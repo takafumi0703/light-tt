@@ -93,103 +93,238 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="section service-mv" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072'); background-size: cover; background-position: center; position: relative; min-height: 75vh;">
-            <div class="service-mv-overlay" style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(11, 15, 14, 0.92) 0%, rgba(11, 15, 14, 0.75) 50%, rgba(11, 15, 14, 0.88) 100%);"></div>
-            <div class="r-container position-relative z-2 h-100 d-flex align-items-center">
-                <div class="row w-100">
-                    <div class="col-12 col-xl-10 mx-auto">
-                        <div class="d-flex flex-column gap-4 text-center">
-                            <h1 class="scrollanimation animated fadeInUp adr-5 m-0" style="font-size: 48px; line-height: 1.3;">
-                                光技術で、医療と産業の未来を支える
-                            </h1>
-                            <p class="scrollanimation animated fadeInUp adr-5 adl-1 mx-auto" style="max-width: 780px; font-size: 18px; line-height: 1.8;">
-                                LTTは、最先端レーザー技術を核に<br>
-                                医療・ヘルスケアから産業・環境分野まで、<br>
-                                社会課題の解決につながる技術とサービスを提供します。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- リードテキスト -->
-        <div class="section" style="padding-top: 5em; padding-bottom: 4em;">
-            <div class="r-container">
+        <div class="service-mv position-relative overflow-hidden" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <!-- Dynamic Gradient Background -->
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 25%, #0f1419 50%, #1e2433 75%, #0b0f14 100%); z-index: 1;"></div>
+            
+            <!-- Animated Particles Effect -->
+            <div class="position-absolute w-100 h-100" style="z-index: 2; opacity: 0.15; background-image: 
+                radial-gradient(2px 2px at 20% 30%, white, transparent),
+                radial-gradient(2px 2px at 60% 70%, white, transparent),
+                radial-gradient(1px 1px at 50% 50%, white, transparent),
+                radial-gradient(1px 1px at 80% 10%, white, transparent),
+                radial-gradient(2px 2px at 90% 60%, white, transparent),
+                radial-gradient(1px 1px at 33% 80%, white, transparent),
+                radial-gradient(1px 1px at 70% 30%, white, transparent);
+                background-size: 300% 300%;
+                animation: particles 30s ease-in-out infinite;"></div>
+                
+            <!-- Laser Beam Effect -->
+            <div class="position-absolute" style="top: 0; left: 0; right: 0; bottom: 0; z-index: 3; opacity: 0.05; background: linear-gradient(90deg, transparent 0%, rgba(221, 152, 76, 0.3) 50%, transparent 100%); transform: skewY(-3deg); animation: laserSweep 8s ease-in-out infinite;"></div>
+            
+            <div class="r-container position-relative" style="z-index: 10;">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-10">
-                        <div class="d-flex flex-column gap-4 text-center scrollanimation animated fadeInUp">
-                            <div class="d-flex flex-column gap-3">
-                                <p style="font-size: 17px; line-height: 1.95; margin: 0;">
-                                    LTT（Light Touch Technology）は、<br>
-                                    長年培ってきたレーザー・光計測技術を基盤に、<br>
-                                    「正確に、非接触で、負担なく測る」技術の社会実装に取り組んでいます。
-                                </p>
-                                <p style="font-size: 17px; line-height: 1.95; margin: 0;">
-                                    研究機関発の高度な技術を、<br>
-                                    医療現場や産業の実利用へとつなげること。<br>
-                                    それが、私たちのサービスの本質です。
-                                </p>
+                        <div class="text-center" style="padding: 4rem 0;">
+                            <!-- Badge -->
+                            <div class="scrollanimation animated fadeInDown mb-4" style="animation-delay: 0.2s;">
+                                <span class="px-4 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.15); border: 1px solid rgba(221, 152, 76, 0.3); color: #dd984c; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                                    <i class="fa-solid fa-atom me-2"></i>Service Overview
+                                </span>
+                            </div>
+                            
+                            <!-- Main Headline -->
+                            <h1 class="scrollanimation animated fadeInUp mb-5" style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.2; font-weight: 800; letter-spacing: -0.02em; animation-delay: 0.4s;">
+                                <span class="d-block" style="background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 50%, #ffffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 0 80px rgba(221, 152, 76, 0.3);">
+                                    光技術で、医療と産業の
+                                </span>
+                                <span class="d-block mt-2" style="background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 0 80px rgba(221, 152, 76, 0.5);">
+                                    未来を支える
+                                </span>
+                            </h1>
+                            
+                            <!-- Subtitle -->
+                            <p class="scrollanimation animated fadeInUp mx-auto mb-5" style="max-width: 720px; font-size: clamp(1rem, 2vw, 1.25rem); line-height: 1.8; color: rgba(255, 255, 255, 0.85); font-weight: 400; animation-delay: 0.6s;">
+                                LTTは、最先端レーザー技術を核に<br class="d-none d-md-block">
+                                医療・ヘルスケアから産業・環境分野まで、<br class="d-none d-md-block">
+                                社会課題の解決につながる技術とサービスを提供します。
+                            </p>
+                            
+                            <!-- Scroll Indicator -->
+                            <div class="scrollanimation animated fadeIn" style="animation-delay: 1s; margin-top: 5rem;">
+                                <div class="scroll-indicator-arrow" style="width: 30px; height: 50px; border: 2px solid rgba(221, 152, 76, 0.5); border-radius: 20px; position: relative; margin: 0 auto;">
+                                    <div style="width: 4px; height: 8px; background: #dd984c; border-radius: 2px; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); animation: scrollBounce 2s ease-in-out infinite;"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Bottom Gradient Fade -->
+            <div class="position-absolute bottom-0 w-100" style="height: 150px; background: linear-gradient(to top, rgba(11, 15, 20, 1), transparent); z-index: 4;"></div>
         </div>
 
-        <!-- アンカーボタン -->
-        <div class="section" style="padding-top: 0; padding-bottom: 5em;">
+        <!-- Philosophy Section -->
+        <div class="section position-relative" style="padding: 8rem 0; background: radial-gradient(ellipse at top, rgba(221, 152, 76, 0.08) 0%, transparent 70%);">
             <div class="r-container">
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="#technology" class="btn btn-accent btn-accent-alt scrollanimation animated fadeInUp">
-                        <span>テクノロジー</span>
-                    </a>
-                    <a href="#medical" class="btn btn-accent btn-accent-alt scrollanimation animated fadeInUp adl-1">
-                        <span>メディカル</span>
-                    </a>
-                    <a href="#industrial" class="btn btn-accent btn-accent-alt scrollanimation animated fadeInUp adl-2">
-                        <span>インダストリアル</span>
-                    </a>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <!-- Icon Feature -->
+                        <div class="text-center mb-5">
+                            <div class="scrollanimation animated zoomIn" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border: 2px solid rgba(221, 152, 76, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 40px rgba(221, 152, 76, 0.2); position: relative;">
+                                <i class="fa-solid fa-lightbulb" style="font-size: 32px; color: #dd984c;"></i>
+                                <div class="position-absolute" style="width: 100%; height: 100%; border-radius: 50%; border: 2px solid rgba(221, 152, 76, 0.2); animation: pulse 3s ease-in-out infinite;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Main Text -->
+                        <div class="text-center scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
+                            <p class="mb-5" style="font-size: clamp(1.15rem, 2.5vw, 1.5rem); line-height: 2; color: rgba(255, 255, 255, 0.95); font-weight: 400;">
+                                LTT（Light Touch Technology）は、<br class="d-none d-md-block">
+                                長年培ってきたレーザー・光計測技術を基盤に、<br class="d-none d-md-block">
+                                <span style="color: #dd984c; font-weight: 600; position: relative;">
+                                    「正確に、非接触で、負担なく測る」
+                                    <span style="position: absolute; bottom: -5px; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, #dd984c, transparent);"></span>
+                                </span>
+                                技術の社会実装に取り組んでいます。
+                            </p>
+                            
+                            <p class="m-0" style="font-size: clamp(1.15rem, 2.5vw, 1.5rem); line-height: 2; color: rgba(255, 255, 255, 0.95); font-weight: 400;">
+                                研究機関発の高度な技術を、<br class="d-none d-md-block">
+                                医療現場や産業の実利用へとつなげること。<br class="d-none d-md-block">
+                                <span style="color: #dd984c; font-weight: 600;">それが、私たちのサービスの本質です。</span>
+                            </p>
+                        </div>
+                        
+                        <!-- Decorative Line -->
+                        <div class="scrollanimation animated fadeIn mt-5" style="animation-delay: 0.4s;">
+                            <div style="width: 100px; height: 2px; background: linear-gradient(90deg, transparent, #dd984c, transparent); margin: 0 auto;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Cards -->
+        <div class="section" style="padding: 6rem 0;">
+            <div class="r-container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <a href="#technology" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0s;">
+                            <div class="position-relative overflow-hidden rounded-4" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.12), rgba(221, 152, 76, 0.05)); border: 1px solid rgba(221, 152, 76, 0.25); padding: 2.5rem 2rem; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(10px);">
+                                <div class="position-absolute" style="top: -50%; right: -30%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent); border-radius: 50%; transition: all 0.4s ease;"></div>
+                                <div class="position-relative" style="z-index: 2;">
+                                    <div class="mb-4" style="width: 60px; height: 60px; background: rgba(221, 152, 76, 0.15); border-radius: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                                        <i class="fa-solid fa-atom" style="font-size: 28px; color: #dd984c;"></i>
+                                    </div>
+                                    <h3 class="mb-2" style="font-size: 1.5rem; font-weight: 700; color: #ffffff;">テクノロジー</h3>
+                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7); line-height: 1.6;">最先端レーザー技術を実装可能な技術へ</p>
+                                    <div class="mt-3" style="display: inline-flex; align-items: center; gap: 8px; color: #dd984c; font-size: 0.9rem; font-weight: 600;">
+                                        <span>詳しく見る</span>
+                                        <i class="fa-solid fa-arrow-right" style="transition: transform 0.3s ease;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <a href="#medical" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0.1s;">
+                            <div class="position-relative overflow-hidden rounded-4" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.12), rgba(221, 152, 76, 0.05)); border: 1px solid rgba(221, 152, 76, 0.25); padding: 2.5rem 2rem; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(10px);">
+                                <div class="position-absolute" style="top: -50%; right: -30%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent); border-radius: 50%; transition: all 0.4s ease;"></div>
+                                <div class="position-relative" style="z-index: 2;">
+                                    <div class="mb-4" style="width: 60px; height: 60px; background: rgba(221, 152, 76, 0.15); border-radius: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                                        <i class="fa-solid fa-heart-pulse" style="font-size: 28px; color: #dd984c;"></i>
+                                    </div>
+                                    <h3 class="mb-2" style="font-size: 1.5rem; font-weight: 700; color: #ffffff;">メディカル</h3>
+                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7); line-height: 1.6;">採血しない血糖値測定という選択肢を</p>
+                                    <div class="mt-3" style="display: inline-flex; align-items: center; gap: 8px; color: #dd984c; font-size: 0.9rem; font-weight: 600;">
+                                        <span>詳しく見る</span>
+                                        <i class="fa-solid fa-arrow-right" style="transition: transform 0.3s ease;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <a href="#industrial" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
+                            <div class="position-relative overflow-hidden rounded-4" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.12), rgba(221, 152, 76, 0.05)); border: 1px solid rgba(221, 152, 76, 0.25); padding: 2.5rem 2rem; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(10px);">
+                                <div class="position-absolute" style="top: -50%; right: -30%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent); border-radius: 50%; transition: all 0.4s ease;"></div>
+                                <div class="position-relative" style="z-index: 2;">
+                                    <div class="mb-4" style="width: 60px; height: 60px; background: rgba(221, 152, 76, 0.15); border-radius: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                                        <i class="fa-solid fa-industry" style="font-size: 28px; color: #dd984c;"></i>
+                                    </div>
+                                    <h3 class="mb-2" style="font-size: 1.5rem; font-weight: 700; color: #ffffff;">インダストリアル</h3>
+                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7); line-height: 1.6;">光で見えない情報を可視化する</p>
+                                    <div class="mt-3" style="display: inline-flex; align-items: center; gap: 8px; color: #dd984c; font-size: 0.9rem; font-weight: 600;">
+                                        <span>詳しく見る</span>
+                                        <i class="fa-solid fa-arrow-right" style="transition: transform 0.3s ease;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Technology Section -->
-        <div id="technology" class="section" style="background: linear-gradient(135deg, rgba(24, 20, 32, 0.5), rgba(14, 14, 20, 0.5));">
-            <div class="r-container">
-                <div class="row row-cols-1 row-cols-xl-2 align-items-center gy-5">
-                    <div class="col order-2 order-xl-1">
-                        <div class="d-flex flex-column gap-4">
-                            <div class="d-flex flex-column gap-3 scrollanimation animated fadeInLeft">
-                                <p class="m-0 text-uppercase letter-space-2">
-                                    <span class="text-accent">TECHNOLOGY</span>
-                                </p>
-                                <h2 class="m-0">最先端レーザー技術を、<br>実装できる技術へ</h2>
-                                <p class="m-0" style="font-size: 17px; line-height: 1.8;">
-                                    LTTは、固体レーザーや波長変換技術など、<br>
-                                    高い専門性を要するレーザー技術をコアに持つ技術集団です。
-                                </p>
+        <div id="technology" class="section position-relative overflow-hidden" style="padding: 8rem 0; scroll-margin-top: 80px;">
+            <div class="position-absolute w-100 h-100" style="top: 0; left: 0; opacity: 0.03; background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, #dd984c 2px, #dd984c 4px), repeating-linear-gradient(90deg, transparent, transparent 2px, #dd984c 2px, #dd984c 4px); background-size: 50px 50px;"></div>
+            
+            <div class="r-container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <div class="scrollanimation animated fadeInLeft">
+                            <div class="mb-4">
+                                <span class="px-3 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.12); border: 1px solid rgba(221, 152, 76, 0.25); color: #dd984c; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                                    <i class="fa-solid fa-atom me-2"></i>TECHNOLOGY
+                                </span>
                             </div>
-                            <div class="scrollanimation animated fadeInLeft adl-1">
-                                <p style="font-size: 16px; line-height: 1.85;">
-                                    中赤外領域を含むレーザー光源技術、光パラメトリック発振（OPO）などの高度な波長制御技術を活かし、センシング・計測・分析分野での応用を進めています。
-                                    <br><br>
-                                    研究・試作に留まらず、小型化・安定化・実装性までを見据えた技術開発を行い、社会で"使える技術"として提供します。
-                                </p>
-                            </div>
-                            <div class="scrollanimation animated fadeInLeft adl-2">
-                                <h5 class="mb-3">想定ユース</h5>
-                                <ul class="list-circle ps-4" style="line-height: 2;">
-                                    <li>レーザー・光学技術に関する研究開発支援</li>
-                                    <li>センシング技術の共同開発</li>
-                                    <li>受託研究・技術コンサルティング</li>
+                            
+                            <h2 class="mb-4" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.01em;">
+                                最先端レーザー技術を、<br>
+                                <span style="color: #dd984c;">実装できる技術へ</span>
+                            </h2>
+                            
+                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                                LTTは、固体レーザーや波長変換技術など、高い専門性を要するレーザー技術をコアに持つ技術集団です。中赤外領域を含むレーザー光源技術、光パラメトリック発振（OPO）などの高度な波長制御技術を活かし、センシング・計測・分析分野での応用を進めています。
+                            </p>
+                            
+                            <p class="mb-5" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                                研究・試作に留まらず、小型化・安定化・実装性までを見据えた技術開発を行い、社会で"使える技術"として提供します。
+                            </p>
+                            
+                            <div class="p-4 rounded-3" style="background: rgba(221, 152, 76, 0.08); border-left: 3px solid #dd984c;">
+                                <h5 class="mb-3" style="font-size: 1.1rem; font-weight: 700; color: #dd984c;">想定ユース</h5>
+                                <ul class="m-0 ps-4" style="list-style: none; padding-left: 0 !important;">
+                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
+                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                        レーザー・光学技術に関する研究開発支援
+                                    </li>
+                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
+                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                        センシング技術の共同開発
+                                    </li>
+                                    <li style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
+                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                        受託研究・技術コンサルティング
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col order-1 order-xl-2">
-                        <div class="scrollanimation animated fadeInRight">
-                            <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?q=80&w=2070" alt="Technology" class="img-fluid rounded-3" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+                    
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="scrollanimation animated fadeInRight position-relative">
+                            <div class="position-relative" style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 80px rgba(221, 152, 76, 0.15);">
+                                <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?q=80&w=2070" alt="Technology" class="img-fluid" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;">
+                                <div class="position-absolute" style="inset: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 60%); mix-blend-mode: overlay;"></div>
+                            </div>
+                            
+                            <div class="position-absolute d-none d-lg-block" style="bottom: 30px; right: 30px; background: rgba(11, 15, 20, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(221, 152, 76, 0.3); border-radius: 16px; padding: 1.25rem 1.5rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.25), rgba(221, 152, 76, 0.1)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fa-solid fa-flask" style="font-size: 20px; color: #dd984c;"></i>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Research</div>
+                                        <div style="font-size: 1.25rem; font-weight: 700; color: #dd984c;">+10 Years</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
