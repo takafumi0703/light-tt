@@ -7642,3 +7642,581 @@ img[src] {
         padding: 16px 20px 20px;
     }
 }
+
+/* ================================================
+   Common Inline Style Classes
+   ================================================ */
+
+/* Section Title - Large Gradient Text */
+.section-title-large {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Section Subtitle - Japanese */
+.section-subtitle-jp {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+/* Section Lead Text */
+.section-lead-text {
+    max-width: 680px;
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Icon Container Variations */
+.icon-box-small {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.25), rgba(221, 152, 76, 0.1));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box-medium {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box-large {
+    width: 60px;
+    height: 60px;
+    background: rgba(221, 152, 76, 0.15);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Glass Morphism Card */
+.glass-card {
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03));
+    border: 1px solid rgba(221, 152, 76, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Badge Style */
+.badge-accent {
+    background: rgba(221, 152, 76, 0.12);
+    border: 1px solid rgba(221, 152, 76, 0.25);
+    color: #dd984c;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Custom List with Icon */
+.list-with-icon {
+    padding-left: 1.5rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.list-icon-marker {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #dd984c;
+    font-size: 0.9rem;
+}
+
+/* Text Styles */
+.text-content-primary {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.text-label-bold {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.text-muted-light {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-accent {
+    color: #dd984c;
+}
+
+.text-icon-accent {
+    font-size: 22px;
+    color: #dd984c;
+}
+
+/* Aspect Ratio Image */
+.img-aspect-4-3 {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+/* Decorative Elements */
+.decoration-glow {
+    position: absolute;
+    top: -50%;
+    right: -30%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 60%);
+    mix-blend-mode: overlay;
+}
+
+/* Z-Index Helpers */
+.z-1 { z-index: 1; }
+.z-2 { z-index: 2; }
+.z-3 { z-index: 3; }
+.z-4 { z-index: 4; }
+.z-10 { z-index: 10; }
+
+/* List Style Reset */
+.list-unstyled-custom {
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+/* Transition Helpers */
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+
+/* ========================================
+   Section Background Patterns
+   ======================================== */
+
+.section-bg-gradient-dark {
+    background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);
+}
+
+.section-bg-gradient-reverse {
+    background: linear-gradient(180deg, rgba(16, 20, 28, 1) 0%, rgba(11, 15, 20, 1) 100%);
+}
+
+.section-bg-gradient-center {
+    background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 50%, rgba(11, 15, 20, 1) 100%);
+}
+
+.section-bg-radial-accent {
+    background: radial-gradient(ellipse at top, rgba(221, 152, 76, 0.08) 0%, transparent 70%);
+}
+
+.section-pattern-diagonal {
+    opacity: 0.04;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #dd984c 10px, #dd984c 11px);
+    background-size: 40px 40px;
+}
+
+/* ========================================
+   Overlay Utilities
+   ======================================== */
+
+.overlay-dark {
+    background: rgba(10, 14, 26, 0.75);
+    z-index: 2;
+}
+
+.overlay-gradient-accent {
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%);
+    z-index: 3;
+}
+
+.overlay-gradient-bottom {
+    background: linear-gradient(to top, rgba(11, 15, 20, 0.95), transparent);
+}
+
+/* ========================================
+   Typography Utilities
+   ======================================== */
+
+.text-gradient-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.text-subtitle-jp {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.03em;
+}
+
+.text-lead {
+    font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+}
+
+.text-body-primary {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.text-body-large {
+    font-size: 1.05rem;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.text-accent-highlight {
+    color: #dd984c;
+    font-weight: 600;
+    position: relative;
+}
+
+.text-small-muted {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-label-orange {
+    font-size: 0.9rem;
+    color: #dd984c;
+}
+
+.text-name-large {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #dd984c;
+}
+
+/* ========================================
+   Card & Box Components
+   ======================================== */
+
+.glass-card {
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03));
+    border: 1px solid rgba(221, 152, 76, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.glass-card-hover {
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.12), rgba(221, 152, 76, 0.05));
+    border: 1px solid rgba(221, 152, 76, 0.25);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.glass-card-hover:hover {
+    transform: translateY(-8px);
+    border-color: rgba(221, 152, 76, 0.4);
+    box-shadow: 0 20px 60px rgba(221, 152, 76, 0.2);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box-medium {
+    width: 60px;
+    height: 60px;
+    background: rgba(221, 152, 76, 0.15);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.icon-box-large {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05));
+    border: 2px solid rgba(221, 152, 76, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 40px rgba(221, 152, 76, 0.2);
+    position: relative;
+}
+
+.icon-accent {
+    font-size: 32px;
+    color: #dd984c;
+}
+
+.icon-accent-medium {
+    font-size: 28px;
+    color: #dd984c;
+}
+
+/* ========================================
+   Image & Media Components
+   ======================================== */
+
+.img-rounded-cover {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-full-cover {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* ========================================
+   Decorative Elements
+   ======================================== */
+
+.decorative-glow {
+    position: absolute;
+    top: -50%;
+    right: -30%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.decorative-line-horizontal {
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #dd984c, transparent);
+    margin: 0 auto;
+}
+
+.decorative-underline {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #dd984c, transparent);
+}
+
+.pulse-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgba(221, 152, 76, 0.2);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+/* ========================================
+   Link & Button Utilities
+   ======================================== */
+
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #dd984c;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.link-arrow i {
+    transition: transform 0.3s ease;
+}
+
+.link-arrow:hover i {
+    transform: translateX(4px);
+}
+
+/* ========================================
+   Spacing & Layout Utilities
+   ======================================== */
+
+.section-padding {
+    padding: 6rem 0;
+}
+
+.section-padding-large {
+    padding: 8rem 0;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.z-3 {
+    z-index: 3;
+}
+
+/* Additional specific utility classes */
+.list-icon-position {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #dd984c;
+    font-size: 0.9rem;
+}
+
+.list-item-padded {
+    padding-left: 1.5rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.icon-box-small {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.25), rgba(221, 152, 76, 0.1));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-aspect-4-3 {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+.list-unstyled-important {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.overlay-gradient-inset {
+    inset: 0;
+    background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 60%);
+    mix-blend-mode: overlay;
+}
+
+.text-title-section {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.icon-medium {
+    font-size: 20px;
+    color: #dd984c;
+}
+
+.text-heading-md {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.text-accent-lg {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #dd984c;
+}
+
+.text-accent-md {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #dd984c;
+}
+
+.text-muted-sm {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+.text-label-xs {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-accent-color {
+    color: #dd984c;
+}
+
+.img-card-rounded {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 80px rgba(221, 152, 76, 0.15);
+}
+
+.badge-accent {
+    background: rgba(221, 152, 76, 0.12);
+    border: 1px solid rgba(221, 152, 76, 0.25);
+    color: #dd984c;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.card-highlight {
+    background: rgba(221, 152, 76, 0.08);
+    border-left: 3px solid #dd984c;
+}
+
+.scroll-margin-100 {
+    scroll-margin-top: 100px;
+}
+
+.overlay-info-box {
+    background: rgba(11, 15, 20, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(221, 152, 76, 0.3);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}

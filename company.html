@@ -98,13 +98,13 @@
             <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
             
             <!-- Dark Overlay -->
-            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.75); z-index: 2;"></div>
+            <div class="position-absolute w-100 h-100" class="overlay-dark"></div>
             
             <!-- Gradient Overlay -->
-            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%); z-index: 3;"></div>
+            <div class="position-absolute w-100 h-100" class="overlay-gradient-accent"></div>
             
             <!-- Content -->
-            <div class="r-container position-relative" style="z-index: 10;">
+            <div class="r-container position-relative" class="z-10">
                 <div class="text-center">
                     <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
                         <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Company</span>
@@ -123,11 +123,11 @@
             <div class="r-container">
                 <div class="text-center mb-5 scrollanimation animated fadeInUp">
                     <div class="mb-3">
-                        <h2 class="m-0" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: 0.05em; background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-transform: uppercase;">
+                        <h2 class="m-0" class="text-gradient-title">
                             Vision / Mission
                         </h2>
                     </div>
-                    <p class="m-0" style="font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 600; color: rgba(255, 255, 255, 0.95); letter-spacing: 0.03em;">
+                    <p class="m-0" class="text-subtitle-jp">
                         ビジョン・ミッション
                     </p>
                 </div>
@@ -135,7 +135,7 @@
                 <div class="row row-cols-1 row-cols-xl-2 g-5">
                     <div class="col">
                         <div class="scrollanimation animated fadeInLeft h-100">
-                            <div class="p-5 rounded-4 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03)); border: 1px solid rgba(221, 152, 76, 0.2); backdrop-filter: blur(10px);">
+                            <div class="p-5 rounded-4 h-100" class="glass-card">
                                 <div class="mb-4" style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border-radius: 18px; display: flex; align-items: center; justify-content: center;">
                                     <i class="fa-solid fa-eye" style="font-size: 32px; color: #dd984c;"></i>
                                 </div>
@@ -152,7 +152,7 @@
                     
                     <div class="col">
                         <div class="scrollanimation animated fadeInRight h-100">
-                            <div class="p-5 rounded-4 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03)); border: 1px solid rgba(221, 152, 76, 0.2); backdrop-filter: blur(10px);">
+                            <div class="p-5 rounded-4 h-100" class="glass-card">
                                 <div class="mb-4" style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border-radius: 18px; display: flex; align-items: center; justify-content: center;">
                                     <i class="fa-solid fa-rocket" style="font-size: 32px; color: #dd984c;"></i>
                                 </div>
@@ -171,7 +171,7 @@
         </div>
 
         <!-- Our Origin Section -->
-        <div class="section position-relative overflow-hidden" style="background: linear-gradient(180deg, rgba(16, 20, 28, 1) 0%, rgba(11, 15, 20, 1) 100%);">
+        <div class="section position-relative overflow-hidden" class="section-bg-gradient-reverse">
             <div class="position-absolute" style="top: 20%; left: 10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(221, 152, 76, 0.06), transparent 70%); border-radius: 50%; filter: blur(100px);"></div>
             
             <div class="r-container position-relative">
@@ -179,18 +179,18 @@
                     <div class="col-12 col-xl-10">
                         <div class="text-center mb-5 scrollanimation animated fadeInUp">
                             <div class="mb-3">
-                                <h2 class="m-0" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: 0.05em; background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-transform: uppercase;">
+                                <h2 class="m-0" class="text-gradient-title">
                                     Our Origin
                                 </h2>
                             </div>
-                            <p class="m-0" style="font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 600; color: rgba(255, 255, 255, 0.95); letter-spacing: 0.03em;">
+                            <p class="m-0" class="text-subtitle-jp">
                                 創業の背景
                             </p>
                         </div>
                         
                         <div class="scrollanimation animated fadeInUp text-center" style="animation-delay: 0.2s;">
                             <h3 class="mb-4" style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; line-height: 1.4; color: rgba(255, 255, 255, 0.95);">
-                                研究から生まれた技術を、<span style="color: #dd984c;">社会へ</span>
+                                研究から生まれた技術を、<span class="text-accent-color">社会へ</span>
                             </h3>
                             
                             <div class="mx-auto" style="max-width: 800px;">
@@ -213,35 +213,35 @@
         </div>
 
         <!-- Top Message Section -->
-        <div class="section" style="background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 50%, rgba(11, 15, 20, 1) 100%);">
+        <div class="section" class="section-bg-gradient-center">
             <div class="r-container">
                 <div class="text-center mb-5 scrollanimation animated fadeInUp">
                     <div class="mb-3">
-                        <h2 class="m-0" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: 0.05em; background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-transform: uppercase;">
+                        <h2 class="m-0" class="text-gradient-title">
                             Top Message
                         </h2>
                     </div>
-                    <p class="m-0" style="font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 600; color: rgba(255, 255, 255, 0.95); letter-spacing: 0.03em;">
+                    <p class="m-0" class="text-subtitle-jp">
                         代表メッセージ
                     </p>
                 </div>
                 
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-10">
-                        <div class="scrollanimation animated fadeInUp p-5 rounded-4" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03)); border: 1px solid rgba(221, 152, 76, 0.2); backdrop-filter: blur(10px);">
+                        <div class="scrollanimation animated fadeInUp p-5 rounded-4" class="glass-card">
                             <div class="row row-cols-1 row-cols-xl-2 g-5 align-items-center">
                                 <div class="col">
-                                    <div class="position-relative" style="border-radius: 20px; overflow: hidden;">
-                                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" alt="CEO" class="img-fluid" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-                                        <div class="position-absolute bottom-0 start-0 end-0 p-4" style="background: linear-gradient(to top, rgba(11, 15, 20, 0.95), transparent);">
-                                            <p class="m-0" style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">代表取締役</p>
-                                            <p class="m-0" style="font-size: 1.5rem; font-weight: 700; color: #dd984c;">〇〇〇〇</p>
+                                    <div class="position-relative" class="img-rounded-cover">
+                                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" alt="CEO" class="img-fluid" class="img-full-cover">
+                                        <div class="position-absolute bottom-0 start-0 end-0 p-4" class="overlay-gradient-bottom">
+                                            <p class="m-0" class="text-small-muted">代表取締役</p>
+                                            <p class="m-0" class="text-name-large">〇〇〇〇</p>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="col">
-                                    <div style="font-size: 1.05rem; line-height: 2; color: rgba(255, 255, 255, 0.9);">
+                                    <div class="text-body-large">
                                         <p class="mb-4">
                                             私たちは、長年レーザー技術の研究・開発に携わってきました。その中で常に感じていたのは、「優れた技術ほど、社会に届いていない」という現実です。
                                         </p>
@@ -263,24 +263,24 @@
         </div>
 
         <!-- Company Profile Section -->
-        <div class="section position-relative overflow-hidden" style="background: linear-gradient(180deg, rgba(16, 20, 28, 1) 0%, rgba(11, 15, 20, 1) 100%);">
-            <div class="position-absolute w-100 h-100" style="top: 0; left: 0; opacity: 0.04; background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #dd984c 10px, #dd984c 11px); background-size: 40px 40px;"></div>
+        <div class="section position-relative overflow-hidden" class="section-bg-gradient-reverse">
+            <div class="position-absolute w-100 h-100" class="section-pattern-diagonal" style="top: 0; left: 0;"></div>
             
             <div class="r-container position-relative">
                 <div class="text-center mb-5 scrollanimation animated fadeInUp">
                     <div class="mb-3">
-                        <h2 class="m-0" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: 0.05em; background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-transform: uppercase;">
+                        <h2 class="m-0" class="text-gradient-title">
                             Company Profile
                         </h2>
                     </div>
-                    <p class="m-0" style="font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 600; color: rgba(255, 255, 255, 0.95); letter-spacing: 0.03em;">
+                    <p class="m-0" class="text-subtitle-jp">
                         会社情報
                     </p>
                 </div>
                 
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-10">
-                        <div class="scrollanimation animated fadeInUp p-5 rounded-4" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03)); border: 1px solid rgba(221, 152, 76, 0.2); backdrop-filter: blur(10px);">
+                        <div class="scrollanimation animated fadeInUp p-5 rounded-4" class="glass-card">
                             <div class="company-info-table">
                                 <div class="info-row">
                                     <div class="info-label">会社名</div>
@@ -325,7 +325,7 @@
         <div class="section" style="background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
             <div class="r-container">
                 <div class="text-center mb-5">
-                    <span class="scrollanimation animated fadeInDown px-3 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.12); border: 1px solid rgba(221, 152, 76, 0.25); color: #dd984c; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                    <span class="scrollanimation animated fadeInDown px-3 py-2 rounded-pill" class="badge-accent">
                         <i class="fa-solid fa-trophy me-2"></i>MEDIA / AWARDS
                     </span>
                     <h2 class="mt-4 mb-3" style="font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 700;">実績と評価</h2>

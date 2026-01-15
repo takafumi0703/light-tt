@@ -98,13 +98,13 @@
             <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
             
             <!-- Dark Overlay -->
-            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.75); z-index: 2;"></div>
+            <div class="position-absolute w-100 h-100" class="overlay-dark"></div>
             
             <!-- Gradient Overlay -->
-            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%); z-index: 3;"></div>
+            <div class="position-absolute w-100 h-100" class="overlay-gradient-accent"></div>
             
             <!-- Content -->
-            <div class="r-container position-relative" style="z-index: 10;">
+            <div class="r-container position-relative" class="z-10">
                 <div class="text-center">
                     <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
                         <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Service</span>
@@ -119,40 +119,40 @@
         </div>
 
         <!-- Philosophy Section -->
-        <div class="section position-relative" style="padding: 8rem 0; background: radial-gradient(ellipse at top, rgba(221, 152, 76, 0.08) 0%, transparent 70%);">
+        <div class="section position-relative" class="section-padding-large section-bg-radial-accent">
             <div class="r-container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10">
                         <!-- Icon Feature -->
                         <div class="text-center mb-5">
-                            <div class="scrollanimation animated zoomIn" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border: 2px solid rgba(221, 152, 76, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 40px rgba(221, 152, 76, 0.2); position: relative;">
-                                <i class="fa-solid fa-lightbulb" style="font-size: 32px; color: #dd984c;"></i>
-                                <div class="position-absolute" style="width: 100%; height: 100%; border-radius: 50%; border: 2px solid rgba(221, 152, 76, 0.2); animation: pulse 3s ease-in-out infinite;"></div>
+                            <div class="scrollanimation animated zoomIn" class="icon-box-large">
+                                <i class="fa-solid fa-lightbulb" class="icon-accent"></i>
+                                <div class="position-absolute" class="pulse-ring"></div>
                             </div>
                         </div>
                         
                         <!-- Main Text -->
                         <div class="text-center scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
-                            <p class="mb-5" style="font-size: clamp(1.15rem, 2.5vw, 1.5rem); line-height: 2; color: rgba(255, 255, 255, 0.95); font-weight: 400;">
+                            <p class="mb-5" class="text-lead">
                                 LTT（Light Touch Technology）は、<br class="d-none d-md-block">
                                 長年培ってきたレーザー・光計測技術を基盤に、<br class="d-none d-md-block">
-                                <span style="color: #dd984c; font-weight: 600; position: relative;">
+                                <span class="text-accent-highlight">
                                     「正確に、非接触で、負担なく測る」
-                                    <span style="position: absolute; bottom: -5px; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, #dd984c, transparent);"></span>
+                                    <span class="decorative-underline"></span>
                                 </span>
                                 技術の社会実装に取り組んでいます。
                             </p>
                             
-                            <p class="m-0" style="font-size: clamp(1.15rem, 2.5vw, 1.5rem); line-height: 2; color: rgba(255, 255, 255, 0.95); font-weight: 400;">
+                            <p class="m-0" class="text-lead">
                                 研究機関発の高度な技術を、<br class="d-none d-md-block">
                                 医療現場や産業の実利用へとつなげること。<br class="d-none d-md-block">
-                                <span style="color: #dd984c; font-weight: 600;">それが、私たちのサービスの本質です。</span>
+                                <span class="text-accent-highlight">それが、私たちのサービスの本質です。</span>
                             </p>
                         </div>
                         
                         <!-- Decorative Line -->
                         <div class="scrollanimation animated fadeIn mt-5" style="animation-delay: 0.4s;">
-                            <div style="width: 100px; height: 2px; background: linear-gradient(90deg, transparent, #dd984c, transparent); margin: 0 auto;"></div>
+                            <div class="decorative-line-horizontal"></div>
                         </div>
                     </div>
                 </div>
@@ -160,22 +160,22 @@
         </div>
 
         <!-- Navigation Cards -->
-        <div class="section" style="padding: 6rem 0;">
+        <div class="section" class="section-padding">
             <div class="r-container">
                 <div class="row g-4 justify-content-center">
                     <div class="col-12 col-md-4">
                         <a href="#technology" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0s;">
-                            <div class="position-relative overflow-hidden rounded-4" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.12), rgba(221, 152, 76, 0.05)); border: 1px solid rgba(221, 152, 76, 0.25); padding: 2.5rem 2rem; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(10px);">
-                                <div class="position-absolute" style="top: -50%; right: -30%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent); border-radius: 50%; transition: all 0.4s ease;"></div>
-                                <div class="position-relative" style="z-index: 2;">
-                                    <div class="mb-4" style="width: 60px; height: 60px; background: rgba(221, 152, 76, 0.15); border-radius: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                                        <i class="fa-solid fa-atom" style="font-size: 28px; color: #dd984c;"></i>
+                            <div class="position-relative overflow-hidden rounded-4" class="glass-card-hover p-5">
+                                <div class="position-absolute" class="decorative-glow"></div>
+                                <div class="position-relative" class="z-2">
+                                    <div class="mb-4" class="icon-box-medium">
+                                        <i class="fa-solid fa-atom" class="icon-accent-medium"></i>
                                     </div>
-                                    <h3 class="mb-2" style="font-size: 1.5rem; font-weight: 700; color: #ffffff;">テクノロジー</h3>
-                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7); line-height: 1.6;">最先端レーザー技術を実装可能な技術へ</p>
-                                    <div class="mt-3" style="display: inline-flex; align-items: center; gap: 8px; color: #dd984c; font-size: 0.9rem; font-weight: 600;">
+                                    <h3 class="mb-2" class="text-heading-md">テクノロジー</h3>
+                                    <p class="m-0" class="text-muted-sm">最先端レーザー技術を実装可能な技術へ</p>
+                                    <div class="mt-3" class="link-arrow">
                                         <span>詳しく見る</span>
-                                        <i class="fa-solid fa-arrow-right" style="transition: transform 0.3s ease;"></i>
+                                        <i class="fa-solid fa-arrow-right" class="transition-all"></i>
                                     </div>
                                 </div>
                             </div>
@@ -184,17 +184,17 @@
                     
                     <div class="col-12 col-md-4">
                         <a href="#medical" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0.1s;">
-                            <div class="position-relative overflow-hidden rounded-4" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.12), rgba(221, 152, 76, 0.05)); border: 1px solid rgba(221, 152, 76, 0.25); padding: 2.5rem 2rem; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(10px);">
-                                <div class="position-absolute" style="top: -50%; right: -30%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent); border-radius: 50%; transition: all 0.4s ease;"></div>
-                                <div class="position-relative" style="z-index: 2;">
-                                    <div class="mb-4" style="width: 60px; height: 60px; background: rgba(221, 152, 76, 0.15); border-radius: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                                        <i class="fa-solid fa-heart-pulse" style="font-size: 28px; color: #dd984c;"></i>
+                            <div class="position-relative overflow-hidden rounded-4" class="glass-card-hover p-5">
+                                <div class="position-absolute" class="decorative-glow"></div>
+                                <div class="position-relative" class="z-2">
+                                    <div class="mb-4" class="icon-box-medium">
+                                        <i class="fa-solid fa-heart-pulse" class="icon-accent-medium"></i>
                                     </div>
-                                    <h3 class="mb-2" style="font-size: 1.5rem; font-weight: 700; color: #ffffff;">メディカル</h3>
-                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7); line-height: 1.6;">採血しない血糖値測定という選択肢を</p>
-                                    <div class="mt-3" style="display: inline-flex; align-items: center; gap: 8px; color: #dd984c; font-size: 0.9rem; font-weight: 600;">
+                                    <h3 class="mb-2" class="text-heading-md">メディカル</h3>
+                                    <p class="m-0" class="text-muted-sm">採血しない血糖値測定という選択肢を</p>
+                                    <div class="mt-3" class="link-arrow">
                                         <span>詳しく見る</span>
-                                        <i class="fa-solid fa-arrow-right" style="transition: transform 0.3s ease;"></i>
+                                        <i class="fa-solid fa-arrow-right" class="transition-all"></i>
                                     </div>
                                 </div>
                             </div>
@@ -203,17 +203,17 @@
                     
                     <div class="col-12 col-md-4">
                         <a href="#industrial" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
-                            <div class="position-relative overflow-hidden rounded-4" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.12), rgba(221, 152, 76, 0.05)); border: 1px solid rgba(221, 152, 76, 0.25); padding: 2.5rem 2rem; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(10px);">
-                                <div class="position-absolute" style="top: -50%; right: -30%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent); border-radius: 50%; transition: all 0.4s ease;"></div>
-                                <div class="position-relative" style="z-index: 2;">
-                                    <div class="mb-4" style="width: 60px; height: 60px; background: rgba(221, 152, 76, 0.15); border-radius: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                                        <i class="fa-solid fa-industry" style="font-size: 28px; color: #dd984c;"></i>
+                            <div class="position-relative overflow-hidden rounded-4" class="glass-card-hover p-5">
+                                <div class="position-absolute" class="decorative-glow"></div>
+                                <div class="position-relative" class="z-2">
+                                    <div class="mb-4" class="icon-box-medium">
+                                        <i class="fa-solid fa-industry" class="icon-accent-medium"></i>
                                     </div>
-                                    <h3 class="mb-2" style="font-size: 1.5rem; font-weight: 700; color: #ffffff;">インダストリアル</h3>
-                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7); line-height: 1.6;">光で見えない情報を可視化する</p>
-                                    <div class="mt-3" style="display: inline-flex; align-items: center; gap: 8px; color: #dd984c; font-size: 0.9rem; font-weight: 600;">
+                                    <h3 class="mb-2" class="text-heading-md">インダストリアル</h3>
+                                    <p class="m-0" class="text-muted-sm">光で見えない情報を可視化する</p>
+                                    <div class="mt-3" class="link-arrow">
                                         <span>詳しく見る</span>
-                                        <i class="fa-solid fa-arrow-right" style="transition: transform 0.3s ease;"></i>
+                                        <i class="fa-solid fa-arrow-right" class="transition-all"></i>
                                     </div>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@
         </div>
 
         <!-- Technology Section -->
-        <div id="technology" class="section position-relative overflow-hidden" style="scroll-margin-top: 100px; background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div id="technology" class="section position-relative overflow-hidden" class="section-bg-gradient-dark" class="scroll-margin-100">
             <div class="position-absolute w-100 h-100" style="top: 0; left: 0; opacity: 0.04; background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, #dd984c 2px, #dd984c 4px), repeating-linear-gradient(90deg, transparent, transparent 2px, #dd984c 2px, #dd984c 4px); background-size: 60px 60px;"></div>
             
             <div class="r-container position-relative">
@@ -232,37 +232,37 @@
                     <div class="col order-2 order-xl-1">
                         <div class="scrollanimation animated fadeInLeft">
                             <div class="mb-4">
-                                <span class="px-3 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.12); border: 1px solid rgba(221, 152, 76, 0.25); color: #dd984c; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                                <span class="px-3 py-2 rounded-pill" class="badge-accent">
                                     <i class="fa-solid fa-atom me-2"></i>TECHNOLOGY
                                 </span>
                             </div>
                             
-                            <h2 class="mb-4" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.01em;">
+                            <h2 class="mb-4" class="text-title-section">
                                 最先端レーザー技術を、<br>
-                                <span style="color: #dd984c;">実装できる技術へ</span>
+                                <span class="text-accent-color">実装できる技術へ</span>
                             </h2>
                             
-                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                            <p class="mb-4" class="text-body-primary">
                                 LTTは、固体レーザーや波長変換技術など、高い専門性を要するレーザー技術をコアに持つ技術集団です。中赤外領域を含むレーザー光源技術、光パラメトリック発振（OPO）などの高度な波長制御技術を活かし、センシング・計測・分析分野での応用を進めています。
                             </p>
                             
-                            <p class="mb-5" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                            <p class="mb-5" class="text-body-primary">
                                 研究・試作に留まらず、小型化・安定化・実装性までを見据えた技術開発を行い、社会で"使える技術"として提供します。
                             </p>
                             
-                            <div class="p-4 rounded-3" style="background: rgba(221, 152, 76, 0.08); border-left: 3px solid #dd984c;">
-                                <h5 class="mb-3" style="font-size: 1.1rem; font-weight: 700; color: #dd984c;">想定ユース</h5>
-                                <ul class="m-0 ps-4" style="list-style: none; padding-left: 0 !important;">
-                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
-                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                            <div class="p-4 rounded-3" class="card-highlight">
+                                <h5 class="mb-3" class="text-accent-md">想定ユース</h5>
+                                <ul class="m-0 ps-4" class="list-unstyled-important">
+                                    <li class="mb-2" class="list-item-padded">
+                                        <i class="fa-solid fa-check" class="list-icon-position"></i>
                                         レーザー・光学技術に関する研究開発支援
                                     </li>
-                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
-                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                    <li class="mb-2" class="list-item-padded">
+                                        <i class="fa-solid fa-check" class="list-icon-position"></i>
                                         センシング技術の共同開発
                                     </li>
-                                    <li style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
-                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                    <li class="list-item-padded">
+                                        <i class="fa-solid fa-check" class="list-icon-position"></i>
                                         受託研究・技術コンサルティング
                                     </li>
                                 </ul>
@@ -272,19 +272,19 @@
                     
                     <div class="col-12 col-lg-6 order-1 order-lg-2">
                         <div class="scrollanimation animated fadeInRight position-relative">
-                            <div class="position-relative" style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 80px rgba(221, 152, 76, 0.15);">
-                                <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?q=80&w=2070" alt="Technology" class="img-fluid" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;">
-                                <div class="position-absolute" style="inset: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 60%); mix-blend-mode: overlay;"></div>
+                            <div class="position-relative" class="img-card-rounded">
+                                <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?q=80&w=2070" alt="Technology" class="img-fluid" class="img-aspect-4-3">
+                                <div class="position-absolute" class="overlay-gradient-inset"></div>
                             </div>
                             
-                            <div class="position-absolute d-none d-lg-block" style="bottom: 30px; right: 30px; background: rgba(11, 15, 20, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(221, 152, 76, 0.3); border-radius: 16px; padding: 1.25rem 1.5rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);">
+                            <div class="position-absolute d-none d-lg-block" class="overlay-info-box" style="bottom: 30px; right: 30px;">
                                 <div class="d-flex align-items-center gap-3">
-                                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.25), rgba(221, 152, 76, 0.1)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                        <i class="fa-solid fa-flask" style="font-size: 20px; color: #dd984c;"></i>
+                                    <div class="icon-box-small">
+                                        <i class="fa-solid fa-flask" class="icon-medium"></i>
                                     </div>
                                     <div>
-                                        <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Research</div>
-                                        <div style="font-size: 1.25rem; font-weight: 700; color: #dd984c;">+10 Years</div>
+                                        <div class="text-label-xs">Research</div>
+                                        <div class="text-accent-lg">+10 Years</div>
                                     </div>
                                 </div>
                             </div>
@@ -302,19 +302,19 @@
                 <div class="row row-cols-1 row-cols-xl-2 align-items-center gy-5">
                     <div class="col">
                         <div class="scrollanimation animated fadeInLeft position-relative">
-                            <div class="position-relative" style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 80px rgba(221, 152, 76, 0.15);">
-                                <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2070" alt="Medical" class="img-fluid" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;">
-                                <div class="position-absolute" style="inset: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 60%); mix-blend-mode: overlay;"></div>
+                            <div class="position-relative" class="img-card-rounded">
+                                <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2070" alt="Medical" class="img-fluid" class="img-aspect-4-3">
+                                <div class="position-absolute" class="overlay-gradient-inset"></div>
                             </div>
                             
                             <div class="position-absolute d-none d-lg-block" style="top: 30px; left: 30px; background: rgba(11, 15, 20, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(221, 152, 76, 0.3); border-radius: 16px; padding: 1.25rem 1.5rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);">
                                 <div class="d-flex align-items-center gap-3">
-                                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.25), rgba(221, 152, 76, 0.1)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                        <i class="fa-solid fa-heart-pulse" style="font-size: 20px; color: #dd984c;"></i>
+                                    <div class="icon-box-small">
+                                        <i class="fa-solid fa-heart-pulse" class="icon-medium"></i>
                                     </div>
                                     <div>
-                                        <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Non-invasive</div>
-                                        <div style="font-size: 1.25rem; font-weight: 700; color: #dd984c;">Pain-free</div>
+                                        <div class="text-label-xs">Non-invasive</div>
+                                        <div class="text-accent-lg">Pain-free</div>
                                     </div>
                                 </div>
                             </div>
@@ -324,37 +324,37 @@
                     <div class="col">
                         <div class="scrollanimation animated fadeInRight">
                             <div class="mb-4">
-                                <span class="px-3 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.12); border: 1px solid rgba(221, 152, 76, 0.25); color: #dd984c; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                                <span class="px-3 py-2 rounded-pill" class="badge-accent">
                                     <i class="fa-solid fa-heart-pulse me-2"></i>MEDICAL
                                 </span>
                             </div>
                             
-                            <h2 class="mb-4" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.01em;">
+                            <h2 class="mb-4" class="text-title-section">
                                 採血しない血糖値測定という<br>
-                                <span style="color: #dd984c;">選択肢を</span>
+                                <span class="text-accent-color">選択肢を</span>
                             </h2>
                             
-                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                            <p class="mb-4" class="text-body-primary">
                                 LTTが取り組む医療分野の中核は、非侵襲型（採血不要）血糖値センサーの開発です。従来の血糖値測定は、針による採血が不可欠であり、患者にとって身体的・心理的な負担がありました。
                             </p>
                             
-                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                            <p class="mb-4" class="text-body-primary">
                                 LTTは、レーザー光を用いた非接触計測により、痛みやストレスを伴わない血糖値測定の実現を目指しています。
                             </p>
                             
-                            <p class="mb-5" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                            <p class="mb-5" class="text-body-primary">
                                 日常的な測定をより自然に行えることで、治療だけでなく、予防や健康管理への活用も視野に入れています。
                             </p>
                             
-                            <div class="p-4 rounded-3" style="background: rgba(221, 152, 76, 0.08); border-left: 3px solid #dd984c;">
-                                <h5 class="mb-3" style="font-size: 1.1rem; font-weight: 700; color: #dd984c;">プロダクト構想例</h5>
-                                <ul class="m-0 ps-4" style="list-style: none; padding-left: 0 !important;">
-                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
-                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                            <div class="p-4 rounded-3" class="card-highlight">
+                                <h5 class="mb-3" class="text-accent-md">プロダクト構想例</h5>
+                                <ul class="m-0 ps-4" class="list-unstyled-important">
+                                    <li class="mb-2" class="list-item-padded">
+                                        <i class="fa-solid fa-check" class="list-icon-position"></i>
                                         モバイル型 血糖値センサー
                                     </li>
-                                    <li style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
-                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                    <li class="list-item-padded">
+                                        <i class="fa-solid fa-check" class="list-icon-position"></i>
                                         据置型 ヘルスケアセンサー（薬局・施設向け）
                                     </li>
                                 </ul>
@@ -366,7 +366,7 @@
         </div>
 
         <!-- Industrial Section -->
-        <div id="industrial" class="section position-relative overflow-hidden" style="scroll-margin-top: 100px; background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div id="industrial" class="section position-relative overflow-hidden" class="section-bg-gradient-dark" class="scroll-margin-100">
             <div class="position-absolute w-100 h-100" style="top: 0; left: 0; opacity: 0.04; background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #dd984c 10px, #dd984c 11px), repeating-linear-gradient(-45deg, transparent, transparent 10px, #dd984c 10px, #dd984c 11px); background-size: 40px 40px;"></div>
             
             <div class="r-container position-relative">
@@ -374,41 +374,41 @@
                     <div class="col order-2 order-xl-1">
                         <div class="scrollanimation animated fadeInLeft">
                             <div class="mb-4">
-                                <span class="px-3 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.12); border: 1px solid rgba(221, 152, 76, 0.25); color: #dd984c; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                                <span class="px-3 py-2 rounded-pill" class="badge-accent">
                                     <i class="fa-solid fa-industry me-2"></i>INDUSTRIAL
                                 </span>
                             </div>
                             
-                            <h2 class="mb-4" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.01em;">
+                            <h2 class="mb-4" class="text-title-section">
                                 光で"見えない情報"を<br>
-                                <span style="color: #dd984c;">可視化する</span>
+                                <span class="text-accent-color">可視化する</span>
                             </h2>
                             
-                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                            <p class="mb-4" class="text-body-primary">
                                 LTTの光計測技術は、医療分野にとどまらず、産業・環境分野への応用も可能です。レーザーによる非接触・リアルタイム計測は、製造現場や環境計測においても高い価値を発揮します。
                             </p>
                             
-                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                            <p class="mb-4" class="text-body-primary">
                                 対象物に触れることなく、状態・成分・変化を正確に捉えることで、品質管理や効率化、新たな分析手法の創出につながります。
                             </p>
                             
-                            <p class="mb-5" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                            <p class="mb-5" class="text-body-primary">
                                 LTTは、用途や課題に応じた光技術ソリューションの提供・共同開発を行っています。
                             </p>
                             
-                            <div class="p-4 rounded-3" style="background: rgba(221, 152, 76, 0.08); border-left: 3px solid #dd984c;">
-                                <h5 class="mb-3" style="font-size: 1.1rem; font-weight: 700; color: #dd984c;">想定分野</h5>
-                                <ul class="m-0 ps-4" style="list-style: none; padding-left: 0 !important;">
-                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
-                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                            <div class="p-4 rounded-3" class="card-highlight">
+                                <h5 class="mb-3" class="text-accent-md">想定分野</h5>
+                                <ul class="m-0 ps-4" class="list-unstyled-important">
+                                    <li class="mb-2" class="list-item-padded">
+                                        <i class="fa-solid fa-check" class="list-icon-position"></i>
                                         産業向けセンシング・検査
                                     </li>
-                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
-                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                    <li class="mb-2" class="list-item-padded">
+                                        <i class="fa-solid fa-check" class="list-icon-position"></i>
                                         環境モニタリング
                                     </li>
-                                    <li style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
-                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                    <li class="list-item-padded">
+                                        <i class="fa-solid fa-check" class="list-icon-position"></i>
                                         光技術を用いた新規計測手法の検討
                                     </li>
                                 </ul>
@@ -418,19 +418,19 @@
                     
                     <div class="col-12 col-lg-6 order-1 order-lg-2">
                         <div class="scrollanimation animated fadeInRight position-relative">
-                            <div class="position-relative" style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 80px rgba(221, 152, 76, 0.15);">
-                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070" alt="Industrial" class="img-fluid" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;">
-                                <div class="position-absolute" style="inset: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 60%); mix-blend-mode: overlay;"></div>
+                            <div class="position-relative" class="img-card-rounded">
+                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070" alt="Industrial" class="img-fluid" class="img-aspect-4-3">
+                                <div class="position-absolute" class="overlay-gradient-inset"></div>
                             </div>
                             
-                            <div class="position-absolute d-none d-lg-block" style="bottom: 30px; right: 30px; background: rgba(11, 15, 20, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(221, 152, 76, 0.3); border-radius: 16px; padding: 1.25rem 1.5rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);">
+                            <div class="position-absolute d-none d-lg-block" class="overlay-info-box" style="bottom: 30px; right: 30px;">
                                 <div class="d-flex align-items-center gap-3">
-                                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.25), rgba(221, 152, 76, 0.1)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                        <i class="fa-solid fa-microscope" style="font-size: 20px; color: #dd984c;"></i>
+                                    <div class="icon-box-small">
+                                        <i class="fa-solid fa-microscope" class="icon-medium"></i>
                                     </div>
                                     <div>
-                                        <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Real-time</div>
-                                        <div style="font-size: 1.25rem; font-weight: 700; color: #dd984c;">Sensing</div>
+                                        <div class="text-label-xs">Real-time</div>
+                                        <div class="text-accent-lg">Sensing</div>
                                     </div>
                                 </div>
                             </div>
