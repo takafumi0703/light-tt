@@ -4265,3 +4265,123 @@ a {
     margin: 0 auto;
 }
 
+
+/* Product Page Styles */
+.product-mv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-mv-overlay {
+    z-index: 1;
+}
+
+/* Value Card Styles */
+.value-card {
+    background: linear-gradient(135deg, rgba(24, 20, 32, 0.6), rgba(14, 14, 20, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 32px 28px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 138, 0, 0.4);
+    box-shadow: 0 16px 40px rgba(255, 138, 0, 0.12);
+}
+
+.value-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: rgba(255, 138, 0, 0.12);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    background: rgba(255, 138, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.value-card h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.value-card h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.value-card p {
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+/* Specifications Table Styles */
+.spec-table {
+    background: linear-gradient(135deg, rgba(24, 20, 32, 0.6), rgba(14, 14, 20, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.spec-row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: background-color 0.2s ease;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-row:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.spec-label {
+    flex: 0 0 180px;
+    padding: 20px 24px;
+    font-weight: 600;
+    color: var(--text-accent);
+    background-color: rgba(255, 138, 0, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.spec-value {
+    flex: 1;
+    padding: 20px 24px;
+    color: var(--text-color-2);
+    line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+    .spec-row {
+        flex-direction: column;
+    }
+    
+    .spec-label {
+        flex: none;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 16px 20px;
+    }
+    
+    .spec-value {
+        padding: 16px 20px;
+    }
+}
+
