@@ -4899,3 +4899,10 @@ img[src] {
     transform: translateY(0);
 }
 
+
+/* Grid Move Animation for Product Page */
+@keyframes gridMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 60px 60px; }
+}
+

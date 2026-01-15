@@ -93,24 +93,50 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="section product-mv" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070'); background-size: cover; background-position: center; position: relative; min-height: 75vh;">
-            <div class="product-mv-overlay" style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(11, 15, 14, 0.92) 0%, rgba(11, 15, 14, 0.78) 50%, rgba(11, 15, 14, 0.9) 100%);"></div>
-            <div class="r-container position-relative z-2 h-100 d-flex align-items-center">
-                <div class="row w-100">
-                    <div class="col-12 col-xl-10 mx-auto">
-                        <div class="d-flex flex-column gap-4 text-center">
-                            <h1 class="scrollanimation animated fadeInUp adr-5 m-0" style="font-size: 48px; line-height: 1.3;">
-                                光技術が切り拓く、<br>新しい血糖値測定
+        <div class="product-mv position-relative overflow-hidden" style="min-height: 90vh; display: flex; align-items: center; justify-content: center;">
+            <!-- Dynamic Gradient Background -->
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 25%, #0f1419 50%, #1e2433 75%, #0b0f14 100%); z-index: 1;"></div>
+            
+            <!-- Animated Grid Pattern -->
+            <div class="position-absolute w-100 h-100" style="z-index: 2; opacity: 0.08; background-image: linear-gradient(rgba(221, 152, 76, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(221, 152, 76, 0.3) 1px, transparent 1px); background-size: 60px 60px; animation: gridMove 20s linear infinite;"></div>
+            
+            <!-- Radial Glow Effect -->
+            <div class="position-absolute" style="top: 20%; right: 10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(221, 152, 76, 0.15), transparent 70%); border-radius: 50%; z-index: 3; filter: blur(80px);"></div>
+            
+            <div class="r-container position-relative" style="z-index: 10;">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-10">
+                        <div class="text-center" style="padding: 4rem 0;">
+                            <!-- Badge -->
+                            <div class="scrollanimation animated fadeInDown mb-4" style="animation-delay: 0.2s;">
+                                <span class="px-4 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.15); border: 1px solid rgba(221, 152, 76, 0.3); color: #dd984c; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                                    <i class="fa-solid fa-droplet me-2"></i>Product Overview
+                                </span>
+                            </div>
+                            
+                            <!-- Main Headline -->
+                            <h1 class="scrollanimation animated fadeInUp mb-5" style="font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; animation-delay: 0.4s;">
+                                <span class="d-block" style="background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 50%, #ffffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                    光技術が切り拓く、
+                                </span>
+                                <span class="d-block mt-2" style="background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                    新しい血糖値測定
+                                </span>
                             </h1>
-                            <p class="scrollanimation animated fadeInUp adr-5 adl-1 mx-auto" style="max-width: 780px; font-size: 18px; line-height: 1.8;">
-                                LTTは、レーザー技術を用いた<br>
-                                非侵襲型血糖値センサーの開発を通じて、<br>
+                            
+                            <!-- Subtitle -->
+                            <p class="scrollanimation animated fadeInUp mx-auto mb-5" style="max-width: 720px; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: rgba(255, 255, 255, 0.85); font-weight: 400; animation-delay: 0.6s;">
+                                LTTは、レーザー技術を用いた<br class="d-none d-md-block">
+                                非侵襲型血糖値センサーの開発を通じて、<br class="d-none d-md-block">
                                 日常に溶け込むヘルスケアの実現を目指しています。
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Bottom Gradient Fade -->
+            <div class="position-absolute bottom-0 w-100" style="height: 150px; background: linear-gradient(to top, rgba(11, 15, 20, 1), transparent); z-index: 4;"></div>
         </div>
 
         <!-- Mobile Glucose Sensor Section -->

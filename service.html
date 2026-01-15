@@ -332,40 +332,66 @@
         </div>
 
         <!-- Medical Section -->
-        <div id="medical" class="section">
-            <div class="r-container">
-                <div class="row row-cols-1 row-cols-xl-2 align-items-center gy-5">
-                    <div class="col">
-                        <div class="scrollanimation animated fadeInLeft">
-                            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2070" alt="Medical" class="img-fluid rounded-3" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+        <div id="medical" class="section position-relative overflow-hidden" style="padding: 8rem 0; scroll-margin-top: 80px; background: radial-gradient(ellipse at center, rgba(221, 152, 76, 0.05) 0%, transparent 70%);">
+            <div class="r-container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-12 col-lg-6">
+                        <div class="scrollanimation animated fadeInLeft position-relative">
+                            <div class="position-relative" style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 80px rgba(221, 152, 76, 0.15);">
+                                <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2070" alt="Medical" class="img-fluid" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;">
+                                <div class="position-absolute" style="inset: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 60%); mix-blend-mode: overlay;"></div>
+                            </div>
+                            
+                            <div class="position-absolute d-none d-lg-block" style="top: 30px; left: 30px; background: rgba(11, 15, 20, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(221, 152, 76, 0.3); border-radius: 16px; padding: 1.25rem 1.5rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.25), rgba(221, 152, 76, 0.1)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fa-solid fa-heart-pulse" style="font-size: 20px; color: #dd984c;"></i>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Non-invasive</div>
+                                        <div style="font-size: 1.25rem; font-weight: 700; color: #dd984c;">Pain-free</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="d-flex flex-column gap-4">
-                            <div class="d-flex flex-column gap-3 scrollanimation animated fadeInRight">
-                                <p class="m-0 text-uppercase letter-space-2">
-                                    <span class="text-accent">MEDICAL</span>
-                                </p>
-                                <h2 class="m-0">採血しない血糖値測定という<br>選択肢を</h2>
-                                <p class="m-0" style="font-size: 17px; line-height: 1.8;">
-                                    LTTが取り組む医療分野の中核は、<br>
-                                    非侵襲型（採血不要）血糖値センサーの開発です。
-                                </p>
+                    
+                    <div class="col-12 col-lg-6">
+                        <div class="scrollanimation animated fadeInRight">
+                            <div class="mb-4">
+                                <span class="px-3 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.12); border: 1px solid rgba(221, 152, 76, 0.25); color: #dd984c; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                                    <i class="fa-solid fa-heart-pulse me-2"></i>MEDICAL
+                                </span>
                             </div>
-                            <div class="scrollanimation animated fadeInRight adl-1">
-                                <p style="font-size: 16px; line-height: 1.85;">
-                                    従来の血糖値測定は、針による採血が不可欠であり、患者にとって身体的・心理的な負担がありました。
-                                    <br><br>
-                                    LTTは、レーザー光を用いた非接触計測により、痛みやストレスを伴わない血糖値測定の実現を目指しています。
-                                    <br><br>
-                                    日常的な測定をより自然に行えることで、治療だけでなく、予防や健康管理への活用も視野に入れています。
-                                </p>
-                            </div>
-                            <div class="scrollanimation animated fadeInRight adl-2">
-                                <h5 class="mb-3">プロダクト構想例</h5>
-                                <ul class="list-circle ps-4" style="line-height: 2;">
-                                    <li>モバイル型 血糖値センサー</li>
-                                    <li>据置型 ヘルスケアセンサー（薬局・施設向け）</li>
+                            
+                            <h2 class="mb-4" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.01em;">
+                                採血しない血糖値測定という<br>
+                                <span style="color: #dd984c;">選択肢を</span>
+                            </h2>
+                            
+                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                                LTTが取り組む医療分野の中核は、非侵襲型（採血不要）血糖値センサーの開発です。従来の血糖値測定は、針による採血が不可欠であり、患者にとって身体的・心理的な負担がありました。
+                            </p>
+                            
+                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                                LTTは、レーザー光を用いた非接触計測により、痛みやストレスを伴わない血糖値測定の実現を目指しています。
+                            </p>
+                            
+                            <p class="mb-5" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                                日常的な測定をより自然に行えることで、治療だけでなく、予防や健康管理への活用も視野に入れています。
+                            </p>
+                            
+                            <div class="p-4 rounded-3" style="background: rgba(221, 152, 76, 0.08); border-left: 3px solid #dd984c;">
+                                <h5 class="mb-3" style="font-size: 1.1rem; font-weight: 700; color: #dd984c;">プロダクト構想例</h5>
+                                <ul class="m-0 ps-4" style="list-style: none; padding-left: 0 !important;">
+                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
+                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                        モバイル型 血糖値センサー
+                                    </li>
+                                    <li style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
+                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                        据置型 ヘルスケアセンサー（薬局・施設向け）
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -375,43 +401,74 @@
         </div>
 
         <!-- Industrial Section -->
-        <div id="industrial" class="section" style="background: linear-gradient(135deg, rgba(24, 20, 32, 0.5), rgba(14, 14, 20, 0.5));">
-            <div class="r-container">
-                <div class="row row-cols-1 row-cols-xl-2 align-items-center gy-5">
-                    <div class="col order-2 order-xl-1">
-                        <div class="d-flex flex-column gap-4">
-                            <div class="d-flex flex-column gap-3 scrollanimation animated fadeInLeft">
-                                <p class="m-0 text-uppercase letter-space-2">
-                                    <span class="text-accent">INDUSTRIAL</span>
-                                </p>
-                                <h2 class="m-0">光で"見えない情報"を<br>可視化する</h2>
-                                <p class="m-0" style="font-size: 17px; line-height: 1.8;">
-                                    LTTの光計測技術は、<br>
-                                    医療分野にとどまらず、産業・環境分野への応用も可能です。
-                                </p>
+        <div id="industrial" class="section position-relative overflow-hidden" style="padding: 8rem 0; scroll-margin-top: 80px;">
+            <div class="position-absolute w-100 h-100" style="top: 0; left: 0; opacity: 0.03; background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #dd984c 10px, #dd984c 11px), repeating-linear-gradient(-45deg, transparent, transparent 10px, #dd984c 10px, #dd984c 11px); background-size: 30px 30px;"></div>
+            
+            <div class="r-container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <div class="scrollanimation animated fadeInLeft">
+                            <div class="mb-4">
+                                <span class="px-3 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.12); border: 1px solid rgba(221, 152, 76, 0.25); color: #dd984c; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
+                                    <i class="fa-solid fa-industry me-2"></i>INDUSTRIAL
+                                </span>
                             </div>
-                            <div class="scrollanimation animated fadeInLeft adl-1">
-                                <p style="font-size: 16px; line-height: 1.85;">
-                                    レーザーによる非接触・リアルタイム計測は、製造現場や環境計測においても高い価値を発揮します。
-                                    <br><br>
-                                    対象物に触れることなく、状態・成分・変化を正確に捉えることで、品質管理や効率化、新たな分析手法の創出につながります。
-                                    <br><br>
-                                    LTTは、用途や課題に応じた光技術ソリューションの提供・共同開発を行っています。
-                                </p>
-                            </div>
-                            <div class="scrollanimation animated fadeInLeft adl-2">
-                                <h5 class="mb-3">想定分野</h5>
-                                <ul class="list-circle ps-4" style="line-height: 2;">
-                                    <li>産業向けセンシング・検査</li>
-                                    <li>環境モニタリング</li>
-                                    <li>光技術を用いた新規計測手法の検討</li>
+                            
+                            <h2 class="mb-4" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.01em;">
+                                光で"見えない情報"を<br>
+                                <span style="color: #dd984c;">可視化する</span>
+                            </h2>
+                            
+                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                                LTTの光計測技術は、医療分野にとどまらず、産業・環境分野への応用も可能です。レーザーによる非接触・リアルタイム計測は、製造現場や環境計測においても高い価値を発揮します。
+                            </p>
+                            
+                            <p class="mb-4" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                                対象物に触れることなく、状態・成分・変化を正確に捉えることで、品質管理や効率化、新たな分析手法の創出につながります。
+                            </p>
+                            
+                            <p class="mb-5" style="font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                                LTTは、用途や課題に応じた光技術ソリューションの提供・共同開発を行っています。
+                            </p>
+                            
+                            <div class="p-4 rounded-3" style="background: rgba(221, 152, 76, 0.08); border-left: 3px solid #dd984c;">
+                                <h5 class="mb-3" style="font-size: 1.1rem; font-weight: 700; color: #dd984c;">想定分野</h5>
+                                <ul class="m-0 ps-4" style="list-style: none; padding-left: 0 !important;">
+                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
+                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                        産業向けセンシング・検査
+                                    </li>
+                                    <li class="mb-2" style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
+                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                        環境モニタリング
+                                    </li>
+                                    <li style="padding-left: 1.5rem; position: relative; color: rgba(255, 255, 255, 0.85);">
+                                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 4px; color: #dd984c; font-size: 0.9rem;"></i>
+                                        光技術を用いた新規計測手法の検討
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col order-1 order-xl-2">
-                        <div class="scrollanimation animated fadeInRight">
-                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070" alt="Industrial" class="img-fluid rounded-3" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+                    
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="scrollanimation animated fadeInRight position-relative">
+                            <div class="position-relative" style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 80px rgba(221, 152, 76, 0.15);">
+                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070" alt="Industrial" class="img-fluid" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;">
+                                <div class="position-absolute" style="inset: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 60%); mix-blend-mode: overlay;"></div>
+                            </div>
+                            
+                            <div class="position-absolute d-none d-lg-block" style="bottom: 30px; right: 30px; background: rgba(11, 15, 20, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(221, 152, 76, 0.3); border-radius: 16px; padding: 1.25rem 1.5rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.25), rgba(221, 152, 76, 0.1)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fa-solid fa-microscope" style="font-size: 20px; color: #dd984c;"></i>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Real-time</div>
+                                        <div style="font-size: 1.25rem; font-weight: 700; color: #dd984c;">Sensing</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
