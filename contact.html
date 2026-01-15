@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | Light Touch Technology</title>
+    <link rel="icon" type="image/png" href="image/ltt-fav.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-top-fixed">
+        <nav class="navbar navbar-expand-xl navbar-light position-relative">
+            <div class="r-container">
+                <div class="row w-100 align-items-center justify-content-between mx-0">
+                    <div class="col-auto ps-0">
+                        <a class="navbar-brand mb-2 mb-xl-0" href="index.html">
+                            <img src="image/logo.png" alt="Light Touch Technology" class="logo" width="200">
+                        </a>
+                    </div>
+                    <div class="col-auto d-block d-xl-none order-xl-2 pe-0">
+                        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#navbar-collapse-1" aria-controls="navbar-collapse-1"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-12 col-xl-auto p-0 order-xl-1">
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar-collapse-1"
+                            aria-labelledby="navbar-collapse-1-label">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="navbar-collapse-1-label">メニュー</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav navbar-nav-collapse justify-content-center gap-1 gap-xl-3 text-lg-start text-xl-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">ホーム</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="company.html">会社概要</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service.html">事業内容</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="product.html">プロダクト</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="news.html">お知らせ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="recruit.html">採用</a>
+                                    </li>
+                                </ul>
+                                <div class="w-max-content mt-3 mt-xl-0 d-block d-xl-none">
+                                    <a href="contact.html" class="btn btn-accent animated-gradient w-100">
+                                        <span>お問い合わせ</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-xl-block order-xl-2 pe-0">
+                        <a href="contact.html" class="btn btn-accent animated-gradient">
+                            <span>お問い合わせ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- MV Section -->
+        <section class="contact-mv position-relative overflow-hidden">
+            <div class="contact-mv-bg"></div>
+            <div class="r-container">
+                <div class="contact-mv-content text-center">
+                    <div class="contact-mv-badge mb-4" data-aos="fade-up">
+                        <i class="fas fa-envelope me-2"></i>
+                        <span>Contact</span>
+                    </div>
+                    <h1 class="contact-mv-title mb-4" data-aos="fade-up" data-aos-delay="100">
+                        お問い合わせ
+                    </h1>
+                    <p class="contact-mv-subtitle mb-0" data-aos="fade-up" data-aos-delay="200">
+                        製品やサービスに関するご質問、採用に関するお問い合わせなど、<br class="d-none d-md-block">
+                        お気軽にご連絡ください。
+                    </p>
+                </div>
+            </div>
+            <div class="contact-mv-decoration">
+                <div class="decoration-circle decoration-circle-1"></div>
+                <div class="decoration-circle decoration-circle-2"></div>
+            </div>
+        </section>
+        <!-- End MV Section -->
+
+        <!-- Contact Section -->
+        <section class="contact-section py-5 py-lg-7">
+            <div class="r-container">
+                <div class="row g-5">
+                    <!-- Contact Info -->
+                    <div class="col-lg-5">
+                        <div class="contact-info-wrapper" data-aos="fade-right">
+                            <h2 class="contact-info-title mb-4">お問い合わせ先</h2>
+                            <p class="contact-info-text mb-5">
+                                以下のフォームまたは、お電話・メールにて<br>
+                                お問い合わせいただけます。<br>
+                                担当者より折り返しご連絡させていただきます。
+                            </p>
+
+                            <!-- Contact Cards -->
+                            <div class="contact-info-card mb-4">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h3 class="contact-info-label">お電話でのお問い合わせ</h3>
+                                    <p class="contact-info-value mb-2">043-XXX-XXXX</p>
+                                    <p class="contact-info-note">受付時間：平日 9:00～18:00</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-card mb-4">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h3 class="contact-info-label">メールでのお問い合わせ</h3>
+                                    <p class="contact-info-value mb-2">info@light-tt.co.jp</p>
+                                    <p class="contact-info-note">24時間受付（返信は営業日に対応）</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-card">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h3 class="contact-info-label">所在地</h3>
+                                    <p class="contact-info-value mb-2">
+                                        〒263-8555<br>
+                                        千葉県千葉市稲毛区穴川4丁目9-1<br>
+                                        量子科学技術研究開発機構（QST）千葉地区内
+                                    </p>
+                                    <p class="contact-info-note">※訪問の際は事前にご連絡ください</p>
+                                </div>
+                            </div>
+
+                            <!-- Business Hours -->
+                            <div class="business-hours-card mt-5">
+                                <h3 class="business-hours-title">
+                                    <i class="fas fa-clock me-2"></i>
+                                    営業時間
+                                </h3>
+                                <div class="business-hours-content">
+                                    <div class="business-hours-item">
+                                        <span class="day">平日</span>
+                                        <span class="time">9:00 - 18:00</span>
+                                    </div>
+                                    <div class="business-hours-item">
+                                        <span class="day">土日祝</span>
+                                        <span class="time">定休日</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-7">
+                        <div class="contact-form-wrapper" data-aos="fade-left">
+                            <h2 class="contact-form-title mb-4">お問い合わせフォーム</h2>
+                            <p class="contact-form-text mb-5">
+                                下記フォームに必要事項をご記入の上、送信してください。<br>
+                                <span class="text-danger">*</span> は必須項目です。
+                            </p>
+
+                            <form id="contactForm" class="contact-form">
+                                <!-- Inquiry Type -->
+                                <div class="form-group mb-4">
+                                    <label for="inquiryType" class="form-label">
+                                        お問い合わせ種別 <span class="text-danger">*</span>
+                                    </label>
+                                    <select class="form-control form-select" id="inquiryType" required>
+                                        <option value="">選択してください</option>
+                                        <option value="product">製品・サービスについて</option>
+                                        <option value="business">事業提携・協業について</option>
+                                        <option value="recruit">採用について</option>
+                                        <option value="media">取材・メディア掲載について</option>
+                                        <option value="other">その他</option>
+                                    </select>
+                                </div>
+
+                                <!-- Company Name -->
+                                <div class="form-group mb-4">
+                                    <label for="companyName" class="form-label">
+                                        会社名・団体名
+                                    </label>
+                                    <input type="text" class="form-control" id="companyName" placeholder="株式会社〇〇">
+                                </div>
+
+                                <!-- Name -->
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">
+                                            お名前（姓） <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="山田" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">
+                                            お名前（名） <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="太郎" required>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group mb-4">
+                                    <label for="email" class="form-label">
+                                        メールアドレス <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="form-group mb-4">
+                                    <label for="phone" class="form-label">
+                                        電話番号
+                                    </label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="03-1234-5678">
+                                </div>
+
+                                <!-- Subject -->
+                                <div class="form-group mb-4">
+                                    <label for="subject" class="form-label">
+                                        件名 <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="subject" placeholder="お問い合わせの件名を入力してください" required>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="form-group mb-4">
+                                    <label for="message" class="form-label">
+                                        お問い合わせ内容 <span class="text-danger">*</span>
+                                    </label>
+                                    <textarea class="form-control" id="message" rows="6" placeholder="お問い合わせ内容を詳しくご記入ください" required></textarea>
+                                    <div class="form-text">できるだけ具体的にご記入いただくと、スムーズに対応できます。</div>
+                                </div>
+
+                                <!-- Privacy Policy -->
+                                <div class="form-group mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                        <label class="form-check-label" for="privacyCheck">
+                                            <a href="#" class="text-accent">プライバシーポリシー</a>に同意する <span class="text-danger">*</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-accent btn-lg animated-gradient w-100">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        <span>送信する</span>
+                                    </button>
+                                </div>
+
+                                <!-- Form Status Messages -->
+                                <div id="formSuccess" class="alert alert-success mt-4" style="display: none;">
+                                    <i class="fas fa-check-circle me-2"></i>
+                                    お問い合わせを受け付けました。担当者より折り返しご連絡いたします。
+                                </div>
+                                <div id="formError" class="alert alert-danger mt-4" style="display: none;">
+                                    <i class="fas fa-exclamation-circle me-2"></i>
+                                    送信に失敗しました。お手数ですが、もう一度お試しください。
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+        <!-- Map Section -->
+        <section class="map-section py-5 py-lg-7 bg-light-gray">
+            <div class="r-container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <div class="section-badge mb-3">
+                        <i class="fas fa-map-marked-alt me-2"></i>
+                        <span>Access</span>
+                    </div>
+                    <h2 class="section-title mb-4">アクセス</h2>
+                    <p class="section-lead mx-auto">
+                        量子科学技術研究開発機構（QST）千葉地区内に所在しています。<br>
+                        訪問の際は事前にご連絡をお願いいたします。
+                    </p>
+                </div>
+
+                <div class="map-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.2899547893883!2d140.10299831525887!3d35.68426038019537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022892d3e6d3f3f%3A0x3e3b3b3b3b3b3b3b!2z5Y2D6JGJ55yM5Y2D6JGJ5biC56iy5q-b5Yy6!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="map-info-overlay">
+                        <div class="map-info-card">
+                            <h3 class="map-info-title">
+                                <i class="fas fa-building me-2"></i>
+                                Light Touch Technology 株式会社
+                            </h3>
+                            <p class="map-info-address mb-3">
+                                〒263-8555<br>
+                                千葉県千葉市稲毛区穴川4丁目9-1<br>
+                                量子科学技術研究開発機構（QST）千葉地区内
+                            </p>
+                            <div class="map-info-access">
+                                <div class="access-item">
+                                    <i class="fas fa-train"></i>
+                                    <span>JR稲毛駅からバス約10分</span>
+                                </div>
+                                <div class="access-item">
+                                    <i class="fas fa-car"></i>
+                                    <span>京葉道路 穴川ICから約5分</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Map Section -->
+
+        <!-- FAQ Section -->
+        <section class="faq-section py-5 py-lg-7">
+            <div class="r-container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <div class="section-badge mb-3">
+                        <i class="fas fa-question-circle me-2"></i>
+                        <span>FAQ</span>
+                    </div>
+                    <h2 class="section-title mb-4">よくあるご質問</h2>
+                    <p class="section-lead mx-auto">
+                        お問い合わせの前に、よくあるご質問をご確認ください。
+                    </p>
+                </div>
+
+                <div class="faq-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <span class="faq-number">Q1</span>
+                                    <span class="faq-question">製品のデモや試用は可能ですか？</span>
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-answer">現在開発中の製品については、開発状況に応じてデモンストレーションのご相談を承っております。お問い合わせフォームまたはお電話にてお気軽にご相談ください。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <span class="faq-number">Q2</span>
+                                    <span class="faq-question">共同研究や技術提携は可能ですか？</span>
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-answer">研究機関や企業様との共同研究、技術提携については積極的に検討しております。まずはお問い合わせフォームより「事業提携・協業について」を選択してご連絡ください。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <span class="faq-number">Q3</span>
+                                    <span class="faq-question">採用に関する問い合わせ方法を教えてください。</span>
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-answer">採用に関するお問い合わせは、お問い合わせフォームより「採用について」を選択してご連絡ください。または、採用ページから直接応募いただくことも可能です。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    <span class="faq-number">Q4</span>
+                                    <span class="faq-question">取材や報道関係のお問い合わせについて</span>
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-answer">メディアの方からの取材依頼は、お問い合わせフォームより「取材・メディア掲載について」を選択してご連絡ください。広報担当より折り返しご連絡いたします。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item faq-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    <span class="faq-number">Q5</span>
+                                    <span class="faq-question">お問い合わせの回答にはどのくらい時間がかかりますか？</span>
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-answer">通常、営業日の2～3日以内にご返信させていただいております。お問い合わせ内容により調査が必要な場合は、お時間をいただく場合がございます。予めご了承ください。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End FAQ Section -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="r-container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="footer-menu">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="index.html">ホーム</a></li>
+                            <li><a href="company.html">会社概要</a></li>
+                            <li><a href="service.html">事業内容</a></li>
+                            <li><a href="product.html">プロダクト</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-menu">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="news.html">お知らせ</a></li>
+                            <li><a href="recruit.html">採用</a></li>
+                            <li><a href="contact.html">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0 text-muted">
+                            <a href="#" class="me-3">プライバシーポリシー</a>
+                            <a href="#">利用規約</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0 text-muted">© 2025 Light Touch Technology. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const formData = {
+                inquiryType: document.getElementById('inquiryType').value,
+                companyName: document.getElementById('companyName').value,
+                lastName: document.getElementById('lastName').value,
+                firstName: document.getElementById('firstName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Hide previous messages
+            document.getElementById('formSuccess').style.display = 'none';
+            document.getElementById('formError').style.display = 'none';
+
+            // Simulate form submission (replace with actual API call)
+            setTimeout(() => {
+                // Show success message
+                document.getElementById('formSuccess').style.display = 'block';
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+                
+                // Scroll to success message
+                document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 1000);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Simple AOS-like animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('[data-aos]');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('aos-animate');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            elements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>

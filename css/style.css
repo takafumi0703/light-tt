@@ -7103,3 +7103,542 @@ img[src] {
         width: 100%;
     }
 }
+
+/* ========================================
+   Contact Page Styles
+   ======================================== */
+
+/* Contact MV Section */
+.contact-mv {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 140px 0 80px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.contact-mv-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 30% 40%, rgba(221, 152, 76, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 60%, rgba(221, 152, 76, 0.08) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.contact-mv-content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.contact-mv-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.contact-mv-title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.contact-mv-subtitle {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-mv-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #ffffff;
+}
+
+/* Contact Info */
+.contact-info-wrapper {
+    position: sticky;
+    top: 100px;
+}
+
+.contact-info-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.contact-info-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.contact-info-card {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 16px;
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: rgba(221, 152, 76, 0.3);
+}
+
+.contact-info-icon {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #dd984c, #f0ad68);
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.contact-info-content {
+    flex: 1;
+}
+
+.contact-info-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.contact-info-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+    line-height: 1.6;
+}
+
+.contact-info-note {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Business Hours Card */
+.business-hours-card {
+    padding: 24px;
+    background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+    border-left: 4px solid #dd984c;
+    border-radius: 12px;
+}
+
+.business-hours-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+
+.business-hours-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.business-hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.business-hours-item .day {
+    font-weight: 600;
+    color: #333;
+}
+
+.business-hours-item .time {
+    font-weight: 600;
+    color: #dd984c;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 2px solid #f0f0f0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.contact-form-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.contact-form .form-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    padding: 14px 18px;
+    font-size: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #dd984c;
+    box-shadow: 0 0 0 0.2rem rgba(221, 152, 76, 0.1);
+}
+
+.contact-form textarea.form-control {
+    resize: vertical;
+}
+
+.contact-form .form-text {
+    font-size: 13px;
+    color: #999;
+    margin-top: 8px;
+}
+
+.contact-form .form-check-input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e0e0e0;
+    margin-top: 2px;
+}
+
+.contact-form .form-check-input:checked {
+    background-color: #dd984c;
+    border-color: #dd984c;
+}
+
+.contact-form .form-check-label {
+    font-size: 14px;
+    color: #666;
+    margin-left: 8px;
+}
+
+.text-accent {
+    color: #dd984c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-accent:hover {
+    color: #c67f3c;
+    text-decoration: underline;
+}
+
+/* Map Section */
+.map-section {
+    background: #f8f9fa;
+}
+
+.map-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+}
+
+.map-container iframe {
+    border-radius: 20px;
+}
+
+.map-info-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    z-index: 10;
+}
+
+.map-info-card {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.map-info-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+}
+
+.map-info-address {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.map-info-access {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.access-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+.access-item i {
+    color: #dd984c;
+    font-size: 16px;
+    width: 20px;
+}
+
+/* FAQ Section */
+.faq-section {
+    background: #ffffff;
+}
+
+.faq-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 16px;
+    border: 2px solid #f0f0f0;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(221, 152, 76, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item .accordion-button {
+    padding: 24px 30px;
+    background: #ffffff;
+    color: #1a1a2e;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+}
+
+.faq-item .accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+    color: #1a1a2e;
+    box-shadow: none;
+}
+
+.faq-item .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.faq-item .accordion-button::after {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    background-image: none;
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border-radius: 8px;
+    color: #dd984c;
+    transition: transform 0.3s ease;
+}
+
+.faq-item .accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+    background: #dd984c;
+    color: #ffffff;
+}
+
+.faq-number {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #dd984c, #f0ad68);
+    border-radius: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.faq-question {
+    flex: 1;
+    text-align: left;
+}
+
+.faq-item .accordion-body {
+    padding: 24px 30px 30px;
+    background: #ffffff;
+}
+
+.faq-answer {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    .contact-mv-title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-mv {
+        min-height: 50vh;
+        padding: 120px 0 60px;
+    }
+    
+    .contact-mv-title {
+        font-size: 38px;
+    }
+    
+    .contact-info-wrapper {
+        position: static;
+        margin-bottom: 40px;
+    }
+    
+    .contact-form-wrapper {
+        padding: 30px;
+    }
+    
+    .map-info-overlay {
+        position: static;
+        margin-top: 20px;
+    }
+    
+    .map-info-card {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-mv {
+        padding: 100px 0 40px;
+    }
+    
+    .contact-mv-title {
+        font-size: 32px;
+    }
+    
+    .contact-mv-subtitle {
+        font-size: 16px;
+    }
+    
+    .contact-info-title,
+    .contact-form-title {
+        font-size: 26px;
+    }
+    
+    .contact-info-card {
+        padding: 20px;
+    }
+    
+    .contact-form-wrapper {
+        padding: 24px;
+    }
+    
+    .business-hours-card {
+        padding: 20px;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    .map-info-card {
+        padding: 20px;
+    }
+    
+    .faq-item .accordion-button {
+        padding: 16px 20px;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .faq-number {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .faq-question {
+        flex: 1 1 calc(100% - 110px);
+    }
+    
+    .faq-item .accordion-body {
+        padding: 16px 20px 20px;
+    }
+}
