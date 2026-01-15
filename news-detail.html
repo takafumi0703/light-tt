@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="icon" type="image/png" href="image/ltt-fav.png">
+    <title>非侵襲型血糖値センサーの最新開発状況について | お知らせ | ライトタッチテクノロジー株式会社</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-xl mx-xl-5 mx-3">
+            <div class="container-fluid">
+                <div class="logo-container">
+                    <a class="navbar-brand" href="index.html">
+                        <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 203.96 126" viewBox="0 0 203.96 126" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"><defs><style>#comp-kdb9v6zu svg [data-color="1"] {fill: #FFFFFF;}</style></defs>
+                            <g>
+                                <path d="M1.72 120.77h6.69v1.39H0v-12.85h1.72v11.46z" fill="#dd984c" data-color="1"></path>
+                                <path d="M9.87 109.31h1.59v1.52H9.87v-1.52zm1.59 3.58v9.27H9.87v-9.27h1.59z" fill="#dd984c" data-color="1"></path>
+                                <path d="M20.2 121.3v-1.06c-.62 1.28-1.61 1.92-2.98 1.92-1.06 0-1.95-.42-2.65-1.26-.75-.88-1.13-2.03-1.13-3.44 0-1.55.35-2.74 1.06-3.58.75-.79 1.68-1.19 2.78-1.19.57 0 1.13.11 1.66.33.4.22.82.69 1.26 1.39v-1.52h1.59v7.62c0 1.94-.22 3.2-.66 3.77-.79 1.15-2.01 1.72-3.64 1.72-1.24 0-2.19-.26-2.85-.79-.71-.44-1.06-1.06-1.06-1.85h1.59c0 .44.15.79.46 1.06.44.31 1.06.46 1.85.46 1.06 0 1.81-.35 2.25-1.06.31-.45.47-1.29.47-2.52zm0-4.04c0-1.02-.24-1.83-.73-2.45-.53-.57-1.15-.86-1.85-.86-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65 0 1.15.24 2.03.73 2.65.44.57 1.06.86 1.85.86.7 0 1.32-.33 1.85-.99.48-.63.73-1.53.73-2.72z" fill="#dd984c" data-color="1"></path>
+                                <path d="M25.93 117.59v4.57h-1.59v-13.38h1.59v5.76c.71-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.35-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                <path d="M40.07 120.83v1.32a5.7 5.7 0 01-1.72.26c-1.01 0-1.74-.29-2.19-.86-.53-.53-.79-1.39-.79-2.58v-4.77h-1.59v-1.32h1.59v-2.19h1.52v2.19h2.72v1.32h-2.72v4.3c0 1.1.16 1.81.46 2.12.26.35.71.53 1.32.53.19.02.65-.09 1.4-.32z" fill="#dd984c" data-color="1"></path>
+                                <path d="M59.91 110.64h-4.3v11.52h-1.66v-11.52h-4.37v-1.32h10.33v1.32z" fill="#dd984c" data-color="1"></path>
+                                <path d="M65.42 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58s-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                <path d="M77.76 117.46v-4.57h1.52v9.27h-1.52v-1.59c-.84 1.24-1.83 1.85-2.98 1.85-.79 0-1.5-.24-2.12-.73-.66-.49-.99-1.46-.99-2.91v-5.89h1.59v5.23c0 1.24.2 2.03.6 2.38.35.35.77.53 1.26.53.7 0 1.32-.31 1.85-.93.52-.61.79-1.49.79-2.64z" fill="#dd984c" data-color="1"></path>
+                                <path d="M87.58 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.52.79-2.58.79-1.37 0-2.41-.42-3.11-1.26-.75-.88-1.13-2.1-1.13-3.64s.37-2.76 1.13-3.64c.75-.79 1.79-1.19 3.11-1.19 1.19 0 2.1.31 2.72.93.53.44.79.99.79 1.66h-1.52c0-.4-.16-.73-.46-.99-.35-.22-.84-.33-1.46-.33-.84 0-1.48.29-1.92.86-.53.57-.79 1.48-.79 2.72 0 1.19.26 2.1.79 2.72.49.62 1.13.93 1.92.93.66 0 1.15-.13 1.46-.4s.46-.61.46-1.01z" fill="#dd984c" data-color="1"></path>
+                                <path d="M93.04 117.59v4.57h-1.59v-13.38h1.59v5.76c.7-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.36-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                <path d="M119.04 110.64h-4.3v11.52h-1.66v-11.52h-4.37v-1.32h10.33v1.32z" fill="#dd984c" data-color="1"></path>
+                                <path d="M126.16 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.57.79-2.72.79-1.32 0-2.38-.44-3.18-1.32s-1.19-2.05-1.19-3.51c0-1.55.42-2.74 1.26-3.58.79-.88 1.81-1.32 3.05-1.32 1.15 0 2.07.35 2.78 1.06.66.71.99 1.85.99 3.44v.53h-6.56c0 1.1.29 1.94.86 2.52.53.62 1.24.93 2.12.93.66 0 1.15-.16 1.46-.46.37-.26.54-.57.54-.93zm-4.9-3.17h4.97v-.2c0-.44-.09-.84-.26-1.19-.22-.44-.51-.75-.86-.93-.35-.22-.77-.33-1.26-.33-.62 0-1.15.22-1.59.66-.45.44-.78 1.1-1 1.99z" fill="#dd984c" data-color="1"></path>
+                                <path d="M135.89 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.52.79-2.58.79-1.37 0-2.41-.42-3.11-1.26-.75-.88-1.13-2.1-1.13-3.64s.37-2.76 1.13-3.64c.75-.79 1.79-1.19 3.11-1.19 1.19 0 2.1.31 2.72.93.53.44.79.99.79 1.66h-1.52c0-.4-.16-.73-.46-.99-.35-.22-.84-.33-1.46-.33-.84 0-1.48.29-1.92.86-.53.57-.79 1.48-.79 2.72 0 1.19.26 2.1.79 2.72.48.62 1.13.93 1.92.93.66 0 1.15-.13 1.46-.4.3-.28.46-.61.46-1.01z" fill="#dd984c" data-color="1"></path>
+                                <path d="M141.18 117.59v4.57h-1.59v-13.38h1.59v5.76c.71-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.35-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                <path d="M151.3 117.59v4.57h-1.59v-9.27h1.59v1.66c.7-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.36-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65z" fill="#dd984c" data-color="1"></path>
+                                <path d="M163.81 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58s-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.19.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                <path d="M170.35 122.16v-13.38h1.59v13.38h-1.59z" fill="#dd984c" data-color="1"></path>
+                                <path d="M178.55 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58-.79.88-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                <path d="M191.46 121.3v-1.06c-.62 1.28-1.61 1.92-2.98 1.92-1.06 0-1.94-.42-2.65-1.26-.75-.88-1.13-2.03-1.13-3.44 0-1.55.35-2.74 1.06-3.58.75-.79 1.68-1.19 2.78-1.19.57 0 1.13.11 1.66.33.4.22.82.69 1.26 1.39v-1.52h1.59v7.62c0 1.94-.22 3.2-.66 3.77-.79 1.15-2.01 1.72-3.64 1.72-1.24 0-2.19-.26-2.85-.79-.71-.44-1.06-1.06-1.06-1.85h1.59c0 .44.16.79.46 1.06.44.31 1.06.46 1.85.46 1.06 0 1.81-.35 2.25-1.06.31-.45.47-1.29.47-2.52zm0-4.04c0-1.02-.24-1.83-.73-2.45-.53-.57-1.15-.86-1.85-.86-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65 0 1.15.24 2.03.73 2.65.44.57 1.06.86 1.85.86.71 0 1.32-.33 1.85-.99.48-.63.73-1.53.73-2.72z" fill="#dd984c" data-color="1"></path>
+                                <path d="M198.53 122.09l.2-.33-3.97-8.87h1.72l3.05 6.89 2.91-6.89h1.52l-3.84 9.27c-.53 1.1-.93 1.85-1.19 2.25-.31.4-.66.73-1.06.99-.57.22-1.17.33-1.79.33h-1.19v-1.26h.93c.66 0 1.24-.18 1.72-.53.22-.21.55-.83.99-1.85z" fill="#dd984c" data-color="1"></path>
+                                <path d="M126.27.06H75.79c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h18.95c1.48 0 2.25.87 1.48 1.32-1.91 1.11-2.72 3.01-2.72 5.17 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.13-3.75 5.64 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.19-.83-4.11-2.8-5.21-.76-.43 0-1.27 1.48-1.27h18.61c5.29 0 7.31-2.79 7.31-6.23 0-3.45-2.02-6.24-7.31-6.24z" fill="#dd984c" data-color="1"></path>
+                                <path d="M196.15.06h-50.48c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h18.95c1.48 0 2.25.87 1.48 1.32-1.91 1.11-2.72 3.01-2.72 5.17 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.13-3.75 5.64 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.19-.83-4.11-2.8-5.21-.76-.43 0-1.27 1.48-1.27h18.61c5.29 0 7.31-2.79 7.31-6.23 0-3.45-2.02-6.24-7.31-6.24z" fill="#dd984c" data-color="1"></path>
+                                <path d="M55.76 74.27H23.89c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h31.87c5.29 0 7.31-2.79 7.31-6.23 0-3.44-2.02-6.23-7.31-6.23z" fill="#dd984c" data-color="1"></path>
+                                <path d="M19.68 18.59c0-2.51-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63 0-3.44-2.02-6.23-7.31-6.23h-.86C6.22 0 4.2 2.79 4.2 6.23c0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.99-3.71 3.13-3.71 5.63 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.51-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.63-.99 3.73-3.13 3.73-5.64z" fill="#dd984c" data-color="1"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered accent-color"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-xl-auto ms-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ホーム</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="company.html">会社概要</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">事業内容</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">プロダクト</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="news.html">お知らせ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recruit.html">採用</a>
+                        </li>
+                    </ul>
+                    <div class="w-max-content mt-3 mt-xl-0 d-block d-xl-none">
+                        <a href="contact.html" class="btn btn-accent animated-gradient w-100">
+                            <span>お問い合わせ</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-max-content d-none d-xl-block">
+                    <a href="contact.html" class="btn btn-accent animated-gradient">
+                        <span>お問い合わせ</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- MV Section -->
+        <div class="news-detail-mv position-relative overflow-hidden" style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 25%, #0f1419 50%, #1e2433 75%, #0b0f14 100%); z-index: 1;"></div>
+            
+            <div class="position-absolute w-100 h-100" style="z-index: 2; opacity: 0.05; background-image: repeating-linear-gradient(0deg, transparent, transparent 3px, #dd984c 3px, #dd984c 4px), repeating-linear-gradient(90deg, transparent, transparent 3px, #dd984c 3px, #dd984c 4px); background-size: 70px 70px;"></div>
+            
+            <div class="position-absolute" style="top: 25%; right: 20%; width: 450px; height: 450px; background: radial-gradient(circle, rgba(221, 152, 76, 0.1), transparent 70%); border-radius: 50%; z-index: 3; filter: blur(80px);"></div>
+            
+            <div class="r-container position-relative" style="z-index: 10;">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-10">
+                        <div class="text-center">
+                            <!-- Breadcrumb -->
+                            <div class="scrollanimation animated fadeInDown mb-4">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb justify-content-center mb-0">
+                                        <li class="breadcrumb-item"><a href="index.html">ホーム</a></li>
+                                        <li class="breadcrumb-item"><a href="news.html">お知らせ</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">記事詳細</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            
+                            <!-- Category Badge -->
+                            <div class="scrollanimation animated fadeInUp mb-3">
+                                <span class="news-category news-category-news" style="display: inline-block;">News</span>
+                            </div>
+                            
+                            <!-- Title -->
+                            <h1 class="scrollanimation animated fadeInUp mb-4" style="font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.3; font-weight: 800; letter-spacing: -0.01em; color: #fff;">
+                                非侵襲型血糖値センサーの最新開発状況について
+                            </h1>
+                            
+                            <!-- Meta Info -->
+                            <div class="scrollanimation animated fadeInUp d-flex align-items-center justify-content-center gap-4 flex-wrap" style="font-size: 14px; color: rgba(255, 255, 255, 0.6);">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-calendar-days" style="color: #dd984c;"></i>
+                                    <span>2025.01.15</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-user" style="color: #dd984c;"></i>
+                                    <span>Light Touch Technology</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="position-absolute bottom-0 w-100" style="height: 100px; background: linear-gradient(to top, rgba(11, 15, 20, 1), transparent); z-index: 4;"></div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="section" style="background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+            <div class="r-container">
+                <div class="row g-5">
+                    <!-- Main Content -->
+                    <div class="col-12 col-lg-8">
+                        <article class="news-detail-content">
+                            <!-- Featured Image -->
+                            <div class="scrollanimation animated fadeInUp mb-5">
+                                <div class="position-relative" style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);">
+                                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200" alt="Featured Image" class="img-fluid" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;">
+                                </div>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="scrollanimation animated fadeInUp">
+                                <p class="lead-text">当社が開発を進めている非侵襲型血糖値センサーについて、最新の開発状況と今後の展望をお知らせいたします。これまでの研究成果を踏まえ、実用化に向けた重要なマイルストーンを達成することができました。</p>
+
+                                <h2>開発の背景と目的</h2>
+                                <p>糖尿病患者にとって、日常的な血糖値測定は欠かせない健康管理の一部です。しかし、従来の測定方法は針による採血が必要であり、痛みや感染リスク、さらには心理的な負担を伴います。</p>
+                                <p>LTTが開発する非侵襲型血糖値センサーは、レーザー光を用いた光学的測定により、採血を必要としない新しい測定手法を実現します。これにより、患者の身体的・心理的負担を大幅に軽減し、より日常的な健康管理を可能にします。</p>
+
+                                <h2>最新の技術的進展</h2>
+                                <p>2025年第1四半期において、以下の技術的進展を達成しました：</p>
+
+                                <h3>測定精度の向上</h3>
+                                <p>独自開発したレーザー光源と高感度センサーの組み合わせにより、測定精度が従来比で約30%向上しました。臨床試験においても、従来の侵襲型測定器との相関性が95%以上という高い結果を得ています。</p>
+
+                                <h3>小型化の実現</h3>
+                                <p>光学系の最適化により、プロトタイプのサイズを従来の約60%まで小型化することに成功しました。これにより、モバイル型デバイスとしての実用性が大きく向上しています。</p>
+
+                                <h4>主要コンポーネント</h4>
+                                <ul>
+                                    <li>波長可変レーザー光源（中赤外領域対応）</li>
+                                    <li>高感度光検出器</li>
+                                    <li>信号処理アルゴリズム</li>
+                                    <li>温度補正機能</li>
+                                </ul>
+
+                                <h3>使用環境の拡大</h3>
+                                <p>様々な環境条件下での測定安定性を確保するため、温度補正機能および環境光ノイズ除去アルゴリズムを実装しました。これにより、屋内外を問わず安定した測定が可能となっています。</p>
+
+                                <blockquote class="custom-blockquote">
+                                    <p>「技術的な課題を一つひとつクリアすることで、非侵襲型血糖値測定の実用化が現実味を帯びてきました。患者さんの日常生活の質を向上させる製品として、一日も早く市場に届けたいと考えています。」</p>
+                                    <footer>— 開発責任者コメント</footer>
+                                </blockquote>
+
+                                <h2>今後の開発ロードマップ</h2>
+                                <p>2025年後半に向けて、以下の開発ステップを予定しています：</p>
+
+                                <h4>第2四半期（4-6月）</h4>
+                                <ol>
+                                    <li>長期安定性試験の実施</li>
+                                    <li>ユーザビリティテストの開始</li>
+                                    <li>製造プロセスの確立</li>
+                                </ol>
+
+                                <h4>第3四半期（7-9月）</h4>
+                                <ol>
+                                    <li>臨床試験の拡大実施</li>
+                                    <li>薬事申請準備</li>
+                                    <li>量産試作品の製作</li>
+                                </ol>
+
+                                <h4>第4四半期（10-12月）</h4>
+                                <ol>
+                                    <li>薬事申請</li>
+                                    <li>製造パートナーとの連携強化</li>
+                                    <li>市場投入準備</li>
+                                </ol>
+
+                                <h5>市場展望</h5>
+                                <p>非侵襲型血糖値測定器の世界市場は、2030年までに年平均成長率15%以上で拡大すると予測されています。当社の技術は、この成長市場において重要な位置を占めることが期待されます。</p>
+
+                                <h2>社会的意義</h2>
+                                <p>本技術の実用化により、以下のような社会的意義が期待されます：</p>
+                                <ul>
+                                    <li>糖尿病患者の生活の質（QOL）の向上</li>
+                                    <li>測定頻度の増加による健康管理の精度向上</li>
+                                    <li>予防医療への貢献</li>
+                                    <li>医療費削減への寄与</li>
+                                </ul>
+
+                                <p>LTTは、今後も最先端のレーザー技術を活かし、医療・ヘルスケア分野における革新的なソリューションの提供を目指してまいります。</p>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="scrollanimation animated fadeInUp mt-5">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge-tag">非侵襲型センサー</span>
+                                    <span class="badge-tag">血糖値測定</span>
+                                    <span class="badge-tag">レーザー技術</span>
+                                    <span class="badge-tag">医療機器開発</span>
+                                    <span class="badge-tag">技術革新</span>
+                                </div>
+                            </div>
+
+                            <!-- Share Buttons -->
+                            <div class="scrollanimation animated fadeInUp mt-5">
+                                <div class="share-buttons">
+                                    <h5 class="mb-3" style="font-size: 1rem; font-weight: 600; color: rgba(255, 255, 255, 0.8);">この記事をシェア</h5>
+                                    <div class="d-flex gap-3">
+                                        <a href="#" class="share-btn" title="X（Twitter）でシェア">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                        <a href="#" class="share-btn" title="Facebookでシェア">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="share-btn" title="LinkedInでシェア">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#" class="share-btn" title="リンクをコピー">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-12 col-lg-4">
+                        <aside class="news-sidebar">
+                            <!-- Latest News -->
+                            <div class="sidebar-widget scrollanimation animated fadeInUp">
+                                <h3 class="widget-title">最新の記事</h3>
+                                <div class="latest-news-list">
+                                    <a href="news-detail.html" class="latest-news-item">
+                                        <div class="latest-news-image">
+                                            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=400" alt="News">
+                                            <div class="news-category news-category-awards">Awards</div>
+                                        </div>
+                                        <div class="latest-news-content">
+                                            <div class="latest-news-date">2025.01.10</div>
+                                            <h4 class="latest-news-title">NEDO支援事業に採択されました</h4>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="news-detail.html" class="latest-news-item">
+                                        <div class="latest-news-image">
+                                            <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?q=80&w=400" alt="News">
+                                            <div class="news-category news-category-movie">Movie</div>
+                                        </div>
+                                        <div class="latest-news-content">
+                                            <div class="latest-news-date">2025.01.08</div>
+                                            <h4 class="latest-news-title">LTT技術紹介ムービー公開</h4>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="news-detail.html" class="latest-news-item">
+                                        <div class="latest-news-image">
+                                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=400" alt="News">
+                                            <div class="news-category news-category-news">News</div>
+                                        </div>
+                                        <div class="latest-news-content">
+                                            <div class="latest-news-date">2024.12.20</div>
+                                            <h4 class="latest-news-title">年末年始の営業日のお知らせ</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Categories -->
+                            <div class="sidebar-widget scrollanimation animated fadeInUp" style="animation-delay: 0.1s;">
+                                <h3 class="widget-title">カテゴリー</h3>
+                                <ul class="category-list">
+                                    <li>
+                                        <a href="news.html?category=news">
+                                            <span>News</span>
+                                            <span class="category-count">12</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news.html?category=awards">
+                                            <span>Awards</span>
+                                            <span class="category-count">8</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news.html?category=movie">
+                                            <span>Movie</span>
+                                            <span class="category-count">5</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Recruit Banner -->
+                            <div class="sidebar-widget scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
+                                <a href="recruit.html" class="recruit-banner">
+                                    <div class="recruit-banner-content">
+                                        <div class="recruit-icon">
+                                            <i class="fa-solid fa-users"></i>
+                                        </div>
+                                        <h3>採用情報</h3>
+                                        <p>LTTで一緒に働きませんか？</p>
+                                        <div class="recruit-btn">
+                                            <span>詳しく見る</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="recruit-banner-bg"></div>
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="section position-relative overflow-hidden cta-bg02">
+            <div class="r-container position-relative z-2 h-100 d-flex align-items-center">
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-5 px-4">
+                    <h2 class="text-center scrollanimation animated fadeIn adr-5">
+                        LTTについて、<br class="d-xl-none">もっと知りたい方へ
+                    </h2>
+                    <p class="text-center" style="max-width: 600px;">
+                        事業や技術、採用に関するご質問など、<br>
+                        お気軽にお問い合わせください。
+                    </p>
+                    <div class="w-max-content scrollanimation animated fadeIn adr-5 adl-1">
+                        <a href="contact.html" class="btn btn-accent animated-gradient">
+                            <span>Contact</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer section p-0">
+            <div class="footer-top">
+                <div class="r-container">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-12 col-xl-6">
+                            <div class="d-flex flex-column gap-3">
+                                <a href="index.html" class="footer-logo">
+                                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 203.96 126" viewBox="0 0 203.96 126" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"><defs><style>#comp-kdb9v6zu svg [data-color="1"] {fill: #FFFFFF;}</style></defs>
+                                        <g>
+                                            <path d="M1.72 120.77h6.69v1.39H0v-12.85h1.72v11.46z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M9.87 109.31h1.59v1.52H9.87v-1.52zm1.59 3.58v9.27H9.87v-9.27h1.59z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M20.2 121.3v-1.06c-.62 1.28-1.61 1.92-2.98 1.92-1.06 0-1.95-.42-2.65-1.26-.75-.88-1.13-2.03-1.13-3.44 0-1.55.35-2.74 1.06-3.58.75-.79 1.68-1.19 2.78-1.19.57 0 1.13.11 1.66.33.4.22.82.69 1.26 1.39v-1.52h1.59v7.62c0 1.94-.22 3.2-.66 3.77-.79 1.15-2.01 1.72-3.64 1.72-1.24 0-2.19-.26-2.85-.79-.71-.44-1.06-1.06-1.06-1.85h1.59c0 .44.15.79.46 1.06.44.31 1.06.46 1.85.46 1.06 0 1.81-.35 2.25-1.06.31-.45.47-1.29.47-2.52zm0-4.04c0-1.02-.24-1.83-.73-2.45-.53-.57-1.15-.86-1.85-.86-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65 0 1.15.24 2.03.73 2.65.44.57 1.06.86 1.85.86.7 0 1.32-.33 1.85-.99.48-.63.73-1.53.73-2.72z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M25.93 117.59v4.57h-1.59v-13.38h1.59v5.76c.71-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.35-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M40.07 120.83v1.32a5.7 5.7 0 01-1.72.26c-1.01 0-1.74-.29-2.19-.86-.53-.53-.79-1.39-.79-2.58v-4.77h-1.59v-1.32h1.59v-2.19h1.52v2.19h2.72v1.32h-2.72v4.3c0 1.1.16 1.81.46 2.12.26.35.71.53 1.32.53.19.02.65-.09 1.4-.32z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M59.91 110.64h-4.3v11.52h-1.66v-11.52h-4.37v-1.32h10.33v1.32z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M65.42 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58s-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M77.76 117.46v-4.57h1.52v9.27h-1.52v-1.59c-.84 1.24-1.83 1.85-2.98 1.85-.79 0-1.5-.24-2.12-.73-.66-.49-.99-1.46-.99-2.91v-5.89h1.59v5.23c0 1.24.2 2.03.6 2.38.35.35.77.53 1.26.53.7 0 1.32-.31 1.85-.93.52-.61.79-1.49.79-2.64z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M87.58 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.52.79-2.58.79-1.37 0-2.41-.42-3.11-1.26-.75-.88-1.13-2.1-1.13-3.64s.37-2.76 1.13-3.64c.75-.79 1.79-1.19 3.11-1.19 1.19 0 2.1.31 2.72.93.53.44.79.99.79 1.66h-1.52c0-.4-.16-.73-.46-.99-.35-.22-.84-.33-1.46-.33-.84 0-1.48.29-1.92.86-.53.57-.79 1.48-.79 2.72 0 1.19.26 2.1.79 2.72.49.62 1.13.93 1.92.93.66 0 1.15-.13 1.46-.4s.46-.61.46-1.01z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M93.04 117.59v4.57h-1.59v-13.38h1.59v5.76c.7-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.36-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M119.04 110.64h-4.3v11.52h-1.66v-11.52h-4.37v-1.32h10.33v1.32z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M126.16 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.57.79-2.72.79-1.32 0-2.38-.44-3.18-1.32s-1.19-2.05-1.19-3.51c0-1.55.42-2.74 1.26-3.58.79-.88 1.81-1.32 3.05-1.32 1.15 0 2.07.35 2.78 1.06.66.71.99 1.85.99 3.44v.53h-6.56c0 1.1.29 1.94.86 2.52.53.62 1.24.93 2.12.93.66 0 1.15-.16 1.46-.46.37-.26.54-.57.54-.93zm-4.9-3.17h4.97v-.2c0-.44-.09-.84-.26-1.19-.22-.44-.51-.75-.86-.93-.35-.22-.77-.33-1.26-.33-.62 0-1.15.22-1.59.66-.45.44-.78 1.1-1 1.99z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M135.89 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.52.79-2.58.79-1.37 0-2.41-.42-3.11-1.26-.75-.88-1.13-2.1-1.13-3.64s.37-2.76 1.13-3.64c.75-.79 1.79-1.19 3.11-1.19 1.19 0 2.1.31 2.72.93.53.44.79.99.79 1.66h-1.52c0-.4-.16-.73-.46-.99-.35-.22-.84-.33-1.46-.33-.84 0-1.48.29-1.92.86-.53.57-.79 1.48-.79 2.72 0 1.19.26 2.1.79 2.72.48.62 1.13.93 1.92.93.66 0 1.15-.13 1.46-.4.3-.28.46-.61.46-1.01z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M141.18 117.59v4.57h-1.59v-13.38h1.59v5.76c.71-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.35-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M151.3 117.59v4.57h-1.59v-9.27h1.59v1.66c.7-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.36-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M163.81 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58s-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.19.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M170.35 122.16v-13.38h1.59v13.38h-1.59z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M178.55 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58-.79.88-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M191.46 121.3v-1.06c-.62 1.28-1.61 1.92-2.98 1.92-1.06 0-1.94-.42-2.65-1.26-.75-.88-1.13-2.03-1.13-3.44 0-1.55.35-2.74 1.06-3.58.75-.79 1.68-1.19 2.78-1.19.57 0 1.13.11 1.66.33.4.22.82.69 1.26 1.39v-1.52h1.59v7.62c0 1.94-.22 3.2-.66 3.77-.79 1.15-2.01 1.72-3.64 1.72-1.24 0-2.19-.26-2.85-.79-.71-.44-1.06-1.06-1.06-1.85h1.59c0 .44.16.79.46 1.06.44.31 1.06.46 1.85.46 1.06 0 1.81-.35 2.25-1.06.31-.45.47-1.29.47-2.52zm0-4.04c0-1.02-.24-1.83-.73-2.45-.53-.57-1.15-.86-1.85-.86-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65 0 1.15.24 2.03.73 2.65.44.57 1.06.86 1.85.86.71 0 1.32-.33 1.85-.99.48-.63.73-1.53.73-2.72z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M198.53 122.09l.2-.33-3.97-8.87h1.72l3.05 6.89 2.91-6.89h1.52l-3.84 9.27c-.53 1.1-.93 1.85-1.19 2.25-.31.4-.66.73-1.06.99-.57.22-1.17.33-1.79.33h-1.19v-1.26h.93c.66 0 1.24-.18 1.72-.53.22-.21.55-.83.99-1.85z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M126.27.06H75.79c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h18.95c1.48 0 2.25.87 1.48 1.32-1.91 1.11-2.72 3.01-2.72 5.17 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.13-3.75 5.64 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.19-.83-4.11-2.8-5.21-.76-.43 0-1.27 1.48-1.27h18.61c5.29 0 7.31-2.79 7.31-6.23 0-3.45-2.02-6.24-7.31-6.24z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M196.15.06h-50.48c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h18.95c1.48 0 2.25.87 1.48 1.32-1.91 1.11-2.72 3.01-2.72 5.17 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.13-3.75 5.64 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.19-.83-4.11-2.8-5.21-.76-.43 0-1.27 1.48-1.27h18.61c5.29 0 7.31-2.79 7.31-6.23 0-3.45-2.02-6.24-7.31-6.24z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M55.76 74.27H23.89c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h31.87c5.29 0 7.31-2.79 7.31-6.23 0-3.44-2.02-6.23-7.31-6.23z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M19.68 18.59c0-2.51-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63 0-3.44-2.02-6.23-7.31-6.23h-.86C6.22 0 4.2 2.79 4.2 6.23c0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.99-3.71 3.13-3.71 5.63 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.51-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.63-.99 3.73-3.13 3.73-5.64z" fill="#dd984c" data-color="1"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <p class="text-color-2 m-0">光技術で医療の常識を変え、世界初を日常に。<br>研究から製品化まで、LTTは挑戦を続けます。</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                                <div class="col">
+                                    <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
+                                        <li><a href="index.html">ホーム</a></li>
+                                        <li><a href="company.html">会社概要</a></li>
+                                        <li><a href="service.html">事業内容</a></li>
+                                        <li><a href="product.html">プロダクト</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
+                                        <li><a href="news.html">お知らせ</a></li>
+                                        <li><a href="recruit.html">採用</a></li>
+                                        <li><a href="contact.html">お問い合わせ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="r-container d-flex flex-column flex-xl-row align-items-center justify-content-between gap-3">
+                    <div class="d-flex gap-3 small-text order-1 order-xl-2">
+                        <a href="#">プライバシーポリシー</a>
+                        <a href="#">利用規約</a>
+                    </div>
+                    <span class="text-color-2 small-text order-2 order-xl-1">Copyright © 2025 Light Touch Technology. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/vendor/fontawesome/all.js"></script>
+    <script src="js/vendor/fontawesome/all.min.js"></script>
+    <script src="js/vendor/fontawesome/brands.js"></script>
+    <script src="js/vendor/fontawesome/brands.min.js"></script>
+    <script src="js/vendor/fontawesome/fontawesome.js"></script>
+    <script src="js/vendor/fontawesome/fontawesome.min.js"></script>
+    <script src="js/vendor/fontawesome/regular.js"></script>
+    <script src="js/vendor/fontawesome/regular.min.js"></script>
+    <script src="js/vendor/fontawesome/solid.js"></script>
+    <script src="js/vendor/fontawesome/solid.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+</body>
+
+</html>
