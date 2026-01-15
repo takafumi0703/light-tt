@@ -93,39 +93,29 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="news-mv position-relative overflow-hidden" style="min-height: 70vh; display: flex; align-items: center; justify-content: center;">
-            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 25%, #0f1419 50%, #1e2433 75%, #0b0f14 100%); z-index: 1;"></div>
+        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+            <!-- Background Image -->
+            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
             
-            <div class="position-absolute w-100 h-100" style="z-index: 2; opacity: 0.05; background-image: repeating-linear-gradient(0deg, transparent, transparent 3px, #dd984c 3px, #dd984c 4px), repeating-linear-gradient(90deg, transparent, transparent 3px, #dd984c 3px, #dd984c 4px); background-size: 70px 70px;"></div>
+            <!-- Dark Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.75); z-index: 2;"></div>
             
-            <div class="position-absolute" style="top: 25%; right: 20%; width: 450px; height: 450px; background: radial-gradient(circle, rgba(221, 152, 76, 0.1), transparent 70%); border-radius: 50%; z-index: 3; filter: blur(80px);"></div>
+            <!-- Gradient Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%); z-index: 3;"></div>
             
+            <!-- Content -->
             <div class="r-container position-relative" style="z-index: 10;">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-xl-10">
-                        <div class="text-center">
-                            <div class="scrollanimation animated fadeInDown mb-4">
-                                <span class="px-4 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.15); border: 1px solid rgba(221, 152, 76, 0.3); color: #dd984c; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
-                                    <i class="fa-solid fa-newspaper me-2"></i>News & Information
-                                </span>
-                            </div>
-                            
-                            <h1 class="scrollanimation animated fadeInUp mb-4" style="font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.2; font-weight: 800; letter-spacing: -0.02em;">
-                                <span style="background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                                    お知らせ
-                                </span>
-                            </h1>
-                            
-                            <p class="scrollanimation animated fadeInUp mx-auto" style="max-width: 700px; font-size: clamp(1rem, 2vw, 1.15rem); line-height: 1.8; color: rgba(255, 255, 255, 0.85); font-weight: 400;">
-                                LTTの最新ニュース、受賞歴、メディア掲載情報などを<br class="d-none d-md-block">
-                                お届けします。
-                            </p>
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
+                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">News</span>
+                        お知らせ
+                    </h1>
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                        LTTの最新ニュース、受賞歴、メディア掲載情報などを<br class="d-none d-md-inline">
+                        お届けします。
+                    </p>
                 </div>
             </div>
-            
-            <div class="position-absolute bottom-0 w-100" style="height: 120px; background: linear-gradient(to top, rgba(11, 15, 20, 1), transparent); z-index: 4;"></div>
         </div>
 
         <!-- Category Filter Section -->

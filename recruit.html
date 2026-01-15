@@ -84,35 +84,30 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <section class="recruit-mv position-relative overflow-hidden">
-            <div class="recruit-mv-bg"></div>
-            <div class="r-container">
-                <div class="recruit-mv-content text-center">
-                    <div class="recruit-mv-badge mb-4">
-                        <i class="fas fa-users me-2"></i>
-                        <span>Recruit</span>
-                    </div>
-                    <h1 class="recruit-mv-title mb-4" data-aos="fade-up">
-                        技術で、社会に向き合う。
+        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+            <!-- Background Image -->
+            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
+            
+            <!-- Dark Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.75); z-index: 2;"></div>
+            
+            <!-- Gradient Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%); z-index: 3;"></div>
+            
+            <!-- Content -->
+            <div class="r-container position-relative" style="z-index: 10;">
+                <div class="text-center">
+                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
+                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Recruit</span>
+                        採用情報
                     </h1>
-                    <p class="recruit-mv-subtitle mb-5" data-aos="fade-up" data-aos-delay="100">
-                        研究の延長ではなく、社会実装の最前線へ。<br>
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                        研究の延長ではなく、社会実装の最前線へ。<br class="d-none d-md-inline">
                         LTTは、光技術で未来をつくる仲間を求めています。
                     </p>
-                    <div class="recruit-mv-scroll" data-aos="fade-up" data-aos-delay="200">
-                        <div class="scroll-indicator">
-                            <span>SCROLL</span>
-                            <div class="scroll-line"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="recruit-mv-decoration">
-                <div class="decoration-circle decoration-circle-1"></div>
-                <div class="decoration-circle decoration-circle-2"></div>
-                <div class="decoration-circle decoration-circle-3"></div>
-            </div>
-        </section>
+        </div>
         <!-- End MV Section -->
 
         <!-- Why LTT Section -->

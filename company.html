@@ -93,43 +93,29 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="company-mv position-relative overflow-hidden" style="min-height: 90vh; display: flex; align-items: center; justify-content: center;">
-            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 25%, #0f1419 50%, #1e2433 75%, #0b0f14 100%); z-index: 1;"></div>
+        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+            <!-- Background Image -->
+            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
             
-            <div class="position-absolute w-100 h-100" style="z-index: 2; opacity: 0.06; background-image: repeating-linear-gradient(0deg, transparent, transparent 3px, #dd984c 3px, #dd984c 4px), repeating-linear-gradient(90deg, transparent, transparent 3px, #dd984c 3px, #dd984c 4px); background-size: 80px 80px;"></div>
+            <!-- Dark Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.75); z-index: 2;"></div>
             
-            <div class="position-absolute" style="top: 20%; right: 15%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(221, 152, 76, 0.12), transparent 70%); border-radius: 50%; z-index: 3; filter: blur(80px);"></div>
+            <!-- Gradient Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%); z-index: 3;"></div>
             
+            <!-- Content -->
             <div class="r-container position-relative" style="z-index: 10;">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-xl-10">
-                        <div class="text-center">
-                            <div class="scrollanimation animated fadeInDown mb-4">
-                                <span class="px-4 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.15); border: 1px solid rgba(221, 152, 76, 0.3); color: #dd984c; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
-                                    <i class="fa-solid fa-building me-2"></i>About Us
-                                </span>
-                            </div>
-                            
-                            <h1 class="scrollanimation animated fadeInUp mb-5" style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.2; font-weight: 800; letter-spacing: -0.02em;">
-                                <span class="d-block" style="background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 50%, #ffffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                                    光技術を、
-                                </span>
-                                <span class="d-block mt-2" style="background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                                    社会の価値へ
-                                </span>
-                            </h1>
-                            
-                            <p class="scrollanimation animated fadeInUp mx-auto" style="max-width: 720px; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.9; color: rgba(255, 255, 255, 0.85); font-weight: 400;">
-                                研究から実装へ。<br class="d-none d-md-block">
-                                LTTは、最先端レーザー技術を<br class="d-none d-md-block">
-                                人々の生活と社会課題の解決につなげる企業です。
-                            </p>
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
+                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Company</span>
+                        会社概要
+                    </h1>
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                        研究から実装へ。LTTは、最先端レーザー技術を<br class="d-none d-md-inline">
+                        人々の生活と社会課題の解決につなげる企業です。
+                    </p>
                 </div>
             </div>
-            
-            <div class="position-absolute bottom-0 w-100" style="height: 150px; background: linear-gradient(to top, rgba(11, 15, 20, 1), transparent); z-index: 4;"></div>
         </div>
 
         <!-- Vision / Mission Section -->

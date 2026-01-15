@@ -84,50 +84,41 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <section class="recruit-detail-mv position-relative overflow-hidden">
-            <div class="recruit-detail-mv-bg"></div>
-            <div class="r-container">
-                <div class="recruit-detail-mv-content">
+        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+            <!-- Background Image -->
+            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
+            
+            <!-- Dark Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.80); z-index: 2;"></div>
+            
+            <!-- Gradient Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%); z-index: 3;"></div>
+            
+            <!-- Content -->
+            <div class="r-container position-relative" style="z-index: 10;">
+                <div class="text-center">
                     <!-- Breadcrumb -->
-                    <nav aria-label="breadcrumb" data-aos="fade-up">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="recruit.html">採用</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">募集要項</li>
-                        </ol>
-                    </nav>
-                    
-                    <div class="recruit-detail-badges mb-3" data-aos="fade-up" data-aos-delay="100">
-                        <span class="badge badge-status">募集中</span>
-                        <span class="badge badge-type">正社員</span>
-                        <span class="badge badge-type">フルタイム</span>
+                    <div class="scrollanimation animated fadeInDown mb-4">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center mb-0" style="font-size: 14px;">
+                                <li class="breadcrumb-item"><a href="index.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">ホーム</a></li>
+                                <li class="breadcrumb-item"><a href="recruit.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">採用情報</a></li>
+                                <li class="breadcrumb-item active" aria-current="page" style="color: #dd984c;">募集要項</li>
+                            </ol>
+                        </nav>
                     </div>
                     
-                    <h1 class="recruit-detail-title mb-4" data-aos="fade-up" data-aos-delay="200">
-                        レーザー・光学エンジニア
+                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
+                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Recruit Detail</span>
+                        募集要項詳細
                     </h1>
-                    
-                    <p class="recruit-detail-subtitle mb-4" data-aos="fade-up" data-aos-delay="300">
-                        最先端のレーザー技術と光学システムで、<br class="d-md-none">医療・ヘルスケアの未来を切り拓く。
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                        レーザー・光学エンジニア<br class="d-none d-md-inline">
+                        最先端のレーザー技術と光学システムで、医療・ヘルスケアの未来を切り拓く。
                     </p>
-                    
-                    <div class="recruit-detail-meta" data-aos="fade-up" data-aos-delay="400">
-                        <div class="meta-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>千葉県千葉市</span>
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-briefcase"></i>
-                            <span>経験者優遇</span>
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-clock"></i>
-                            <span>掲載日：2025.01.15</span>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- End MV Section -->
 
         <!-- Job Information Section -->

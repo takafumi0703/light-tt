@@ -84,28 +84,30 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <section class="contact-mv position-relative overflow-hidden">
-            <div class="contact-mv-bg"></div>
-            <div class="r-container">
-                <div class="contact-mv-content text-center">
-                    <div class="contact-mv-badge mb-4" data-aos="fade-up">
-                        <i class="fas fa-envelope me-2"></i>
-                        <span>Contact</span>
-                    </div>
-                    <h1 class="contact-mv-title mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+            <!-- Background Image -->
+            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
+            
+            <!-- Dark Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.75); z-index: 2;"></div>
+            
+            <!-- Gradient Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%); z-index: 3;"></div>
+            
+            <!-- Content -->
+            <div class="r-container position-relative" style="z-index: 10;">
+                <div class="text-center">
+                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
+                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Contact</span>
                         お問い合わせ
                     </h1>
-                    <p class="contact-mv-subtitle mb-0" data-aos="fade-up" data-aos-delay="200">
-                        製品やサービスに関するご質問、採用に関するお問い合わせなど、<br class="d-none d-md-block">
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                        製品やサービスに関するご質問、採用に関するお問い合わせなど、<br class="d-none d-md-inline">
                         お気軽にご連絡ください。
                     </p>
                 </div>
             </div>
-            <div class="contact-mv-decoration">
-                <div class="decoration-circle decoration-circle-1"></div>
-                <div class="decoration-circle decoration-circle-2"></div>
-            </div>
-        </section>
+        </div>
         <!-- End MV Section -->
 
         <!-- Contact Section -->

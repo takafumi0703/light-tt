@@ -93,66 +93,29 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="service-mv position-relative overflow-hidden" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-            <!-- Dynamic Gradient Background -->
-            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 25%, #0f1419 50%, #1e2433 75%, #0b0f14 100%); z-index: 1;"></div>
+        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+            <!-- Background Image -->
+            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
             
-            <!-- Animated Particles Effect -->
-            <div class="position-absolute w-100 h-100" style="z-index: 2; opacity: 0.15; background-image: 
-                radial-gradient(2px 2px at 20% 30%, white, transparent),
-                radial-gradient(2px 2px at 60% 70%, white, transparent),
-                radial-gradient(1px 1px at 50% 50%, white, transparent),
-                radial-gradient(1px 1px at 80% 10%, white, transparent),
-                radial-gradient(2px 2px at 90% 60%, white, transparent),
-                radial-gradient(1px 1px at 33% 80%, white, transparent),
-                radial-gradient(1px 1px at 70% 30%, white, transparent);
-                background-size: 300% 300%;
-                animation: particles 30s ease-in-out infinite;"></div>
-                
-            <!-- Laser Beam Effect -->
-            <div class="position-absolute" style="top: 0; left: 0; right: 0; bottom: 0; z-index: 3; opacity: 0.05; background: linear-gradient(90deg, transparent 0%, rgba(221, 152, 76, 0.3) 50%, transparent 100%); transform: skewY(-3deg); animation: laserSweep 8s ease-in-out infinite;"></div>
+            <!-- Dark Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.75); z-index: 2;"></div>
             
+            <!-- Gradient Overlay -->
+            <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.15) 0%, transparent 50%, rgba(221, 152, 76, 0.1) 100%); z-index: 3;"></div>
+            
+            <!-- Content -->
             <div class="r-container position-relative" style="z-index: 10;">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-xl-10">
-                        <div class="text-center" style="padding: 4rem 0;">
-                            <!-- Badge -->
-                            <div class="scrollanimation animated fadeInDown mb-4" style="animation-delay: 0.2s;">
-                                <span class="px-4 py-2 rounded-pill" style="background: rgba(221, 152, 76, 0.15); border: 1px solid rgba(221, 152, 76, 0.3); color: #dd984c; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: inline-block;">
-                                    <i class="fa-solid fa-atom me-2"></i>Service Overview
-                                </span>
-                            </div>
-                            
-                            <!-- Main Headline -->
-                            <h1 class="scrollanimation animated fadeInUp mb-5" style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.2; font-weight: 800; letter-spacing: -0.02em; animation-delay: 0.4s;">
-                                <span class="d-block" style="background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 50%, #ffffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 0 80px rgba(221, 152, 76, 0.3);">
-                                    光技術で、医療と産業の
-                                </span>
-                                <span class="d-block mt-2" style="background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 0 80px rgba(221, 152, 76, 0.5);">
-                                    未来を支える
-                                </span>
-                            </h1>
-                            
-                            <!-- Subtitle -->
-                            <p class="scrollanimation animated fadeInUp mx-auto mb-5" style="max-width: 720px; font-size: clamp(1rem, 2vw, 1.25rem); line-height: 1.8; color: rgba(255, 255, 255, 0.85); font-weight: 400; animation-delay: 0.6s;">
-                                LTTは、最先端レーザー技術を核に<br class="d-none d-md-block">
-                                医療・ヘルスケアから産業・環境分野まで、<br class="d-none d-md-block">
-                                社会課題の解決につながる技術とサービスを提供します。
-                            </p>
-                            
-                            <!-- Scroll Indicator -->
-                            <div class="scrollanimation animated fadeIn" style="animation-delay: 1s; margin-top: 5rem;">
-                                <div class="scroll-indicator-arrow" style="width: 30px; height: 50px; border: 2px solid rgba(221, 152, 76, 0.5); border-radius: 20px; position: relative; margin: 0 auto;">
-                                    <div style="width: 4px; height: 8px; background: #dd984c; border-radius: 2px; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); animation: scrollBounce 2s ease-in-out infinite;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
+                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Service</span>
+                        事業内容
+                    </h1>
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                        LTTは、最先端レーザー技術を核に医療・ヘルスケアから産業・環境分野まで、<br class="d-none d-md-inline">
+                        社会課題の解決につながる技術とサービスを提供します。
+                    </p>
                 </div>
             </div>
-            
-            <!-- Bottom Gradient Fade -->
-            <div class="position-absolute bottom-0 w-100" style="height: 150px; background: linear-gradient(to top, rgba(11, 15, 20, 1), transparent); z-index: 4;"></div>
         </div>
 
         <!-- Philosophy Section -->
