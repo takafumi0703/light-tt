@@ -84,24 +84,24 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+        <div class="page-mv position-relative overflow-hidden hero-flex-center">
             <!-- Background Image -->
-            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
+            <div class="overlay-absolute-full hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80');"></div>
             
             <!-- Dark Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-dark"></div>
+            <div class="overlay-absolute-full overlay-dark"></div>
             
             <!-- Gradient Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-gradient-accent"></div>
+            <div class="overlay-absolute-full overlay-gradient-accent"></div>
             
             <!-- Content -->
             <div class="r-container position-relative z-10">
                 <div class="text-center">
-                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
-                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Contact</span>
+                    <h1 class="scrollanimation animated fadeInUp mb-3 heading-responsive-lg">
+                        <span class="d-block mb-2 heading-responsive-sm">Contact</span>
                         お問い合わせ
                     </h1>
-                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4 text-max-width text-responsive-body">
                         製品やサービスに関するご質問、採用に関するお問い合わせなど、<br class="d-none d-md-inline">
                         お気軽にご連絡ください。
                     </p>
@@ -302,16 +302,12 @@
         <!-- Map Section -->
         <div class="map-section py-5 py-lg-7 bg-light-gray">
             <div class="r-container">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            Access
-                        </h2>
-                    </div>
-                    <p class="m-0 mb-4 text-subtitle-jp">
-                        アクセス
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">ACCESS</span>
                     </p>
-                    <p class="section-lead mx-auto" style="max-width: 680px; font-size: clamp(1rem, 1.8vw, 1.15rem); line-height: 1.75; color: rgba(255, 255, 255, 0.85);">
+                    <h2 class="m-0 scrollanimation animated fadeInDown">アクセス</h2>
+                    <p class="section-lead text-max-width mx-auto">
                         量子科学技術研究開発機構（QST）千葉地区内に所在しています。<br>
                         訪問の際は事前にご連絡をお願いいたします。
                     </p>
@@ -360,16 +356,12 @@
         <!-- FAQ Section -->
         <div class="faq-section py-5 py-lg-7">
             <div class="r-container">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            FAQ
-                        </h2>
-                    </div>
-                    <p class="m-0 mb-4 text-subtitle-jp">
-                        よくあるご質問
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">FAQ</span>
                     </p>
-                    <p class="section-lead mx-auto" style="max-width: 680px; font-size: clamp(1rem, 1.8vw, 1.15rem); line-height: 1.75; color: rgba(255, 255, 255, 0.85);">
+                    <h2 class="m-0 scrollanimation animated fadeInDown">よくあるご質問</h2>
+                    <p class="section-lead text-max-width mx-auto">
                         お問い合わせの前に、よくあるご質問をご確認ください。
                     </p>
                 </div>

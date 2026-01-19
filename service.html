@@ -93,24 +93,24 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+        <div class="page-mv position-relative overflow-hidden hero-flex-center">
             <!-- Background Image -->
-            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
-            
+            <div class="overlay-absolute-full hero-bg-image service-hero-bg-image"></div>
+
             <!-- Dark Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-dark"></div>
+            <div class="overlay-absolute-full dark-overlay"></div>
             
             <!-- Gradient Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-gradient-accent"></div>
-            
+            <div class="overlay-absolute-full overlay-gradient-accent"></div>
+
             <!-- Content -->
             <div class="r-container position-relative z-10">
                 <div class="text-center">
-                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
-                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Service</span>
+                    <h1 class="scrollanimation animated fadeInUp mb-3 heading-responsive-lg text-lightest">
+                        <span class="d-block mb-2 heading-responsive-sm">Service</span>
                         事業内容
                     </h1>
-                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4 text-max-width text-responsive-body text-light">
                         LTTは、最先端レーザー技術を核に医療・ヘルスケアから産業・環境分野まで、<br class="d-none d-md-inline">
                         社会課題の解決につながる技術とサービスを提供します。
                     </p>
@@ -118,322 +118,334 @@
             </div>
         </div>
 
-        <!-- Philosophy Section -->
-        <div class="section position-relative section-padding-large section-bg-radial-accent">
+        <!-- Philosophy & Navigation Combined Section -->
+        <div class="section position-relative section-bg-radial-accent py-5">
             <div class="r-container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10">
-                        <!-- Icon Feature -->
-                        <div class="text-center mb-5">
-                            <div class="scrollanimation animated zoomIn icon-box-large">
-                                <i class="fa-solid fa-lightbulb icon-accent"></i>
-                                <div class="position-absolute pulse-ring"></div>
-                            </div>
-                        </div>
-                        
-                        <!-- Main Text -->
-                        <div class="text-center scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
-                            <p class="mb-5 text-lead">
-                                LTT（Light Touch Technology）は、<br class="d-none d-md-block">
-                                長年培ってきたレーザー・光計測技術を基盤に、<br class="d-none d-md-block">
-                                <span class="text-accent-highlight">
-                                    「正確に、非接触で、負担なく測る」
-                                    <span class="decorative-underline"></span>
-                                </span>
-                                技術の社会実装に取り組んでいます。
-                            </p>
-                            
-                            <p class="m-0 text-lead">
-                                研究機関発の高度な技術を、<br class="d-none d-md-block">
-                                医療現場や産業の実利用へとつなげること。<br class="d-none d-md-block">
-                                <span class="text-accent-highlight">それが、私たちのサービスの本質です。</span>
-                            </p>
-                        </div>
-                        
-                        <!-- Decorative Line -->
-                        <div class="scrollanimation animated fadeIn mt-5" style="animation-delay: 0.4s;">
-                            <div class="decorative-line-horizontal"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Navigation Cards -->
-        <div class="section section-padding">
-            <div class="r-container">
-                <div class="row g-4 justify-content-center">
-                    <div class="col-12 col-md-4">
-                        <a href="#technology" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0s;">
-                            <div class="position-relative overflow-hidden rounded-4 glass-card-hover p-5">
-                                <div class="position-absolute decorative-glow"></div>
-                                <div class="position-relative z-2">
-                                    <div class="mb-4 icon-box-medium">
-                                        <i class="fa-solid fa-atom icon-accent-medium"></i>
+                        <!-- Category Label -->
+                        <div class="text-center mb-3 scrollanimation animated fadeInUp">
+                            <p class="m-0 text-uppercase letter-space-2 text-small-muted">
+                                <span class="text-accent">Business Categories</span>
+                            </p>
+                        </div>
+
+                        <!-- Navigation Cards - Compact -->
+                        <div class="row g-3 service-nav-cards">
+                            <div class="col-12 col-md-4">
+                                <a href="#technology" class="d-block text-decoration-none scrollanimation animated fadeInUp">
+                                    <div class="position-relative overflow-hidden rounded-3 glass-card-hover p-4 h-100">
+                                        <div class="position-relative z-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="icon-box-small">
+                                                    <i class="fa-solid fa-atom icon-accent-small"></i>
+                                                </div>
+                                                <div>
+                                                    <h3 class="mb-1 h6 fw-bold">TECHNOLOGY</h3>
+                                                    <p class="m-0 small">技術コンサル・提供</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-arrow-right text-accent"></i>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h3 class="mb-2 text-heading-md">テクノロジー</h3>
-                                    <p class="m-0 text-muted-sm">最先端レーザー技術を実装可能な技術へ</p>
-                                    <div class="mt-3 link-arrow">
-                                        <span>詳しく見る</span>
-                                        <i class="fa-solid fa-arrow-right transition-all"></i>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    
-                    <div class="col-12 col-md-4">
-                        <a href="#medical" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0.1s;">
-                            <div class="position-relative overflow-hidden rounded-4 glass-card-hover p-5">
-                                <div class="position-absolute decorative-glow"></div>
-                                <div class="position-relative z-2">
-                                    <div class="mb-4 icon-box-medium">
-                                        <i class="fa-solid fa-heart-pulse icon-accent-medium"></i>
+
+                            <div class="col-12 col-md-4">
+                                <a href="#medical" class="d-block text-decoration-none scrollanimation animated fadeInUp animation-delay-100">
+                                    <div class="position-relative overflow-hidden rounded-3 glass-card-hover p-4 h-100">
+                                        <div class="position-relative z-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="icon-box-small">
+                                                    <i class="fa-solid fa-heart-pulse icon-accent-small"></i>
+                                                </div>
+                                                <div>
+                                                    <h3 class="mb-1 h6 fw-bold">MEDICAL</h3>
+                                                    <p class="m-0 small">血液検査・ヘルスケア事業</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-arrow-right text-accent"></i>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h3 class="mb-2 text-heading-md">メディカル</h3>
-                                    <p class="m-0 text-muted-sm">採血しない血糖値測定という選択肢を</p>
-                                    <div class="mt-3 link-arrow">
-                                        <span>詳しく見る</span>
-                                        <i class="fa-solid fa-arrow-right transition-all"></i>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    
-                    <div class="col-12 col-md-4">
-                        <a href="#industrial" class="d-block text-decoration-none scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
-                            <div class="position-relative overflow-hidden rounded-4 glass-card-hover p-5">
-                                <div class="position-absolute decorative-glow"></div>
-                                <div class="position-relative z-2">
-                                    <div class="mb-4 icon-box-medium">
-                                        <i class="fa-solid fa-industry icon-accent-medium"></i>
+
+                            <div class="col-12 col-md-4">
+                                <a href="#industrial" class="d-block text-decoration-none scrollanimation animated fadeInUp animation-delay-200">
+                                    <div class="position-relative overflow-hidden rounded-3 glass-card-hover p-4 h-100">
+                                        <div class="position-relative z-2 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="icon-box-small">
+                                                    <i class="fa-solid fa-industry icon-accent-small"></i>
+                                                </div>
+                                                <div>
+                                                    <h3 class="mb-1 h6 fw-bold">INDUSTRIAL</h3>
+                                                    <p class="m-0 small">産業向けセンシング</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-arrow-right text-accent"></i>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h3 class="mb-2 text-heading-md">インダストリアル</h3>
-                                    <p class="m-0 text-muted-sm">光で見えない情報を可視化する</p>
-                                    <div class="mt-3 link-arrow">
-                                        <span>詳しく見る</span>
-                                        <i class="fa-solid fa-arrow-right transition-all"></i>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Technology Section -->
-        <div id="technology" class="section position-relative overflow-hidden section-bg-gradient-dark scroll-margin-100">
-            <div class="position-absolute w-100 h-100" style="top: 0; left: 0; opacity: 0.04; background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, #dd984c 2px, #dd984c 4px), repeating-linear-gradient(90deg, transparent, transparent 2px, #dd984c 2px, #dd984c 4px); background-size: 60px 60px;"></div>
-            
-            <div class="r-container position-relative">
-                <div class="row row-cols-1 row-cols-xl-2 align-items-center gy-5">
-                    <div class="col order-2 order-xl-1">
-                        <div class="scrollanimation animated fadeInLeft">
-                            <div class="mb-4">
-                                <span class="px-3 py-2 rounded-pill badge-accent">
-                                    <i class="fa-solid fa-atom me-2"></i>TECHNOLOGY
-                                </span>
-                            </div>
-                            
-                            <h2 class="mb-4 text-title-section">
-                                最先端レーザー技術を、<br>
-                                <span class="text-accent-color">実装できる技術へ</span>
-                            </h2>
-                            
-                            <p class="mb-4 text-body-primary">
-                                LTTは、固体レーザーや波長変換技術など、高い専門性を要するレーザー技術をコアに持つ技術集団です。中赤外領域を含むレーザー光源技術、光パラメトリック発振（OPO）などの高度な波長制御技術を活かし、センシング・計測・分析分野での応用を進めています。
-                            </p>
-                            
-                            <p class="mb-5 text-body-primary">
-                                研究・試作に留まらず、小型化・安定化・実装性までを見据えた技術開発を行い、社会で"使える技術"として提供します。
-                            </p>
-                            
-                            <div class="p-4 rounded-3 card-highlight">
-                                <h5 class="mb-3 text-accent-md">想定ユース</h5>
-                                <ul class="m-0 ps-4 list-unstyled-important">
-                                    <li class="mb-2 list-item-padded">
-                                        <i class="fa-solid fa-check list-icon-position"></i>
-                                        レーザー・光学技術に関する研究開発支援
-                                    </li>
-                                    <li class="mb-2 list-item-padded">
-                                        <i class="fa-solid fa-check list-icon-position"></i>
-                                        センシング技術の共同開発
-                                    </li>
-                                    <li class="list-item-padded">
-                                        <i class="fa-solid fa-check list-icon-position"></i>
-                                        受託研究・技術コンサルティング
-                                    </li>
-                                </ul>
+        <div id="technology" class="scroll-margin-100">
+            <!-- Section Header -->
+            <div class="service-section-header">
+                <div class="r-container">
+                    <div class="scrollanimation animated fadeInUp">
+                        <h2>TECHNOLOGY</h2>
+                        <p class="section-subtitle">技術コンサルティング・技術支援</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHY Section -->
+            <div class="service-why-section">
+                <div class="r-container">
+                    <div class="row align-items-center gy-4 service-why-row">
+                        <div class="col-12 col-md-5">
+                            <div class="service-why-media scrollanimation animated fadeInUp animation-delay-100">
+                                <img src="image/b01.jpg" alt="Technology" class="img-fluid service-why-image">
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-6 order-1 order-lg-2">
-                        <div class="scrollanimation animated fadeInRight position-relative">
-                            <div class="position-relative img-card-rounded">
-                                <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?q=80&w=2070" alt="Technology" class="img-fluid img-aspect-4-3">
-                                <div class="position-absolute overlay-gradient-inset"></div>
-                            </div>
-                            
-                            <div class="position-absolute d-none d-lg-block overlay-info-box" style="bottom: 30px; right: 30px;">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="icon-box-small">
-                                        <i class="fa-solid fa-flask icon-medium"></i>
-                                    </div>
-                                    <div>
-                                        <div class="text-label-xs">Research</div>
-                                        <div class="text-accent-lg">+10 Years</div>
-                                    </div>
-                                </div>
+                        <div class="col-12 col-md-7">
+                            <div class="scrollanimation animated fadeInUp">
+                                <span class="service-why-badge">WHY</span>
+                                <h3 class="service-why-title">なぜLTTはレーザー技術に取り組むのか</h3>
+                                <p class="service-why-text">
+                                    レーザー技術は、その高い精度と制御性から、医療・産業・環境など多くの分野で革新をもたらす可能性を秘めています。しかし、研究室レベルの技術を社会実装可能な形にするには、小型化・安定化・コスト最適化という大きな壁があります。LTTは、固体レーザーや波長変換技術において10年以上培ってきた専門性を活かし、「研究のための技術」を「社会で使える技術」へと変換することを使命としています。
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Content Area -->
+            <div class="service-content-area section-bg-gradient-dark">
+                <div class="r-container">
+                    <div class="row align-items-center gy-5">
+                        <div class="col-12">
+                            <div class="scrollanimation animated fadeInRight text-center">
+                                <h3 class="mb-4 h4 fw-bold">
+                                    光技術で、
+                                    <span class="text-accent">課題解決を支援する</span>
+                                </h3>
+                                <p class="text-body-primary">
+                                    LTTは、レーザー・光計測分野における専門知識をもとに、<br class="sm-hidden">
+                                    技術コンサルティング、技術提供、共同開発を通じて
+                                    企業や研究機関の課題解決を支援しています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Items -->
+                    <div class="service-item-grid">
+                        <div class="service-item-card scrollanimation animated fadeInUp">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <h4>光源設計・技術支援</h4>
+                            <p>
+                                用途に応じたレーザー光源の設計方針や技術選定を支援します。
+                            </p>
+                        </div>
+                        <div class="service-item-card scrollanimation animated fadeInUp animation-delay-100">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-wave-square"></i>
+                            </div>
+                            <h4>波長設計・応用検討</h4>
+                            <p>
+                                計測・センシング用途に適した波長設計や技術検討を行います。
+                            </p>
+                        </div>
+                        <div class="service-item-card scrollanimation animated fadeInUp animation-delay-200">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-cogs"></i>
+                            </div>
+                            <h4>光学システム構築支援</h4>
+                            <p>
+                                光学システムの構成検討から実装に向けた設計支援を行います。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="service-divider"></div>
 
         <!-- Medical Section -->
-        <div id="medical" class="section position-relative overflow-hidden" style="scroll-margin-top: 100px; background: linear-gradient(180deg, rgba(16, 20, 28, 1) 0%, rgba(11, 15, 20, 1) 100%);">
-            <div class="position-absolute" style="top: 30%; left: 10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(221, 152, 76, 0.08), transparent 70%); border-radius: 50%; filter: blur(100px);"></div>
-            
-            <div class="r-container position-relative">
-                <div class="row row-cols-1 row-cols-xl-2 align-items-center gy-5">
-                    <div class="col">
-                        <div class="scrollanimation animated fadeInLeft position-relative">
-                            <div class="position-relative img-card-rounded">
-                                <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2070" alt="Medical" class="img-fluid img-aspect-4-3">
-                                <div class="position-absolute overlay-gradient-inset"></div>
+        <div id="medical" class="scroll-margin-100">
+            <!-- Section Header -->
+            <div class="service-section-header">
+                <div class="r-container">
+                    <div class="scrollanimation animated fadeInUp">
+                        <h2>MEDICAL</h2>
+                        <p class="section-subtitle">血液検査・ヘルスケア事業</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHY Section -->
+            <div class="service-why-section">
+                <div class="r-container">
+                    <div class="row align-items-center gy-4 service-why-row">
+                        <div class="col-12 col-md-5">
+                            <div class="service-why-media scrollanimation animated fadeInUp animation-delay-100">
+                                <img src="image/b02.jpg" alt="Medical" class="img-fluid service-why-image">
                             </div>
-                            
-                            <div class="position-absolute d-none d-lg-block" style="top: 30px; left: 30px; background: rgba(11, 15, 20, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(221, 152, 76, 0.3); border-radius: 16px; padding: 1.25rem 1.5rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="icon-box-small">
-                                        <i class="fa-solid fa-heart-pulse icon-medium"></i>
-                                    </div>
-                                    <div>
-                                        <div class="text-label-xs">Non-invasive</div>
-                                        <div class="text-accent-lg">Pain-free</div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="scrollanimation animated fadeInUp">
+                                <span class="service-why-badge">WHY</span>
+                                <h3 class="service-why-title">なぜLTTは非侵襲血糖測定に取り組むのか</h3>
+                                <p class="service-why-text">
+                                    日本では糖尿病患者が約1,000万人、予備群を含めると2,000万人以上といわれています。血糖値の定期的な測定は糖尿病管理に不可欠ですが、従来の方法は針による採血が必要で、痛みや感染リスク、心理的負担が課題でした。LTTは、レーザー技術を用いた非接触・無痛の血糖測定を実現することで、患者のQOL向上と、より多くの人が気軽に健康管理できる社会の実現を目指しています。
+                                </p>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col">
-                        <div class="scrollanimation animated fadeInRight">
-                            <div class="mb-4">
-                                <span class="px-3 py-2 rounded-pill badge-accent">
-                                    <i class="fa-solid fa-heart-pulse me-2"></i>MEDICAL
-                                </span>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="service-content-area gradient-section-dark">
+                <div class="r-container">
+                    <div class="row align-items-center gy-5">
+                        <div class="col-12">
+                            <div class="scrollanimation animated fadeInLeft text-center">
+                                <h3 class="mb-4 h4 fw-bold">
+                                    採血しない血糖値測定という<br class="pc-hidden">
+                                    <span class="text-accent">選択肢を</span>
+                                </h3>
+                                <p class="text-body-primary">
+                                    レーザー光を用いた非接触計測により、
+                                    採血しない血糖値測定の実用化を目指しています。
+                                </p>
                             </div>
-                            
-                            <h2 class="mb-4 text-title-section">
-                                採血しない血糖値測定という<br>
-                                <span class="text-accent-color">選択肢を</span>
-                            </h2>
-                            
-                            <p class="mb-4 text-body-primary">
-                                LTTが取り組む医療分野の中核は、非侵襲型（採血不要）血糖値センサーの開発です。従来の血糖値測定は、針による採血が不可欠であり、患者にとって身体的・心理的な負担がありました。
-                            </p>
-                            
-                            <p class="mb-4 text-body-primary">
-                                LTTは、レーザー光を用いた非接触計測により、痛みやストレスを伴わない血糖値測定の実現を目指しています。
-                            </p>
-                            
-                            <p class="mb-5 text-body-primary">
-                                日常的な測定をより自然に行えることで、治療だけでなく、予防や健康管理への活用も視野に入れています。
-                            </p>
-                            
-                            <div class="p-4 rounded-3 card-highlight">
-                                <h5 class="mb-3 text-accent-md">プロダクト構想例</h5>
-                                <ul class="m-0 ps-4 list-unstyled-important">
-                                    <li class="mb-2 list-item-padded">
-                                        <i class="fa-solid fa-check list-icon-position"></i>
-                                        モバイル型 血糖値センサー
-                                    </li>
-                                    <li class="list-item-padded">
-                                        <i class="fa-solid fa-check list-icon-position"></i>
-                                        据置型 ヘルスケアセンサー（薬局・施設向け）
-                                    </li>
-                                </ul>
+                        </div>
+                    </div>
+
+                    <!-- Business Items -->
+                    <div class="service-item-grid">
+                        <div class="service-item-card scrollanimation animated fadeInUp">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-droplet"></i>
                             </div>
+                            <h4>非侵襲血糖値センサー開発</h4>
+                            <p>採血不要のレーザー血糖測定技術の研究開発。患者の負担を軽減する次世代センサー。</p>
+                        </div>
+                        <div class="service-item-card scrollanimation animated fadeInUp animation-delay-100">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <h4>モバイル型センサー</h4>
+                            <p>持ち運び可能な小型血糖値センサー。いつでもどこでも測定できる利便性を追求。</p>
+                        </div>
+                        <div class="service-item-card scrollanimation animated fadeInUp animation-delay-200">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <h4>据置型ヘルスケアセンサー</h4>
+                            <p>薬局・医療施設向けの据置型センサー。専門機関での健康チェックに最適。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="service-divider"></div>
+
         <!-- Industrial Section -->
-        <div id="industrial" class="section position-relative overflow-hidden section-bg-gradient-dark scroll-margin-100">
-            <div class="position-absolute w-100 h-100" style="top: 0; left: 0; opacity: 0.04; background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #dd984c 10px, #dd984c 11px), repeating-linear-gradient(-45deg, transparent, transparent 10px, #dd984c 10px, #dd984c 11px); background-size: 40px 40px;"></div>
-            
-            <div class="r-container position-relative">
-                <div class="row row-cols-1 row-cols-xl-2 align-items-center gy-5">
-                    <div class="col order-2 order-xl-1">
-                        <div class="scrollanimation animated fadeInLeft">
-                            <div class="mb-4">
-                                <span class="px-3 py-2 rounded-pill badge-accent">
-                                    <i class="fa-solid fa-industry me-2"></i>INDUSTRIAL
-                                </span>
+        <div id="industrial" class="scroll-margin-100">
+            <!-- Section Header -->
+            <div class="service-section-header">
+                <div class="r-container">
+                    <div class="scrollanimation animated fadeInUp">
+                        <h2>INDUSTRIAL</h2>
+                        <p class="section-subtitle">産業向けセンシング</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHY Section -->
+            <div class="service-why-section">
+                <div class="r-container">
+                    <div class="row align-items-center gy-4 service-why-row">
+                        <div class="col-12 col-md-5">
+                            <div class="service-why-media scrollanimation animated fadeInUp animation-delay-100">
+                                <img src="image/b03.jpg" alt="Industrial" class="img-fluid service-why-image">
                             </div>
-                            
-                            <h2 class="mb-4 text-title-section">
-                                光で"見えない情報"を<br>
-                                <span class="text-accent-color">可視化する</span>
-                            </h2>
-                            
-                            <p class="mb-4 text-body-primary">
-                                LTTの光計測技術は、医療分野にとどまらず、産業・環境分野への応用も可能です。レーザーによる非接触・リアルタイム計測は、製造現場や環境計測においても高い価値を発揮します。
-                            </p>
-                            
-                            <p class="mb-4 text-body-primary">
-                                対象物に触れることなく、状態・成分・変化を正確に捉えることで、品質管理や効率化、新たな分析手法の創出につながります。
-                            </p>
-                            
-                            <p class="mb-5 text-body-primary">
-                                LTTは、用途や課題に応じた光技術ソリューションの提供・共同開発を行っています。
-                            </p>
-                            
-                            <div class="p-4 rounded-3 card-highlight">
-                                <h5 class="mb-3 text-accent-md">想定分野</h5>
-                                <ul class="m-0 ps-4 list-unstyled-important">
-                                    <li class="mb-2 list-item-padded">
-                                        <i class="fa-solid fa-check list-icon-position"></i>
-                                        産業向けセンシング・検査
-                                    </li>
-                                    <li class="mb-2 list-item-padded">
-                                        <i class="fa-solid fa-check list-icon-position"></i>
-                                        環境モニタリング
-                                    </li>
-                                    <li class="list-item-padded">
-                                        <i class="fa-solid fa-check list-icon-position"></i>
-                                        光技術を用いた新規計測手法の検討
-                                    </li>
-                                </ul>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="scrollanimation animated fadeInUp">
+                                <span class="service-why-badge">WHY</span>
+                                <h3 class="service-why-title">なぜLTTは産業センシングに取り組むのか</h3>
+                                <p class="service-why-text">
+                                    製造業や環境分野では、非接触・リアルタイムで対象物の状態を把握するニーズが高まっています。従来の接触式センサーでは測定困難だった高温物体、危険物質、連続工程中の製品などに対して、レーザー技術は新たな可能性を提供します。LTTは医療分野で培った高精度な光計測技術を産業分野に展開し、品質管理の高度化、環境モニタリングの効率化に貢献することを目指しています。
+                                </p>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-12 col-lg-6 order-1 order-lg-2">
-                        <div class="scrollanimation animated fadeInRight position-relative">
-                            <div class="position-relative img-card-rounded">
-                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070" alt="Industrial" class="img-fluid img-aspect-4-3">
-                                <div class="position-absolute overlay-gradient-inset"></div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="service-content-area section-bg-gradient-dark">
+                <div class="r-container">
+                    <div class="row align-items-center gy-5">
+                        <div class="col-12">
+                            <div class="scrollanimation animated fadeInRight text-center">
+                                <h3 class="mb-4 h4 fw-bold">
+                                    光で"見えない情報"を
+                                    <span class="text-accent">可視化する</span>
+                                </h3>
+                                <p class="text-body-primary">
+                                    光計測技術を用いたセンシングと技術提供により、
+                                    産業・環境分野の課題解決を支援しています。
+                                </p>
                             </div>
-                            
-                            <div class="position-absolute d-none d-lg-block overlay-info-box" style="bottom: 30px; right: 30px;">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="icon-box-small">
-                                        <i class="fa-solid fa-microscope icon-medium"></i>
-                                    </div>
-                                    <div>
-                                        <div class="text-label-xs">Real-time</div>
-                                        <div class="text-accent-lg">Sensing</div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Items -->
+                    <div class="service-item-grid">
+                        <div class="service-item-card scrollanimation animated fadeInUp">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-industry"></i>
                             </div>
+                            <h4>産業向けセンシング</h4>
+                            <p>製造ラインでの非接触検査、リアルタイム品質モニタリングシステムの開発。</p>
+                        </div>
+                        <div class="service-item-card scrollanimation animated fadeInUp animation-delay-100">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <h4>環境モニタリング</h4>
+                            <p>大気・水質のリアルタイム分析。環境汚染物質の高感度検出システム。</p>
+                        </div>
+                        <div class="service-item-card scrollanimation animated fadeInUp animation-delay-200">
+                            <div class="service-item-icon">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            </div>
+                            <h4>品質検査ソリューション</h4>
+                            <p>食品・素材・製品の成分分析、異物検出などの高精度検査技術を提供。</p>
                         </div>
                     </div>
                 </div>
@@ -443,17 +455,14 @@
         <!-- CTA Section -->
         <div class="section position-relative overflow-hidden cta-bg02">
             <div class="r-container position-relative z-2 h-100 d-flex align-items-center">
-                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-5 px-4">
-                    <h2 class="text-center scrollanimation animated fadeIn adr-5">
-                        技術の可能性を、<br class="d-xl-none">次のステージへ
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-4 px-4">
+                    <h2 class="text-center scrollanimation animated fadeIn adr-5">未来の医療を<br>
+                        <span class="text-accent">共に創るパートナーへ</span>
                     </h2>
-                    <p class="text-center" style="max-width: 600px;">
-                        技術に関するご相談、共同研究のご相談など、<br>
-                        お気軽にお問い合わせください。
-                    </p>
+                    <p>技術提携、共同研究、事業化に向けたご協業など。 <br>私たちのビジョンに共感いただける方からのご連絡をお待ちしております。</p>
                     <div class="w-max-content scrollanimation animated fadeIn adr-5 adl-1">
                         <a href="contact.html" class="btn btn-accent animated-gradient">
-                            <span>Contact</span>
+                            <span>お問い合わせフォームへ</span>
                         </a>
                     </div>
                 </div>
@@ -504,7 +513,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-xl-6">
-                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                            <div class="row row-cols-2 row-cols-md-2 g-3">
                                 <div class="col">
                                     <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
                                         <li><a href="index.html">ホーム</a></li>

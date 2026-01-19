@@ -93,12 +93,12 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+        <div class="page-mv position-relative overflow-hidden hero-flex-center">
             <!-- Background Image -->
-            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
-            
+            <div class="overlay-absolute-full hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80');"></div>
+
             <!-- Dark Overlay -->
-            <div class="position-absolute w-100 h-100" style="background: rgba(10, 14, 26, 0.80); z-index: 2;"></div>
+            <div class="overlay-absolute-full dark-overlay"></div>
             
             <!-- Gradient Overlay -->
             <div class="position-absolute w-100 h-100 overlay-gradient-accent"></div>
@@ -110,18 +110,18 @@
                     <div class="scrollanimation animated fadeInDown mb-4">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center mb-0" style="font-size: 14px;">
-                                <li class="breadcrumb-item"><a href="index.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">ホーム</a></li>
-                                <li class="breadcrumb-item"><a href="news.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">お知らせ</a></li>
+                                <li class="breadcrumb-item"><a href="index.html" class="text-light" style="text-decoration: none;">ホーム</a></li>
+                                <li class="breadcrumb-item"><a href="news.html" class="text-light" style="text-decoration: none;">お知らせ</a></li>
                                 <li class="breadcrumb-item active" aria-current="page" class="text-accent-color">記事詳細</li>
                             </ol>
                         </nav>
                     </div>
                     
-                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
-                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">News Detail</span>
+                    <h1 class="scrollanimation animated fadeInUp mb-3 heading-responsive-lg">
+                        <span class="d-block mb-2 heading-responsive-sm">News Detail</span>
                         ニュース詳細
                     </h1>
-                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4 text-max-width text-responsive-body">
                         非侵襲型血糖値センサーの最新開発状況について
                     </p>
                 </div>
@@ -137,8 +137,8 @@
                         <article class="news-detail-content">
                             <!-- Featured Image -->
                             <div class="scrollanimation animated fadeInUp mb-5">
-                                <div class="position-relative" style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);">
-                                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200" alt="Featured Image" class="img-fluid" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;">
+                                <div class="position-relative shadow-lg" style="border-radius: 16px; overflow: hidden;">
+                                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200" alt="Featured Image" class="img-fluid responsive-image">
                                 </div>
                             </div>
 
@@ -228,7 +228,7 @@
                             <!-- Share Buttons -->
                             <div class="scrollanimation animated fadeInUp mt-5">
                                 <div class="share-buttons">
-                                    <h5 class="mb-3" style="font-size: 1rem; font-weight: 600; color: rgba(255, 255, 255, 0.8);">この記事をシェア</h5>
+                                    <h5 class="mb-3 text-lighter" style="font-size: 1rem;">この記事をシェア</h5>
                                     <div class="d-flex gap-3">
                                         <a href="#" class="share-btn" title="X（Twitter）でシェア">
                                             <i class="fa-brands fa-x-twitter"></i>
@@ -291,7 +291,7 @@
                             </div>
 
                             <!-- Categories -->
-                            <div class="sidebar-widget scrollanimation animated fadeInUp" style="animation-delay: 0.1s;">
+                            <div class="sidebar-widget scrollanimation animated fadeInUp animation-delay-100">
                                 <h3 class="widget-title">カテゴリー</h3>
                                 <ul class="category-list">
                                     <li>
@@ -316,7 +316,7 @@
                             </div>
 
                             <!-- Recruit Banner -->
-                            <div class="sidebar-widget scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
+                            <div class="sidebar-widget scrollanimation animated fadeInUp animation-delay-200">
                                 <a href="recruit.html" class="recruit-banner">
                                     <div class="recruit-banner-content">
                                         <div class="recruit-icon">
@@ -341,17 +341,14 @@
         <!-- CTA Section -->
         <div class="section position-relative overflow-hidden cta-bg02">
             <div class="r-container position-relative z-2 h-100 d-flex align-items-center">
-                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-5 px-4">
-                    <h2 class="text-center scrollanimation animated fadeIn adr-5">
-                        LTTについて、<br class="d-xl-none">もっと知りたい方へ
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-4 px-4">
+                    <h2 class="text-center scrollanimation animated fadeIn adr-5">未来の医療を<br>
+                        <span class="text-accent">共に創るパートナーへ</span>
                     </h2>
-                    <p class="text-center" style="max-width: 600px;">
-                        事業や技術、採用に関するご質問など、<br>
-                        お気軽にお問い合わせください。
-                    </p>
+                    <p>技術提携、共同研究、事業化に向けたご協業など。 <br>私たちのビジョンに共感いただける方からのご連絡をお待ちしております。</p>
                     <div class="w-max-content scrollanimation animated fadeIn adr-5 adl-1">
                         <a href="contact.html" class="btn btn-accent animated-gradient">
-                            <span>Contact</span>
+                            <span>お問い合わせフォームへ</span>
                         </a>
                     </div>
                 </div>
@@ -402,7 +399,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-xl-6">
-                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                            <div class="row row-cols-2 row-cols-md-2 g-3">
                                 <div class="col">
                                     <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
                                         <li><a href="index.html">ホーム</a></li>

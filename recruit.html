@@ -93,24 +93,24 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+        <div class="page-mv position-relative overflow-hidden hero-flex-center">
             <!-- Background Image -->
-            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
-            
+            <div class="overlay-absolute-full hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80');"></div>
+
             <!-- Dark Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-dark"></div>
-            
+            <div class="overlay-absolute-full dark-overlay"></div>
+
             <!-- Gradient Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-gradient-accent"></div>
-            
+            <div class="overlay-absolute-full overlay-gradient-accent"></div>
+
             <!-- Content -->
             <div class="r-container position-relative z-10">
                 <div class="text-center">
-                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
-                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Recruit</span>
+                    <h1 class="scrollanimation animated fadeInUp mb-3 heading-responsive-lg">
+                        <span class="d-block mb-2 heading-responsive-sm">Recruit</span>
                         採用情報
                     </h1>
-                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4 text-max-width text-responsive-body">
                         研究の延長ではなく、社会実装の最前線へ。<br class="d-none d-md-inline">
                         LTTは、光技術で未来をつくる仲間を求めています。
                     </p>
@@ -120,18 +120,14 @@
         <!-- End MV Section -->
 
         <!-- Why LTT Section -->
-        <div class="section" style="padding: 6rem 0; background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div class="section gradient-section-dark" style="padding: 6rem 0;">
             <div class="r-container">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            Why Join Us
-                        </h2>
-                    </div>
-                    <p class="m-0 mb-4 text-subtitle-jp">
-                        LTTを選ぶ理由
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">WHY JOIN US</span>
                     </p>
-                    <p class="section-lead mx-auto" style="max-width: 680px; font-size: clamp(1rem, 1.8vw, 1.15rem); line-height: 1.75; color: rgba(255, 255, 255, 0.85);">
+                    <h2 class="m-0 scrollanimation animated fadeInDown">LTTを選ぶ理由</h2>
+                    <p class="section-lead mx-auto text-max-width">
                         LTTで働くことは、<br class="d-md-none">最先端技術を「研究成果」で終わらせず、<br>
                         社会で使われる形にしていく挑戦です。
                     </p>
@@ -187,16 +183,12 @@
         <!-- Culture Section -->
         <div class="section" style="padding: 6rem 0; background: linear-gradient(180deg, rgba(16, 20, 28, 1) 0%, rgba(11, 15, 20, 1) 100%);">
             <div class="r-container">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            Our Culture
-                        </h2>
-                    </div>
-                    <p class="m-0 mb-4 text-subtitle-jp">
-                        文化と環境
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">OUR CULTURE</span>
                     </p>
-                    <p class="section-lead mx-auto" style="max-width: 680px; font-size: clamp(1rem, 1.8vw, 1.15rem); line-height: 1.75; color: rgba(255, 255, 255, 0.85);">
+                    <h2 class="m-0 scrollanimation animated fadeInDown">文化と環境</h2>
+                    <p class="section-lead mx-auto text-max-width">
                         LTTは、技術に誠実であることを大切にしています。
                     </p>
                 </div>
@@ -251,18 +243,14 @@
         <!-- End Culture Section -->
 
         <!-- Job Openings Section -->
-        <div class="section" style="padding: 6rem 0; background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div class="section gradient-section-dark" style="padding: 6rem 0;">
             <div class="r-container">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            Job Openings
-                        </h2>
-                    </div>
-                    <p class="m-0 mb-4 text-subtitle-jp">
-                        募集職種
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">JOB OPENINGS</span>
                     </p>
-                    <p class="section-lead mx-auto" style="max-width: 680px; font-size: clamp(1rem, 1.8vw, 1.15rem); line-height: 1.75; color: rgba(255, 255, 255, 0.85);">
+                    <h2 class="m-0 scrollanimation animated fadeInDown">募集職種</h2>
+                    <p class="section-lead mx-auto text-max-width">
                         現在、以下の職種で仲間を募集しています。
                     </p>
                 </div>
@@ -366,16 +354,12 @@
         <!-- Selection Process Section -->
         <div class="section" style="padding: 6rem 0; background: linear-gradient(180deg, rgba(16, 20, 28, 1) 0%, rgba(11, 15, 20, 1) 100%);">
             <div class="r-container">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            Selection Process
-                        </h2>
-                    </div>
-                    <p class="m-0 mb-4 text-subtitle-jp">
-                        選考プロセス
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">SELECTION PROCESS</span>
                     </p>
-                    <p class="section-lead mx-auto mb-5" style="max-width: 680px; font-size: clamp(1rem, 1.8vw, 1.15rem); line-height: 1.75; color: rgba(255, 255, 255, 0.85);">
+                    <h2 class="m-0 scrollanimation animated fadeInDown">選考プロセス</h2>
+                    <p class="section-lead mx-auto mb-5 text-max-width">
                         選考では、これまでの経験だけでなく、<br class="d-md-none">技術に対する考え方やスタンスを重視しています。
                     </p>
                 </div>
@@ -434,25 +418,25 @@
         <!-- End Selection Process Section -->
 
         <!-- Entry Section -->
-        <div id="entry" class="section" style="padding: 6rem 0; background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div id="entry" class="section gradient-section-dark" style="padding: 6rem 0;">
             <div class="r-container">
                 <div class="entry-card scrollanimation animated fadeInUp">
                     <div class="row align-items-center g-5">
                         <div class="col-lg-6">
                             <div class="entry-content">
                                 <div class="mb-3">
-                                    <h2 class="m-0" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; letter-spacing: 0.05em; background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-transform: uppercase;">
+                                    <h2 class="m-0" style="font-size: clamp(2rem, 4vw, 3rem); background: linear-gradient(135deg, #dd984c 0%, #f4b466 50%, #dd984c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-transform: uppercase;">
                                         Apply Now
                                     </h2>
                                 </div>
-                                <p class="m-0 mb-4" style="font-size: clamp(1rem, 1.8vw, 1.25rem); font-weight: 600; color: rgba(255, 255, 255, 0.95); letter-spacing: 0.03em;">
+                                <p class="m-0 mb-4 text-lightest" style="font-size: clamp(1rem, 1.8vw, 1.25rem);">
                                     エントリー
                                 </p>
-                                <p class="entry-lead mb-4" style="font-size: clamp(0.95rem, 1.6vw, 1.1rem); line-height: 1.75; color: rgba(255, 255, 255, 0.85);">
+                                <p class="entry-lead mb-4 text-lighter" style="font-size: clamp(0.95rem, 1.6vw, 1.1rem);">
                                     LTTの取り組みに共感いただける方は、<br>
                                     ぜひお気軽にご応募ください。
                                 </p>
-                                <p class="entry-text mb-5" style="font-size: clamp(0.9rem, 1.5vw, 1rem); line-height: 1.7; color: rgba(255, 255, 255, 0.75);">
+                                <p class="entry-text mb-5 text-light" style="font-size: clamp(0.9rem, 1.5vw, 1rem);">
                                     ご経験の有無に関わらず、光技術や医療・ヘルスケア分野に<br>
                                     興味をお持ちの方のエントリーをお待ちしています。
                                 </p>
@@ -539,7 +523,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-xl-6">
-                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                            <div class="row row-cols-2 row-cols-md-2 g-3">
                                 <div class="col">
                                     <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
                                         <li><a href="index.html">ホーム</a></li>

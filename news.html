@@ -93,24 +93,24 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+        <div class="page-mv position-relative overflow-hidden hero-flex-center">
             <!-- Background Image -->
-            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
-            
+            <div class="overlay-absolute-full hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80');"></div>
+
             <!-- Dark Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-dark"></div>
-            
+            <div class="overlay-absolute-full overlay-dark"></div>
+
             <!-- Gradient Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-gradient-accent"></div>
+            <div class="overlay-absolute-full overlay-gradient-accent"></div>
             
             <!-- Content -->
             <div class="r-container position-relative z-10">
                 <div class="text-center">
-                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
-                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">News</span>
+                    <h1 class="scrollanimation animated fadeInUp mb-3 heading-responsive-lg">
+                        <span class="d-block mb-2 heading-responsive-sm">News</span>
                         お知らせ
                     </h1>
-                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4 text-max-width text-responsive-body">
                         LTTの最新ニュース、受賞歴、メディア掲載情報などを<br class="d-none d-md-inline">
                         お届けします。
                     </p>
@@ -119,7 +119,7 @@
         </div>
 
         <!-- Category Filter Section -->
-        <div class="section" style="padding-top: 3rem; padding-bottom: 2rem; background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div class="section gradient-section-dark" style="padding-top: 3rem; padding-bottom: 2rem;">
             <div class="r-container">
                 <div class="d-flex justify-content-center flex-wrap gap-3">
                     <button class="category-btn active" data-category="all">
@@ -161,7 +161,7 @@
 
                     <!-- Award Card 2 -->
                     <div class="col news-item" data-category="awards">
-                        <div class="news-card scrollanimation animated fadeInUp" style="animation-delay: 0.1s;">
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-100">
                             <a href="news-detail.html" class="text-decoration-none d-block h-100">
                                 <div class="news-card-image">
                                     <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800" alt="Award" class="img-fluid">
@@ -178,7 +178,7 @@
 
                     <!-- Movie Card 3 -->
                     <div class="col news-item" data-category="movie">
-                        <div class="news-card scrollanimation animated fadeInUp" style="animation-delay: 0.2s;">
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-200">
                             <a href="news-detail.html" class="text-decoration-none d-block h-100">
                                 <div class="news-card-image">
                                     <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?q=80&w=800" alt="Movie" class="img-fluid">
@@ -198,7 +198,7 @@
 
                     <!-- News Card 4 -->
                     <div class="col news-item" data-category="news">
-                        <div class="news-card scrollanimation animated fadeInUp" style="animation-delay: 0.3s;">
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-300">
                             <a href="news-detail.html" class="text-decoration-none d-block h-100">
                                 <div class="news-card-image">
                                     <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" alt="News" class="img-fluid">
@@ -215,7 +215,7 @@
 
                     <!-- Award Card 5 -->
                     <div class="col news-item" data-category="awards">
-                        <div class="news-card scrollanimation animated fadeInUp" style="animation-delay: 0.4s;">
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-400">
                             <a href="news-detail.html" class="text-decoration-none d-block h-100">
                                 <div class="news-card-image">
                                     <img src="https://images.unsplash.com/photo-1531537571171-a707bf2683da?q=80&w=800" alt="Award" class="img-fluid">
@@ -232,7 +232,7 @@
 
                     <!-- News Card 6 -->
                     <div class="col news-item" data-category="news">
-                        <div class="news-card scrollanimation animated fadeInUp" style="animation-delay: 0.5s;">
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-500">
                             <a href="news-detail.html" class="text-decoration-none d-block h-100">
                                 <div class="news-card-image">
                                     <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800" alt="News" class="img-fluid">
@@ -249,7 +249,7 @@
 
                     <!-- Movie Card 7 -->
                     <div class="col news-item" data-category="movie">
-                        <div class="news-card scrollanimation animated fadeInUp" style="animation-delay: 0.6s;">
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-600">
                             <a href="news-detail.html" class="text-decoration-none d-block h-100">
                                 <div class="news-card-image">
                                     <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800" alt="Movie" class="img-fluid">
@@ -269,7 +269,7 @@
 
                     <!-- News Card 8 -->
                     <div class="col news-item" data-category="news">
-                        <div class="news-card scrollanimation animated fadeInUp" style="animation-delay: 0.7s;">
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-700">
                             <a href="news-detail.html" class="text-decoration-none d-block h-100">
                                 <div class="news-card-image">
                                     <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800" alt="News" class="img-fluid">
@@ -286,7 +286,7 @@
 
                     <!-- Award Card 9 -->
                     <div class="col news-item" data-category="awards">
-                        <div class="news-card scrollanimation animated fadeInUp" style="animation-delay: 0.8s;">
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-800">
                             <a href="news-detail.html" class="text-decoration-none d-block h-100">
                                 <div class="news-card-image">
                                     <img src="https://images.unsplash.com/photo-1569360221831-43d2838a1c10?q=80&w=800" alt="Award" class="img-fluid">
@@ -305,7 +305,7 @@
         </div>
 
         <!-- Pagination Section -->
-        <div class="section" style="padding-top: 3rem; padding-bottom: 3rem; background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div class="section gradient-section-dark" style="padding-top: 3rem; padding-bottom: 3rem;">
             <div class="r-container">
                 <nav aria-label="Page navigation">
                     <ul class="pagination justify-content-center">
@@ -330,17 +330,14 @@
         <!-- CTA Section -->
         <div class="section position-relative overflow-hidden cta-bg02">
             <div class="r-container position-relative z-2 h-100 d-flex align-items-center">
-                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-5 px-4">
-                    <h2 class="text-center scrollanimation animated fadeIn adr-5">
-                        LTTについて、<br class="d-xl-none">もっと知りたい方へ
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-4 px-4">
+                    <h2 class="text-center scrollanimation animated fadeIn adr-5">未来の医療を<br>
+                        <span class="text-accent">共に創るパートナーへ</span>
                     </h2>
-                    <p class="text-center" style="max-width: 600px;">
-                        事業や技術、採用に関するご質問など、<br>
-                        お気軽にお問い合わせください。
-                    </p>
+                    <p>技術提携、共同研究、事業化に向けたご協業など。 <br>私たちのビジョンに共感いただける方からのご連絡をお待ちしております。</p>
                     <div class="w-max-content scrollanimation animated fadeIn adr-5 adl-1">
                         <a href="contact.html" class="btn btn-accent animated-gradient">
-                            <span>Contact</span>
+                            <span>お問い合わせフォームへ</span>
                         </a>
                     </div>
                 </div>
@@ -391,7 +388,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-xl-6">
-                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                            <div class="row row-cols-2 row-cols-md-2 g-3">
                                 <div class="col">
                                     <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
                                         <li><a href="index.html">ホーム</a></li>

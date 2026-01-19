@@ -93,24 +93,24 @@
     <!-- Main -->
     <main>
         <!-- MV Section -->
-        <div class="page-mv position-relative overflow-hidden" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+        <div class="page-mv position-relative overflow-hidden hero-flex-center">
             <!-- Background Image -->
-            <div class="position-absolute w-100 h-100" style="background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80') center/cover no-repeat; z-index: 1;"></div>
+            <div class="overlay-absolute-full hero-bg-image company-hero-bg-image"></div>
             
             <!-- Dark Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-dark"></div>
-            
+            <div class="overlay-absolute-full overlay-dark"></div>
+
             <!-- Gradient Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-gradient-accent"></div>
+            <div class="overlay-absolute-full overlay-gradient-accent"></div>
             
             <!-- Content -->
             <div class="r-container position-relative z-10">
                 <div class="text-center">
-                    <h1 class="scrollanimation animated fadeInUp mb-3" style="font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; font-weight: 800; letter-spacing: 0.02em; color: #ffffff;">
-                        <span class="d-block mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.15em; color: #dd984c; text-transform: uppercase;">Company</span>
+                    <h1 class="scrollanimation animated fadeInUp mb-3 heading-responsive-lg">
+                        <span class="d-block mb-2 heading-responsive-sm">Company</span>
                         会社概要
                     </h1>
-                    <p class="scrollanimation animated fadeInUp mx-auto mt-4" style="max-width: 680px; font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.85; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+                    <p class="scrollanimation animated fadeInUp mx-auto mt-4 text-max-width text-responsive-body">
                         研究から実装へ。LTTは、最先端レーザー技術を<br class="d-none d-md-inline">
                         人々の生活と社会課題の解決につなげる企業です。
                     </p>
@@ -119,91 +119,72 @@
         </div>
 
         <!-- Vision / Mission Section -->
-        <div class="section" style="background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div class="section gradient-section-dark">
             <div class="r-container">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            Vision / Mission
-                        </h2>
-                    </div>
-                    <p class="m-0 text-subtitle-jp">
-                        ビジョン・ミッション
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">VISION / MISSION</span>
                     </p>
+                    <h2 class="m-0 scrollanimation animated fadeInDown">ビジョン・ミッション</h2>
                 </div>
                 
-                <div class="row row-cols-1 row-cols-xl-2 g-5">
-                    <div class="col">
-                        <div class="scrollanimation animated fadeInLeft h-100">
-                            <div class="p-5 rounded-4 h-100 glass-card">
-                                <div class="mb-4" style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border-radius: 18px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fa-solid fa-eye" style="font-size: 32px; color: #dd984c;"></i>
-                                </div>
-                                <h3 class="mb-3" style="font-size: 1.5rem; font-weight: 700;">Vision</h3>
-                                <h4 class="mb-4" style="font-size: 1.35rem; line-height: 1.5; color: #dd984c; font-weight: 700;">
-                                    誰もが負担なく<br>健康を意識できる社会をつくる
-                                </h4>
-                                <p class="m-0" style="font-size: 1.05rem; line-height: 1.85; color: rgba(255, 255, 255, 0.85);">
-                                    技術の進歩が、一部の専門領域にとどまるのではなく、日常の中で自然に役立つ未来を目指しています。
-                                </p>
-                            </div>
+                <div class="vision-mission-stack">
+                    <article class="vision-mission-card vision-card scrollanimation animated fadeInUp" data-label="Vision">
+                        <div class="vision-mission-header">
+                            <span class="vision-mission-kicker">Vision</span>
                         </div>
-                    </div>
+                        <h3 class="vision-mission-title">
+                            すべての人に、<br class="pc-hidden">痛みのない健康管理を。
+                        </h3>
+                        <p class="vision-mission-lead">
+                            テクノロジーの力で、健康管理を「特別なこと」から「当たり前の習慣」へ。<br>誰もが痛みなく、安心して生きられる社会を目指します。
+                        </p>
+                    </article>
                     
-                    <div class="col">
-                        <div class="scrollanimation animated fadeInRight h-100">
-                            <div class="p-5 rounded-4 h-100 glass-card">
-                                <div class="mb-4" style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border-radius: 18px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fa-solid fa-rocket" style="font-size: 32px; color: #dd984c;"></i>
-                                </div>
-                                <h3 class="mb-3" style="font-size: 1.5rem; font-weight: 700;">Mission</h3>
-                                <h4 class="mb-4" style="font-size: 1.35rem; line-height: 1.5; color: #dd984c; font-weight: 700;">
-                                    光技術で「測る」を変え、<br>医療と産業の可能性を広げる
-                                </h4>
-                                <p class="m-0" style="font-size: 1.05rem; line-height: 1.85; color: rgba(255, 255, 255, 0.85);">
-                                    非侵襲・非接触というアプローチを通じて、医療・ヘルスケア、産業・環境分野における新しい価値の創出に取り組みます。
-                                </p>
-                            </div>
+                    <article class="vision-mission-card mission-card scrollanimation animated fadeInUp" data-label="Mission">
+                        <div class="vision-mission-header">
+                            <span class="vision-mission-kicker">Mission</span>
                         </div>
-                    </div>
+                        <h3 class="vision-mission-title">
+                            非侵襲センサー技術で、<br>医療と日常の境界をなくす。
+                        </h3>
+                        <p class="vision-mission-lead">
+                            先進の光学センシング技術を活かし、採血に頼らない血糖測定を実用化・普及させることで、医療と日常の境界をなくしていきます。
+                        </p>
+                    </article>
                 </div>
             </div>
         </div>
 
         <!-- Our Origin Section -->
-        <div class="section position-relative overflow-hidden section-bg-gradient-reverse">
-            <div class="position-absolute" style="top: 20%; left: 10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(221, 152, 76, 0.06), transparent 70%); border-radius: 50%; filter: blur(100px);"></div>
+        <div class="section position-relative overflow-hidden section-bg-gradient-reverse our-origin-section">
+            <div class="position-absolute gradient-blur-decoration blur-heavy"></div>
             
             <div class="r-container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-10">
-                        <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                            <div class="mb-3">
-                                <h2 class="m-0 text-gradient-title">
-                                    Our Origin
-                                </h2>
-                            </div>
-                            <p class="m-0 text-subtitle-jp">
-                                創業の背景
+                        <div class="d-flex flex-column gap-2 text-center mb-5">
+                            <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                                <span class="text-accent">OUR ORIGIN</span>
                             </p>
+                            <h2 class="m-0 scrollanimation animated fadeInDown">創業の背景</h2>
                         </div>
                         
-                        <div class="scrollanimation animated fadeInUp text-center" style="animation-delay: 0.2s;">
-                            <h3 class="mb-4" style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; line-height: 1.4; color: rgba(255, 255, 255, 0.95);">
-                                研究から生まれた技術を、<span class="text-accent-color">社会へ</span>
+                        <div class="scrollanimation animated fadeInUp text-center animation-delay-200">
+                            <h3 class="mb-4 heading-responsive-xl text-accent-color">
+                                研究成果を、<br class="pc-hidden">社会で使われる技術へ
                             </h3>
-                            
-                            <div class="mx-auto" style="max-width: 800px;">
-                                <p class="mb-4" style="font-size: 1.15rem; line-height: 2; color: rgba(255, 255, 255, 0.9);">
-                                    LTTは、量子科学技術研究開発機構（QST）で培われたレーザー・光学技術を基盤として誕生しました。
+
+                            <div class="mx-auto company-origin-max-width">
+                                <p class="mb-4 section-lead text-light">
+                                    LTTは、量子科学技術研究開発機構（QST）における<br class="sm-hidden">レーザー・光学技術の研究成果を基盤として誕生しました。
                                 </p>
-                                
-                                <p class="mb-4" style="font-size: 1.15rem; line-height: 2; color: rgba(255, 255, 255, 0.9);">
-                                    研究の現場で生まれた高い技術力を、論文や実験に留めるのではなく、社会で実際に使われる技術へと昇華させること。
+                                <p class="mb-4 section-lead text-light">
+                                    非侵襲で生体情報を測定するという難易度の高い技術課題に、<br class="sm-hidden">長年にわたり向き合ってきました。
                                 </p>
-                                
-                                <p class="m-0" style="font-size: 1.15rem; line-height: 2; color: rgba(255, 255, 255, 0.9);">
-                                    その想いから、LTTは研究と実装の橋渡しを担う存在として、事業活動を行っています。
+
+                                <p class="m-0 section-lead text-light">
+                                    研究成果を社会で使われる技術へとつなげることが、私たちの原点です。
                                 </p>
                             </div>
                         </div>
@@ -215,44 +196,43 @@
         <!-- Top Message Section -->
         <div class="section section-bg-gradient-center">
             <div class="r-container">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            Top Message
-                        </h2>
-                    </div>
-                    <p class="m-0 text-subtitle-jp">
-                        代表メッセージ
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">TOP MESSAGE</span>
                     </p>
+                    <h2 class="m-0 scrollanimation animated fadeInDown">代表メッセージ</h2>
                 </div>
                 
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-10">
-                        <div class="scrollanimation animated fadeInUp p-5 rounded-4 glass-card">
+                        <div class="scrollanimation animated fadeInUp p-4 rounded-4 glass-card">
                             <div class="row row-cols-1 row-cols-xl-2 g-5 align-items-center">
                                 <div class="col">
                                     <div class="position-relative img-rounded-cover">
-                                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" alt="CEO" class="img-fluid img-full-cover">
-                                        <div class="position-absolute bottom-0 start-0 end-0 p-4 overlay-gradient-bottom">
-                                            <p class="m-0 text-small-muted">代表取締役</p>
-                                            <p class="m-0 text-name-large">〇〇〇〇</p>
-                                        </div>
+                                        <img src="image/blog.jpg" alt="CEO" class="img-fluid img-full-cover">
                                     </div>
                                 </div>
                                 
                                 <div class="col">
                                     <div class="text-body-large">
+                                        <p class="mb-3 text-lead fw-bold">
+                                            テキストが入ります。テキストが入ります。
+                                        </p>
                                         <p class="mb-4">
-                                            私たちは、長年レーザー技術の研究・開発に携わってきました。その中で常に感じていたのは、「優れた技術ほど、社会に届いていない」という現実です。
+                                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                                         </p>
                                         
                                         <p class="mb-4">
-                                            医療や産業の現場には、まだ解決されていない課題が数多く存在します。LTTは、光技術の可能性を信じ、実際に役立つ形で社会に届けることを使命としています。
+                                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                                         </p>
                                         
-                                        <p class="m-0">
-                                            小さな一歩であっても、確かな技術で未来を変えていく。それが、私たちLTTの目指す姿です。
+                                        <p class="mb-4">
+                                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                                         </p>
+                                        <div>
+                                            <p class="m-0 text-small-muted">代表取締役</p>
+                                            <p class="m-0 text-name-large">山川 孝一</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -264,55 +244,45 @@
 
         <!-- Company Profile Section -->
         <div class="section position-relative overflow-hidden section-bg-gradient-reverse">
-            <div class="position-absolute w-100 h-100 section-pattern-diagonal" style="top: 0; left: 0;"></div>
+            <div class="overlay-absolute-full section-pattern-diagonal"></div>
             
             <div class="r-container position-relative">
-                <div class="text-center mb-5 scrollanimation animated fadeInUp">
-                    <div class="mb-3">
-                        <h2 class="m-0 text-gradient-title">
-                            Company Profile
-                        </h2>
-                    </div>
-                    <p class="m-0 text-subtitle-jp">
-                        会社情報
+                <div class="d-flex flex-column gap-2 text-center mb-5">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">COMPANY PROFILE</span>
                     </p>
+                    <h2 class="m-0 scrollanimation animated fadeInDown">会社情報</h2>
                 </div>
                 
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-10">
-                        <div class="scrollanimation animated fadeInUp p-5 rounded-4 glass-card">
+                        <div class="scrollanimation animated fadeInUp p-4 rounded-4 glass-card">
                             <div class="company-info-table">
                                 <div class="info-row">
                                     <div class="info-label">会社名</div>
                                     <div class="info-value">Light Touch Technology株式会社</div>
                                 </div>
                                 <div class="info-row">
-                                    <div class="info-label">英文社名</div>
-                                    <div class="info-value">Light Touch Technology, Inc.</div>
-                                </div>
-                                <div class="info-row">
                                     <div class="info-label">設立</div>
-                                    <div class="info-value">〇年〇月</div>
+                                    <div class="info-value">2017年7月10日</div>
                                 </div>
                                 <div class="info-row">
-                                    <div class="info-label">代表者</div>
-                                    <div class="info-value">代表取締役 〇〇〇〇</div>
+                                    <div class="info-label">代表取締役</div>
+                                    <div class="info-value">山川 孝一</div>
                                 </div>
                                 <div class="info-row">
-                                    <div class="info-label">所在地</div>
-                                    <div class="info-value">〇〇県〇〇市〇〇</div>
+                                    <div class="info-label">資本金</div>
+                                    <div class="info-value">3千万円</div>
                                 </div>
                                 <div class="info-row">
                                     <div class="info-label">事業内容</div>
                                     <div class="info-value">
-                                        ・非侵襲型血糖値センサーの研究・開発<br>
-                                        ・レーザー・光学技術を用いたセンシング技術開発<br>
-                                        ・受託研究・共同研究
+                                        採血のいらない非侵襲血糖値センサーの開発・製造販売​受託研究
                                     </div>
                                 </div>
                                 <div class="info-row">
-                                    <div class="info-label">関連機関</div>
-                                    <div class="info-value">量子科学技術研究開発機構（QST）</div>
+                                    <div class="info-label">主要取引銀行</div>
+                                    <div class="info-value">三井住友銀行<br>紀陽銀行​<br>大阪信用金庫</div>
                                 </div>
                             </div>
                         </div>
@@ -322,78 +292,72 @@
         </div>
 
         <!-- Media / Awards Section -->
-        <div class="section" style="background: linear-gradient(180deg, rgba(11, 15, 20, 1) 0%, rgba(16, 20, 28, 1) 100%);">
+        <div class="section gradient-section-dark">
             <div class="r-container">
                 <div class="text-center mb-5">
-                    <span class="scrollanimation animated fadeInDown px-3 py-2 rounded-pill badge-accent">
-                        <i class="fa-solid fa-trophy me-2"></i>MEDIA / AWARDS
-                    </span>
-                    <h2 class="mt-4 mb-3" style="font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 700;">実績と評価</h2>
-                    <p class="mx-auto" style="max-width: 600px; font-size: 1.05rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
+                        <span class="text-accent">MEDIA / AWARDS</span>
+                    </p>
+                    <h2 class="m-0 mt-3 scrollanimation animated fadeInDown">実績と評価</h2>
+                    <p class="mx-auto mt-3 text-max-width-md feature-text text-lighter">
                         LTTの技術と取り組みは、さまざまな分野で評価をいただいています。
                     </p>
                 </div>
                 
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
                     <div class="col">
-                        <div class="scrollanimation animated fadeInUp p-4 rounded-4 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03)); border: 1px solid rgba(221, 152, 76, 0.2);">
-                            <div class="d-flex align-items-start gap-3">
-                                <div style="width: 50px; height: 50px; flex-shrink: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fa-solid fa-award" style="font-size: 22px; color: #dd984c;"></i>
+                        <div class="news-card scrollanimation animated fadeInUp">
+                            <a href="news-detail.html" class="text-decoration-none d-block h-100">
+                                <div class="news-card-image">
+                                    <img src="image/blog.jpg" alt="Awards" class="img-fluid">
+                                    <div class="news-category news-category-awards">Awards</div>
                                 </div>
-                                <div>
-                                    <h5 class="mb-2" style="font-weight: 700; font-size: 1.1rem;">NEDO 支援事業 採択</h5>
-                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7);">国立研究開発法人 新エネルギー・産業技術総合開発機構</p>
+                                <div class="news-card-content">
+                                    <div class="news-date">2025.01.10</div>
+                                    <h3 class="news-title">タイトルが入ります。タイトル</h3>
+                                    <p class="news-excerpt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     
                     <div class="col">
-                        <div class="scrollanimation animated fadeInUp p-4 rounded-4 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03)); border: 1px solid rgba(221, 152, 76, 0.2); animation-delay: 0.1s;">
-                            <div class="d-flex align-items-start gap-3">
-                                <div style="width: 50px; height: 50px; flex-shrink: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fa-solid fa-star" style="font-size: 22px; color: #dd984c;"></i>
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-100">
+                            <a href="news-detail.html" class="text-decoration-none d-block h-100">
+                                <div class="news-card-image">
+                                    <img src="image/blog.jpg" alt="Media" class="img-fluid">
+                                    <div class="news-category news-category-news">Media</div>
                                 </div>
-                                <div>
-                                    <h5 class="mb-2" style="font-weight: 700; font-size: 1.1rem;">技術系アワード 受賞</h5>
-                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7);">光技術・センシング分野における技術革新</p>
+                                <div class="news-card-content">
+                                    <div class="news-date">2024.11.20</div>
+                                    <h3 class="news-title">タイトルが入ります。タイトル</h3>
+                                    <p class="news-excerpt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     
                     <div class="col">
-                        <div class="scrollanimation animated fadeInUp p-4 rounded-4 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03)); border: 1px solid rgba(221, 152, 76, 0.2); animation-delay: 0.2s;">
-                            <div class="d-flex align-items-start gap-3">
-                                <div style="width: 50px; height: 50px; flex-shrink: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fa-solid fa-newspaper" style="font-size: 22px; color: #dd984c;"></i>
+                        <div class="news-card scrollanimation animated fadeInUp animation-delay-200">
+                            <a href="news-detail.html" class="text-decoration-none d-block h-100">
+                                <div class="news-card-image">
+                                    <img src="image/blog.jpg" alt="Awards" class="img-fluid">
+                                    <div class="news-category news-category-awards">Awards</div>
                                 </div>
-                                <div>
-                                    <h5 class="mb-2" style="font-weight: 700; font-size: 1.1rem;">医療・ヘルスケア分野メディア掲載</h5>
-                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7);">非侵襲型血糖値測定技術への注目</p>
+                                <div class="news-card-content">
+                                    <div class="news-date">2024.12.15</div>
+                                    <h3 class="news-title">タイトルが入ります。タイトル</h3>
+                                    <p class="news-excerpt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="scrollanimation animated fadeInUp p-4 rounded-4 h-100" style="background: linear-gradient(135deg, rgba(221, 152, 76, 0.08), rgba(221, 152, 76, 0.03)); border: 1px solid rgba(221, 152, 76, 0.2); animation-delay: 0.3s;">
-                            <div class="d-flex align-items-start gap-3">
-                                <div style="width: 50px; height: 50px; flex-shrink: 0; background: linear-gradient(135deg, rgba(221, 152, 76, 0.2), rgba(221, 152, 76, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fa-solid fa-microphone" style="font-size: 22px; color: #dd984c;"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-2" style="font-weight: 700; font-size: 1.1rem;">スタートアップ関連イベント 登壇</h5>
-                                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.7);">技術系スタートアップとしての取り組み</p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="text-center mt-5">
-                    <p class="m-0" style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.6);">※詳細は今後順次追加予定</p>
+                    <a href="news.html" class="btn btn-accent animated-gradient btn-accent-alt">
+                        <span>最新の情報を見る</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -401,17 +365,14 @@
         <!-- CTA Section -->
         <div class="section position-relative overflow-hidden cta-bg02">
             <div class="r-container position-relative z-2 h-100 d-flex align-items-center">
-                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-5 px-4">
-                    <h2 class="text-center scrollanimation animated fadeIn adr-5">
-                        LTTについて、<br class="d-xl-none">もっと知りたい方へ
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-4 px-4">
+                    <h2 class="text-center scrollanimation animated fadeIn adr-5">未来の医療を<br>
+                        <span class="text-accent">共に創るパートナーへ</span>
                     </h2>
-                    <p class="text-center" style="max-width: 600px;">
-                        事業や技術、採用に関するご質問など、<br>
-                        お気軽にお問い合わせください。
-                    </p>
+                    <p>技術提携、共同研究、事業化に向けたご協業など。 <br>私たちのビジョンに共感いただける方からのご連絡をお待ちしております。</p>
                     <div class="w-max-content scrollanimation animated fadeIn adr-5 adl-1">
                         <a href="contact.html" class="btn btn-accent animated-gradient">
-                            <span>Contact</span>
+                            <span>お問い合わせフォームへ</span>
                         </a>
                     </div>
                 </div>
@@ -462,7 +423,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-xl-6">
-                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                            <div class="row row-cols-2 row-cols-md-2 g-3">
                                 <div class="col">
                                     <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
                                         <li><a href="index.html">ホーム</a></li>
