@@ -92,58 +92,34 @@
 
     <!-- Main -->
     <main>
-        <!-- MV Section -->
-        <div class="page-mv position-relative overflow-hidden hero-flex-center">
-            <!-- Background Image -->
-            <div class="overlay-absolute-full hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80');"></div>
-
-            <!-- Dark Overlay -->
-            <div class="overlay-absolute-full dark-overlay"></div>
-            
-            <!-- Gradient Overlay -->
-            <div class="position-absolute w-100 h-100 overlay-gradient-accent"></div>
-            
-            <!-- Content -->
-            <div class="r-container position-relative z-10">
-                <div class="text-center">
-                    <!-- Breadcrumb -->
-                    <div class="scrollanimation animated fadeInDown mb-4">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb justify-content-center mb-0" style="font-size: 14px;">
-                                <li class="breadcrumb-item"><a href="index.html" class="text-light" style="text-decoration: none;">ホーム</a></li>
-                                <li class="breadcrumb-item"><a href="news.html" class="text-light" style="text-decoration: none;">お知らせ</a></li>
-                                <li class="breadcrumb-item active" aria-current="page" class="text-accent-color">記事詳細</li>
-                            </ol>
-                        </nav>
-                    </div>
-                    
-                    <h1 class="scrollanimation animated fadeInUp mb-3 heading-responsive-lg">
-                        <span class="d-block mb-2 heading-responsive-sm">News Detail</span>
-                        ニュース詳細
-                    </h1>
-                    <p class="scrollanimation animated fadeInUp mx-auto mt-4 text-max-width text-responsive-body">
-                        非侵襲型血糖値センサーの最新開発状況について
-                    </p>
-                </div>
-            </div>
-        </div>
-
         <!-- Content Section -->
-        <div class="section section-bg-gradient-dark">
+        <div class="section section-bg-gradient-dark news-detail-content-section">
             <div class="r-container">
+                <div class="text-start mb-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-start mb-0 news-detail-breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-light news-detail-breadcrumb-link">ホーム</a></li>
+                            <li class="breadcrumb-item"><a href="news.html" class="text-light news-detail-breadcrumb-link">お知らせ</a></li>
+                            <li class="breadcrumb-item active text-accent-color" aria-current="page">記事詳細</li>
+                        </ol>
+                    </nav>
+                </div>
                 <div class="row g-5">
                     <!-- Main Content -->
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-md-8">
                         <article class="news-detail-content">
+                            <h1 class="mb-4">
+                                お知らせのタイトルが入ります。お知らせのお知らせのタイトルが入ります。お知らせのお知らせのタイトルが入ります。お知らせの
+                            </h1>
                             <!-- Featured Image -->
-                            <div class="scrollanimation animated fadeInUp mb-5">
-                                <div class="position-relative shadow-lg" style="border-radius: 16px; overflow: hidden;">
-                                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200" alt="Featured Image" class="img-fluid responsive-image">
+                            <div class="mb-5">
+                                <div class="position-relative shadow-lg news-detail-media">
+                                    <img src="image/blog.jpg" alt="Featured Image" class="img-fluid responsive-image">
                                 </div>
                             </div>
 
                             <!-- Content -->
-                            <div class="scrollanimation animated fadeInUp">
+                            <div>
                                 <p class="lead-text">当社が開発を進めている非侵襲型血糖値センサーについて、最新の開発状況と今後の展望をお知らせいたします。これまでの研究成果を踏まえ、実用化に向けた重要なマイルストーンを達成することができました。</p>
 
                                 <h2>開発の背景と目的</h2>
@@ -215,7 +191,7 @@
                             </div>
 
                             <!-- Tags -->
-                            <div class="scrollanimation animated fadeInUp mt-5">
+                            <div class="mt-5">
                                 <div class="d-flex flex-wrap gap-2">
                                     <span class="badge-tag">非侵襲型センサー</span>
                                     <span class="badge-tag">血糖値測定</span>
@@ -224,66 +200,51 @@
                                     <span class="badge-tag">技術革新</span>
                                 </div>
                             </div>
-
-                            <!-- Share Buttons -->
-                            <div class="scrollanimation animated fadeInUp mt-5">
-                                <div class="share-buttons">
-                                    <h5 class="mb-3 text-lighter" style="font-size: 1rem;">この記事をシェア</h5>
-                                    <div class="d-flex gap-3">
-                                        <a href="#" class="share-btn" title="X（Twitter）でシェア">
-                                            <i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                        <a href="#" class="share-btn" title="Facebookでシェア">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a href="#" class="share-btn" title="LinkedInでシェア">
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                        <a href="#" class="share-btn" title="リンクをコピー">
-                                            <i class="fa-solid fa-link"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                         </article>
                     </div>
 
                     <!-- Sidebar -->
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-md-4">
                         <aside class="news-sidebar">
                             <!-- Latest News -->
-                            <div class="sidebar-widget scrollanimation animated fadeInUp">
+                            <div class="sidebar-widget">
                                 <h3 class="widget-title">最新の記事</h3>
                                 <div class="latest-news-list">
                                     <a href="news-detail.html" class="latest-news-item">
                                         <div class="latest-news-image">
-                                            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=400" alt="News">
-                                            <div class="news-category news-category-awards">Awards</div>
+                                            <img src="image/blog.jpg" alt="News">
                                         </div>
                                         <div class="latest-news-content">
-                                            <div class="latest-news-date">2025.01.10</div>
+                                            <div class="latest-news-meta">
+                                                <span class="news-category news-category-awards">Awards</span>
+                                                <span class="latest-news-date">2025.01.10</span>
+                                            </div>
                                             <h4 class="latest-news-title">NEDO支援事業に採択されました</h4>
                                         </div>
                                     </a>
                                     
                                     <a href="news-detail.html" class="latest-news-item">
                                         <div class="latest-news-image">
-                                            <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?q=80&w=400" alt="News">
-                                            <div class="news-category news-category-movie">Movie</div>
+                                            <img src="image/blog.jpg" alt="News">
                                         </div>
                                         <div class="latest-news-content">
-                                            <div class="latest-news-date">2025.01.08</div>
+                                            <div class="latest-news-meta">
+                                                <span class="news-category news-category-movie">Movie</span>
+                                                <span class="latest-news-date">2025.01.08</span>
+                                            </div>
                                             <h4 class="latest-news-title">LTT技術紹介ムービー公開</h4>
                                         </div>
                                     </a>
                                     
                                     <a href="news-detail.html" class="latest-news-item">
                                         <div class="latest-news-image">
-                                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=400" alt="News">
-                                            <div class="news-category news-category-news">News</div>
+                                            <img src="image/blog.jpg" alt="News">
                                         </div>
                                         <div class="latest-news-content">
-                                            <div class="latest-news-date">2024.12.20</div>
+                                            <div class="latest-news-meta">
+                                                <span class="news-category news-category-news">News</span>
+                                                <span class="latest-news-date">2024.12.20</span>
+                                            </div>
                                             <h4 class="latest-news-title">年末年始の営業日のお知らせ</h4>
                                         </div>
                                     </a>
@@ -291,7 +252,7 @@
                             </div>
 
                             <!-- Categories -->
-                            <div class="sidebar-widget scrollanimation animated fadeInUp animation-delay-100">
+                            <div class="sidebar-widget">
                                 <h3 class="widget-title">カテゴリー</h3>
                                 <ul class="category-list">
                                     <li>
@@ -316,22 +277,9 @@
                             </div>
 
                             <!-- Recruit Banner -->
-                            <div class="sidebar-widget scrollanimation animated fadeInUp animation-delay-200">
-                                <a href="recruit.html" class="recruit-banner">
-                                    <div class="recruit-banner-content">
-                                        <div class="recruit-icon">
-                                            <i class="fa-solid fa-users"></i>
-                                        </div>
-                                        <h3>採用情報</h3>
-                                        <p>LTTで一緒に働きませんか？</p>
-                                        <div class="recruit-btn">
-                                            <span>詳しく見る</span>
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                    <div class="recruit-banner-bg"></div>
-                                </a>
-                            </div>
+                            <a href="recruit.html" class="d-block">
+                                <img src="image/ban01.jpg" alt="採用情報" class="img-fluid recruit-banner-image">
+                            </a>
                         </aside>
                     </div>
                 </div>
@@ -342,11 +290,11 @@
         <div class="section position-relative overflow-hidden cta-bg02">
             <div class="r-container position-relative z-2 h-100 d-flex align-items-center">
                 <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto cta-panel rounded-3 py-4 px-4">
-                    <h2 class="text-center scrollanimation animated fadeIn adr-5">未来の医療を<br>
+                    <h2 class="text-center">未来の医療を<br>
                         <span class="text-accent">共に創るパートナーへ</span>
                     </h2>
                     <p>技術提携、共同研究、事業化に向けたご協業など。 <br>私たちのビジョンに共感いただける方からのご連絡をお待ちしております。</p>
-                    <div class="w-max-content scrollanimation animated fadeIn adr-5 adl-1">
+                    <div class="w-max-content">
                         <a href="contact.html" class="btn btn-accent animated-gradient">
                             <span>お問い合わせフォームへ</span>
                         </a>

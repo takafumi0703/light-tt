@@ -162,4 +162,13 @@ $(function () {
         },
     });
 
+    // Product Gallery - CSS Animation based infinite loop
+    var $gallery = $('.swiperProductGallery .swiper-wrapper');
+    if ($gallery.length) {
+        // Clone slides for seamless loop
+        var $slides = $gallery.children('.swiper-slide');
+        $slides.clone().appendTo($gallery);
+        $slides.clone().appendTo($gallery);
+    }
+
 });
