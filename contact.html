@@ -3,78 +3,87 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ | Light Touch Technology</title>
-    <link rel="icon" type="image/png" href="image/ltt-fav.png">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="icon" type="image/png" href="image/ltt-fav.png">
+    <title>お問い合わせ | Light Touch Technology</title>
 </head>
 
 <body>
     <!-- Header -->
-    <div class="header-top-fixed">
-        <nav class="navbar navbar-expand-xl navbar-light position-relative">
-            <div class="r-container">
-                <div class="row w-100 align-items-center justify-content-between mx-0">
-                    <div class="col-auto ps-0">
-                        <a class="navbar-brand mb-2 mb-xl-0" href="index.html">
-                            <img src="image/logo.png" alt="Light Touch Technology" class="logo" width="200">
-                        </a>
-                    </div>
-                    <div class="col-auto d-block d-xl-none order-xl-2 pe-0">
-                        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#navbar-collapse-1" aria-controls="navbar-collapse-1"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="col-12 col-xl-auto p-0 order-xl-1">
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbar-collapse-1"
-                            aria-labelledby="navbar-collapse-1-label">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="navbar-collapse-1-label">メニュー</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav navbar-nav-collapse justify-content-center gap-1 gap-xl-3 text-lg-start text-xl-center">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html">ホーム</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="company.html">会社概要</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="service.html">事業内容</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="product.html">プロダクト</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="news.html">お知らせ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="recruit.html">採用</a>
-                                    </li>
-                                </ul>
-                                <div class="w-max-content mt-3 mt-xl-0 d-block d-xl-none">
-                                    <a href="contact.html" class="btn btn-accent animated-gradient w-100">
-                                        <span>お問い合わせ</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto d-none d-xl-block order-xl-2 pe-0">
-                        <a href="contact.html" class="btn btn-accent animated-gradient">
+    <div id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-xl mx-xl-5 mx-3">
+            <div class="container-fluid">
+                <div class="logo-container">
+                    <a class="navbar-brand" href="index.html">
+                        <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 203.96 126" viewBox="0 0 203.96 126" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"><defs><style>#comp-kdb9v6zu svg [data-color="1"] {fill: #FFFFFF;}</style></defs>
+                            <g>
+                                <path d="M1.72 120.77h6.69v1.39H0v-12.85h1.72v11.46z" fill="#dd984c" data-color="1"></path>
+                                <path d="M9.87 109.31h1.59v1.52H9.87v-1.52zm1.59 3.58v9.27H9.87v-9.27h1.59z" fill="#dd984c" data-color="1"></path>
+                                <path d="M20.2 121.3v-1.06c-.62 1.28-1.61 1.92-2.98 1.92-1.06 0-1.95-.42-2.65-1.26-.75-.88-1.13-2.03-1.13-3.44 0-1.55.35-2.74 1.06-3.58.75-.79 1.68-1.19 2.78-1.19.57 0 1.13.11 1.66.33.4.22.82.69 1.26 1.39v-1.52h1.59v7.62c0 1.94-.22 3.2-.66 3.77-.79 1.15-2.01 1.72-3.64 1.72-1.24 0-2.19-.26-2.85-.79-.71-.44-1.06-1.06-1.06-1.85h1.59c0 .44.15.79.46 1.06.44.31 1.06.46 1.85.46 1.06 0 1.81-.35 2.25-1.06.31-.45.47-1.29.47-2.52zm0-4.04c0-1.02-.24-1.83-.73-2.45-.53-.57-1.15-.86-1.85-.86-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65 0 1.15.24 2.03.73 2.65.44.57 1.06.86 1.85.86.7 0 1.32-.33 1.85-.99.48-.63.73-1.53.73-2.72z" fill="#dd984c" data-color="1"></path>
+                                <path d="M25.93 117.59v4.57h-1.59v-13.38h1.59v5.76c.71-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.35-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                <path d="M40.07 120.83v1.32a5.7 5.7 0 01-1.72.26c-1.01 0-1.74-.29-2.19-.86-.53-.53-.79-1.39-.79-2.58v-4.77h-1.59v-1.32h1.59v-2.19h1.52v2.19h2.72v1.32h-2.72v4.3c0 1.1.16 1.81.46 2.12.26.35.71.53 1.32.53.19.02.65-.09 1.4-.32z" fill="#dd984c" data-color="1"></path>
+                                <path d="M59.91 110.64h-4.3v11.52h-1.66v-11.52h-4.37v-1.32h10.33v1.32z" fill="#dd984c" data-color="1"></path>
+                                <path d="M65.42 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58s-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                <path d="M77.76 117.46v-4.57h1.52v9.27h-1.52v-1.59c-.84 1.24-1.83 1.85-2.98 1.85-.79 0-1.5-.24-2.12-.73-.66-.49-.99-1.46-.99-2.91v-5.89h1.59v5.23c0 1.24.2 2.03.6 2.38.35.35.77.53 1.26.53.7 0 1.32-.31 1.85-.93.52-.61.79-1.49.79-2.64z" fill="#dd984c" data-color="1"></path>
+                                <path d="M87.58 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.52.79-2.58.79-1.37 0-2.41-.42-3.11-1.26-.75-.88-1.13-2.1-1.13-3.64s.37-2.76 1.13-3.64c.75-.79 1.79-1.19 3.11-1.19 1.19 0 2.1.31 2.72.93.53.44.79.99.79 1.66h-1.52c0-.4-.16-.73-.46-.99-.35-.22-.84-.33-1.46-.33-.84 0-1.48.29-1.92.86-.53.57-.79 1.48-.79 2.72 0 1.19.26 2.1.79 2.72.49.62 1.13.93 1.92.93.66 0 1.15-.13 1.46-.4s.46-.61.46-1.01z" fill="#dd984c" data-color="1"></path>
+                                <path d="M93.04 117.59v4.57h-1.59v-13.38h1.59v5.76c.7-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.36-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                <path d="M119.04 110.64h-4.3v11.52h-1.66v-11.52h-4.37v-1.32h10.33v1.32z" fill="#dd984c" data-color="1"></path>
+                                <path d="M126.16 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.57.79-2.72.79-1.32 0-2.38-.44-3.18-1.32s-1.19-2.05-1.19-3.51c0-1.55.42-2.74 1.26-3.58.79-.88 1.81-1.32 3.05-1.32 1.15 0 2.07.35 2.78 1.06.66.71.99 1.85.99 3.44v.53h-6.56c0 1.1.29 1.94.86 2.52.53.62 1.24.93 2.12.93.66 0 1.15-.16 1.46-.46.37-.26.54-.57.54-.93zm-4.9-3.17h4.97v-.2c0-.44-.09-.84-.26-1.19-.22-.44-.51-.75-.86-.93-.35-.22-.77-.33-1.26-.33-.62 0-1.15.22-1.59.66-.45.44-.78 1.1-1 1.99z" fill="#dd984c" data-color="1"></path>
+                                <path d="M135.89 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.52.79-2.58.79-1.37 0-2.41-.42-3.11-1.26-.75-.88-1.13-2.1-1.13-3.64s.37-2.76 1.13-3.64c.75-.79 1.79-1.19 3.11-1.19 1.19 0 2.1.31 2.72.93.53.44.79.99.79 1.66h-1.52c0-.4-.16-.73-.46-.99-.35-.22-.84-.33-1.46-.33-.84 0-1.48.29-1.92.86-.53.57-.79 1.48-.79 2.72 0 1.19.26 2.1.79 2.72.48.62 1.13.93 1.92.93.66 0 1.15-.13 1.46-.4.3-.28.46-.61.46-1.01z" fill="#dd984c" data-color="1"></path>
+                                <path d="M141.18 117.59v4.57h-1.59v-13.38h1.59v5.76c.71-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.35-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                <path d="M151.3 117.59v4.57h-1.59v-9.27h1.59v1.66c.7-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.36-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65z" fill="#dd984c" data-color="1"></path>
+                                <path d="M163.81 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58-.79.88-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                <path d="M170.35 122.16v-13.38h1.59v13.38h-1.59z" fill="#dd984c" data-color="1"></path>
+                                <path d="M178.55 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58-.79.88-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                <path d="M191.46 121.3v-1.06c-.62 1.28-1.61 1.92-2.98 1.92-1.06 0-1.94-.42-2.65-1.26-.75-.88-1.13-2.03-1.13-3.44 0-1.55.35-2.74 1.06-3.58.75-.79 1.68-1.19 2.78-1.19.57 0 1.13.11 1.66.33.4.22.82.69 1.26 1.39v-1.52h1.59v7.62c0 1.94-.22 3.2-.66 3.77-.79 1.15-2.01 1.72-3.64 1.72-1.24 0-2.19-.26-2.85-.79-.71-.44-1.06-1.06-1.06-1.85h1.59c0 .44.16.79.46 1.06.44.31 1.06.46 1.85.46 1.06 0 1.81-.35 2.25-1.06.31-.45.47-1.29.47-2.52zm0-4.04c0-1.02-.24-1.83-.73-2.45-.53-.57-1.15-.86-1.85-.86-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65 0 1.15.24 2.03.73 2.65.44.57 1.06.86 1.85.86.71 0 1.32-.33 1.85-.99.48-.63.73-1.53.73-2.72z" fill="#dd984c" data-color="1"></path>
+                                <path d="M198.53 122.09l.2-.33-3.97-8.87h1.72l3.05 6.89 2.91-6.89h1.52l-3.84 9.27c-.53 1.1-.93 1.85-1.19 2.25-.31.4-.66.73-1.06.99-.57.22-1.17.33-1.79.33h-1.19v-1.26h.93c.66 0 1.24-.18 1.72-.53.22-.21.55-.83.99-1.85z" fill="#dd984c" data-color="1"></path>
+                                <path d="M126.27.06H75.79c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h18.95c1.48 0 2.25.87 1.48 1.32-1.91 1.11-2.72 3.01-2.72 5.17 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.13-3.75 5.64 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.19-.83-4.11-2.8-5.21-.76-.43 0-1.27 1.48-1.27h18.61c5.29 0 7.31-2.79 7.31-6.23 0-3.45-2.02-6.24-7.31-6.24z" fill="#dd984c" data-color="1"></path>
+                                <path d="M196.15.06h-50.48c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h18.95c1.48 0 2.25.87 1.48 1.32-1.91 1.11-2.72 3.01-2.72 5.17 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.13-3.75 5.64 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.19-.83-4.11-2.8-5.21-.76-.43 0-1.27 1.48-1.27h18.61c5.29 0 7.31-2.79 7.31-6.23 0-3.45-2.02-6.24-7.31-6.24z" fill="#dd984c" data-color="1"></path>
+                                <path d="M55.76 74.27H23.89c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h31.87c5.29 0 7.31-2.79 7.31-6.23 0-3.44-2.02-6.23-7.31-6.23z" fill="#dd984c" data-color="1"></path>
+                                <path d="M19.68 18.59c0-2.51-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63 0-3.44-2.02-6.23-7.31-6.23h-.86C6.22 0 4.2 2.79 4.2 6.23c0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.99-3.71 3.13-3.71 5.63 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.51-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.63-.99 3.73-3.13 3.73-5.64z" fill="#dd984c" data-color="1"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered accent-color"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-xl-auto ms-auto mb-2 mb-xl-0 gap-xl-3 gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ホーム</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="company.html">会社概要</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">事業内容</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">プロダクト</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">お知らせ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recruit.html">採用</a>
+                        </li>
+                    </ul>
+                    <div class="w-max-content mt-3 mt-xl-0 d-block d-xl-none">
+                        <a href="contact.html" class="btn btn-accent animated-gradient w-100">
                             <span>お問い合わせ</span>
                         </a>
                     </div>
+                </div>
+                <div class="w-max-content d-none d-xl-block">
+                    <a href="contact.html" class="btn btn-accent animated-gradient">
+                        <span>お問い合わせ</span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -86,16 +95,16 @@
         <!-- MV Section -->
         <div class="page-mv position-relative overflow-hidden hero-flex-center">
             <!-- Background Image -->
-            <div class="overlay-absolute-full hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80');"></div>
+            <div class="overlay-absolute-full hero-bg-image contact-hero-bg-image"></div>
             
             <!-- Dark Overlay -->
-            <div class="overlay-absolute-full overlay-dark"></div>
+            <div class="overlay-absolute-full dark-overlay"></div>
             
             <!-- Gradient Overlay -->
             <div class="overlay-absolute-full overlay-gradient-accent"></div>
             
             <!-- Content -->
-            <div class="r-container position-relative z-10">
+            <div class="r-container contact-container position-relative z-10">
                 <div class="text-center">
                     <h1 class="scrollanimation animated fadeInUp mb-3 heading-responsive-lg">
                         <span class="d-block mb-2 heading-responsive-sm">Contact</span>
@@ -111,82 +120,14 @@
         <!-- End MV Section -->
 
         <!-- Contact Section -->
-        <div class="contact-section py-5 py-lg-7">
-            <div class="r-container">
+        <div class="section gradient-section-dark contact-section">
+            <div class="r-container contact-container">
                 <div class="row g-5">
-                    <!-- Contact Info -->
-                    <div class="col-lg-5">
-                        <div class="contact-info-wrapper scrollanimation animated fadeInRight">
-                            <h2 class="contact-info-title mb-4">お問い合わせ先</h2>
-                            <p class="contact-info-text mb-5">
-                                以下のフォームまたは、お電話・メールにて<br>
-                                お問い合わせいただけます。<br>
-                                担当者より折り返しご連絡させていただきます。
-                            </p>
-
-                            <!-- Contact Cards -->
-                            <div class="contact-info-card mb-4">
-                                <div class="contact-info-icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <h3 class="contact-info-label">お電話でのお問い合わせ</h3>
-                                    <p class="contact-info-value mb-2">043-XXX-XXXX</p>
-                                    <p class="contact-info-note">受付時間：平日 9:00～18:00</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-info-card mb-4">
-                                <div class="contact-info-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <h3 class="contact-info-label">メールでのお問い合わせ</h3>
-                                    <p class="contact-info-value mb-2">info@light-tt.co.jp</p>
-                                    <p class="contact-info-note">24時間受付（返信は営業日に対応）</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-info-card">
-                                <div class="contact-info-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <h3 class="contact-info-label">所在地</h3>
-                                    <p class="contact-info-value mb-2">
-                                        〒263-8555<br>
-                                        千葉県千葉市稲毛区穴川4丁目9-1<br>
-                                        量子科学技術研究開発機構（QST）千葉地区内
-                                    </p>
-                                    <p class="contact-info-note">※訪問の際は事前にご連絡ください</p>
-                                </div>
-                            </div>
-
-                            <!-- Business Hours -->
-                            <div class="business-hours-card mt-5">
-                                <h3 class="business-hours-title">
-                                    <i class="fas fa-clock me-2"></i>
-                                    営業時間
-                                </h3>
-                                <div class="business-hours-content">
-                                    <div class="business-hours-item">
-                                        <span class="day">平日</span>
-                                        <span class="time">9:00 - 18:00</span>
-                                    </div>
-                                    <div class="business-hours-item">
-                                        <span class="day">土日祝</span>
-                                        <span class="time">定休日</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Contact Form -->
-                    <div class="col-lg-7">
+                    <div class="col-lg-12">
                         <div class="contact-form-wrapper scrollanimation animated fadeInLeft">
-                            <h2 class="contact-form-title mb-4">お問い合わせフォーム</h2>
-                            <p class="contact-form-text mb-5">
+                            <h2 class="contact-form-title mb-4 text-center">お問い合わせフォーム</h2>
+                            <p class="contact-form-text mb-5 text-center">
                                 下記フォームに必要事項をご記入の上、送信してください。<br>
                                 <span class="text-danger">*</span> は必須項目です。
                             </p>
@@ -269,14 +210,14 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="privacyCheck" required>
                                         <label class="form-check-label" for="privacyCheck">
-                                            <a href="#" class="text-accent">プライバシーポリシー</a>に同意する <span class="text-danger">*</span>
+                                            <a href="privacy.html" class="text-accent">プライバシーポリシー</a>に同意する <span class="text-danger">*</span>
                                         </label>
                                     </div>
                                 </div>
 
                                 <!-- Submit Button -->
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-accent btn-lg animated-gradient w-100">
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-accent animated-gradient contact-submit-btn">
                                         <i class="fas fa-paper-plane me-2"></i>
                                         <span>送信する</span>
                                     </button>
@@ -298,193 +239,78 @@
             </div>
         </div>
         <!-- End Contact Section -->
-
-        <!-- Map Section -->
-        <div class="map-section py-5 py-lg-7 bg-light-gray">
-            <div class="r-container">
-                <div class="d-flex flex-column gap-2 text-center mb-5">
-                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
-                        <span class="text-accent">ACCESS</span>
-                    </p>
-                    <h2 class="m-0 scrollanimation animated fadeInDown">アクセス</h2>
-                    <p class="section-lead text-max-width mx-auto">
-                        量子科学技術研究開発機構（QST）千葉地区内に所在しています。<br>
-                        訪問の際は事前にご連絡をお願いいたします。
-                    </p>
-                </div>
-
-                <div class="map-wrapper scrollanimation animated fadeInUp" >
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.2899547893883!2d140.10299831525887!3d35.68426038019537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022892d3e6d3f3f%3A0x3e3b3b3b3b3b3b3b!2z5Y2D6JGJ55yM5Y2D6JGJ5biC56iy5q-b5Yy6!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp" 
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                    <div class="map-info-overlay">
-                        <div class="map-info-card">
-                            <h3 class="map-info-title">
-                                <i class="fas fa-building me-2"></i>
-                                Light Touch Technology 株式会社
-                            </h3>
-                            <p class="map-info-address mb-3">
-                                〒263-8555<br>
-                                千葉県千葉市稲毛区穴川4丁目9-1<br>
-                                量子科学技術研究開発機構（QST）千葉地区内
-                            </p>
-                            <div class="map-info-access">
-                                <div class="access-item">
-                                    <i class="fas fa-train"></i>
-                                    <span>JR稲毛駅からバス約10分</span>
-                                </div>
-                                <div class="access-item">
-                                    <i class="fas fa-car"></i>
-                                    <span>京葉道路 穴川ICから約5分</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Map Section -->
-
-        <!-- FAQ Section -->
-        <div class="faq-section py-5 py-lg-7">
-            <div class="r-container">
-                <div class="d-flex flex-column gap-2 text-center mb-5">
-                    <p class="m-0 text-uppercase letter-space-2 scrollanimation animated fadeInDown">
-                        <span class="text-accent">FAQ</span>
-                    </p>
-                    <h2 class="m-0 scrollanimation animated fadeInDown">よくあるご質問</h2>
-                    <p class="section-lead text-max-width mx-auto">
-                        お問い合わせの前に、よくあるご質問をご確認ください。
-                    </p>
-                </div>
-
-                <div class="faq-wrapper scrollanimation animated fadeInUp" >
-                    <div class="accordion" id="faqAccordion">
-                        <!-- FAQ Item 1 -->
-                        <div class="accordion-item faq-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    <span class="faq-number">Q1</span>
-                                    <span class="faq-question">製品のデモや試用は可能ですか？</span>
-                                </button>
-                            </h3>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p class="faq-answer">現在開発中の製品については、開発状況に応じてデモンストレーションのご相談を承っております。お問い合わせフォームまたはお電話にてお気軽にご相談ください。</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 2 -->
-                        <div class="accordion-item faq-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    <span class="faq-number">Q2</span>
-                                    <span class="faq-question">共同研究や技術提携は可能ですか？</span>
-                                </button>
-                            </h3>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p class="faq-answer">研究機関や企業様との共同研究、技術提携については積極的に検討しております。まずはお問い合わせフォームより「事業提携・協業について」を選択してご連絡ください。</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 3 -->
-                        <div class="accordion-item faq-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    <span class="faq-number">Q3</span>
-                                    <span class="faq-question">採用に関する問い合わせ方法を教えてください。</span>
-                                </button>
-                            </h3>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p class="faq-answer">採用に関するお問い合わせは、お問い合わせフォームより「採用について」を選択してご連絡ください。または、採用ページから直接応募いただくことも可能です。</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 4 -->
-                        <div class="accordion-item faq-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    <span class="faq-number">Q4</span>
-                                    <span class="faq-question">取材や報道関係のお問い合わせについて</span>
-                                </button>
-                            </h3>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p class="faq-answer">メディアの方からの取材依頼は、お問い合わせフォームより「取材・メディア掲載について」を選択してご連絡ください。広報担当より折り返しご連絡いたします。</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 5 -->
-                        <div class="accordion-item faq-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                    <span class="faq-number">Q5</span>
-                                    <span class="faq-question">お問い合わせの回答にはどのくらい時間がかかりますか？</span>
-                                </button>
-                            </h3>
-                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    <p class="faq-answer">通常、営業日の2～3日以内にご返信させていただいております。お問い合わせ内容により調査が必要な場合は、お時間をいただく場合がございます。予めご了承ください。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End FAQ Section -->
     </main>
     <!-- End Main -->
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="r-container">
-            <div class="row g-4 mb-5">
-                <div class="col-lg-6">
-                    <div class="footer-menu">
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="index.html">ホーム</a></li>
-                            <li><a href="company.html">会社概要</a></li>
-                            <li><a href="service.html">事業内容</a></li>
-                            <li><a href="product.html">プロダクト</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="footer-menu">
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="news.html">お知らせ</a></li>
-                            <li><a href="recruit.html">採用</a></li>
-                            <li><a href="contact.html">お問い合わせ</a></li>
-                        </ul>
+    <footer>
+        <div class="footer section p-0">
+            <div class="footer-top">
+                <div class="r-container">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-12 col-xl-6">
+                            <div class="d-flex flex-column gap-3">
+                                <a href="index.html" class="footer-logo">
+                                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 203.96 126" viewBox="0 0 203.96 126" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"><defs><style>#comp-kdb9v6zu svg [data-color="1"] {fill: #FFFFFF;}</style></defs>
+                                        <g>
+                                            <path d="M1.72 120.77h6.69v1.39H0v-12.85h1.72v11.46z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M9.87 109.31h1.59v1.52H9.87v-1.52zm1.59 3.58v9.27H9.87v-9.27h1.59z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M20.2 121.3v-1.06c-.62 1.28-1.61 1.92-2.98 1.92-1.06 0-1.95-.42-2.65-1.26-.75-.88-1.13-2.03-1.13-3.44 0-1.55.35-2.74 1.06-3.58.75-.79 1.68-1.19 2.78-1.19.57 0 1.13.11 1.66.33.4.22.82.69 1.26 1.39v-1.52h1.59v7.62c0 1.94-.22 3.2-.66 3.77-.79 1.15-2.01 1.72-3.64 1.72-1.24 0-2.19-.26-2.85-.79-.71-.44-1.06-1.06-1.06-1.85h1.59c0 .44.15.79.46 1.06.44.31 1.06.46 1.85.46 1.06 0 1.81-.35 2.25-1.06.31-.45.47-1.29.47-2.52zm0-4.04c0-1.02-.24-1.83-.73-2.45-.53-.57-1.15-.86-1.85-.86-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65 0 1.15.24 2.03.73 2.65.44.57 1.06.86 1.85.86.7 0 1.32-.33 1.85-.99.48-.63.73-1.53.73-2.72z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M25.93 117.59v4.57h-1.59v-13.38h1.59v5.76c.71-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.35-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M40.07 120.83v1.32a5.7 5.7 0 01-1.72.26c-1.01 0-1.74-.29-2.19-.86-.53-.53-.79-1.39-.79-2.58v-4.77h-1.59v-1.32h1.59v-2.19h1.52v2.19h2.72v1.32h-2.72v4.3c0 1.1.16 1.81.46 2.12.26.35.71.53 1.32.53.19.02.65-.09 1.4-.32z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M59.91 110.64h-4.3v11.52h-1.66v-11.52h-4.37v-1.32h10.33v1.32z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M65.42 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58s-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M77.76 117.46v-4.57h1.52v9.27h-1.52v-1.59c-.84 1.24-1.83 1.85-2.98 1.85-.79 0-1.5-.24-2.12-.73-.66-.49-.99-1.46-.99-2.91v-5.89h1.59v5.23c0 1.24.2 2.03.6 2.38.35.35.77.53 1.26.53.7 0 1.32-.31 1.85-.93.52-.61.79-1.49.79-2.64z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M87.58 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.52.79-2.58.79-1.37 0-2.41-.42-3.11-1.26-.75-.88-1.13-2.1-1.13-3.64s.37-2.76 1.13-3.64c.75-.79 1.79-1.19 3.11-1.19 1.19 0 2.1.31 2.72.93.53.44.79.99.79 1.66h-1.52c0-.4-.16-.73-.46-.99-.35-.22-.84-.33-1.46-.33-.84 0-1.48.29-1.92.86-.53.57-.79 1.48-.79 2.72 0 1.19.26 2.1.79 2.72.49.62 1.13.93 1.92.93.66 0 1.15-.13 1.46-.4s.46-.61.46-1.01z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M93.04 117.59v4.57h-1.59v-13.38h1.59v5.76c.7-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.36-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M119.04 110.64h-4.3v11.52h-1.66v-11.52h-4.37v-1.32h10.33v1.32z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M126.16 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.57.79-2.72.79-1.32 0-2.38-.44-3.18-1.32s-1.19-2.05-1.19-3.51c0-1.55.42-2.74 1.26-3.58.79-.88 1.81-1.32 3.05-1.32 1.15 0 2.07.35 2.78 1.06.66.71.99 1.85.99 3.44v.53h-6.56c0 1.1.29 1.94.86 2.52.53.62 1.24.93 2.12.93.66 0 1.15-.16 1.46-.46.37-.26.54-.57.54-.93zm-4.9-3.17h4.97v-.2c0-.44-.09-.84-.26-1.19-.22-.44-.51-.75-.86-.93-.35-.22-.77-.33-1.26-.33-.62 0-1.15.22-1.59.66-.45.44-.78 1.1-1 1.99z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M135.89 119.77h1.52c0 .71-.31 1.32-.93 1.85-.66.53-1.52.79-2.58.79-1.37 0-2.41-.42-3.11-1.26-.75-.88-1.13-2.1-1.13-3.64s.37-2.76 1.13-3.64c.75-.79 1.79-1.19 3.11-1.19 1.19 0 2.1.31 2.72.93.53.44.79.99.79 1.66h-1.52c0-.4-.16-.73-.46-.99-.35-.22-.84-.33-1.46-.33-.84 0-1.48.29-1.92.86-.53.57-.79 1.48-.79 2.72 0 1.19.26 2.1.79 2.72.48.62 1.13.93 1.92.93.66 0 1.15-.13 1.46-.4.3-.28.46-.61.46-1.01z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M141.18 117.59v4.57h-1.59v-13.38h1.59v5.76c.71-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.35-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.58-.79 1.47-.79 2.66z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M151.3 117.59v4.57h-1.59v-9.27h1.59v1.66c.7-1.24 1.7-1.85 2.98-1.85.97 0 1.72.26 2.25.79.53.57.79 1.5.79 2.78v5.89h-1.59v-5.23c0-1.24-.16-2.01-.46-2.32-.36-.35-.82-.53-1.39-.53-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M163.81 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58-.79.88-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M170.35 122.16v-13.38h1.59v13.38h-1.59z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M178.55 122.42c-1.28 0-2.32-.44-3.11-1.32-.84-.84-1.26-2.03-1.26-3.58s.4-2.74 1.19-3.58c.79-.84 1.85-1.26 3.18-1.26 1.28 0 2.32.42 3.11 1.26.79.84 1.19 2.03 1.19 3.58 0 1.5-.4 2.69-1.19 3.58-.79.88-1.83 1.32-3.11 1.32zm0-1.25c.75 0 1.39-.33 1.92-.99.53-.62.79-1.5.79-2.65 0-1.19-.26-2.08-.79-2.65-.53-.62-1.17-.93-1.92-.93-.79 0-1.46.31-1.99.93-.53.57-.79 1.46-.79 2.65 0 1.15.26 2.03.79 2.65.53.65 1.2.99 1.99.99z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M191.46 121.3v-1.06c-.62 1.28-1.61 1.92-2.98 1.92-1.06 0-1.94-.42-2.65-1.26-.75-.88-1.13-2.03-1.13-3.44 0-1.55.35-2.74 1.06-3.58.75-.79 1.68-1.19 2.78-1.19.57 0 1.13.11 1.66.33.4.22.82.69 1.26 1.39v-1.52h1.59v7.62c0 1.94-.22 3.2-.66 3.77-.79 1.15-2.01 1.72-3.64 1.72-1.24 0-2.19-.26-2.85-.79-.71-.44-1.06-1.06-1.06-1.85h1.59c0 .44.16.79.46 1.06.44.31 1.06.46 1.85.46 1.06 0 1.81-.35 2.25-1.06.31-.45.47-1.29.47-2.52zm0-4.04c0-1.02-.24-1.83-.73-2.45-.53-.57-1.15-.86-1.85-.86-.75 0-1.35.29-1.79.86-.53.57-.79 1.46-.79 2.65 0 1.15.24 2.03.73 2.65.44.57 1.06.86 1.85.86.71 0 1.32-.33 1.85-.99.48-.63.73-1.53.73-2.72z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M198.53 122.09l.2-.33-3.97-8.87h1.72l3.05 6.89 2.91-6.89h1.52l-3.84 9.27c-.53 1.1-.93 1.85-1.19 2.25-.31.4-.66.73-1.06.99-.57.22-1.17.33-1.79.33h-1.19v-1.26h.93c.66 0 1.24-.18 1.72-.53.22-.21.55-.83.99-1.85z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M126.27.06H75.79c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h18.95c1.48 0 2.25.87 1.48 1.32-1.91 1.11-2.72 3.01-2.72 5.17 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.13-3.75 5.64 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.19-.83-4.11-2.8-5.21-.76-.43 0-1.27 1.48-1.27h18.61c5.29 0 7.31-2.79 7.31-6.23 0-3.45-2.02-6.24-7.31-6.24z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M196.15.06h-50.48c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h18.95c1.48 0 2.25.87 1.48 1.32-1.91 1.11-2.72 3.01-2.72 5.17 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.12-3.75 5.64 0 2.53 1.05 4.69 3.75 5.66.52.19.52.88 0 1.07-2.65.98-3.75 3.13-3.75 5.64 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.52-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65s-1.11-4.67-3.77-5.65a.562.562 0 010-1.07c2.67-.97 3.77-3.13 3.77-5.65 0-2.19-.83-4.11-2.8-5.21-.76-.43 0-1.27 1.48-1.27h18.61c5.29 0 7.31-2.79 7.31-6.23 0-3.45-2.02-6.24-7.31-6.24z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M55.76 74.27H23.89c-5.29 0-7.31 2.79-7.31 6.23 0 3.44 1.9 6.23 7.31 6.23h31.87c5.29 0 7.31-2.79 7.31-6.23 0-3.44-2.02-6.23-7.31-6.23z" fill="#dd984c" data-color="1"></path>
+                                            <path d="M19.68 18.59c0-2.51-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63 0-3.44-2.02-6.23-7.31-6.23h-.86C6.22 0 4.2 2.79 4.2 6.23c0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.98-3.71 3.12-3.71 5.62 0 2.51 1.04 4.66 3.71 5.64.53.19.53.9 0 1.1-2.62.99-3.71 3.13-3.71 5.63 0 3.44 1.9 6.23 7.31 6.23h.86c5.29 0 7.31-2.79 7.31-6.23 0-2.51-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.64-.98 3.73-3.12 3.73-5.63s-1.09-4.65-3.73-5.63a.58.58 0 010-1.1c2.63-.99 3.73-3.13 3.73-5.64z" fill="#dd984c" data-color="1"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <p class="text-color-2 m-0">光技術で医療の常識を変え、世界初を日常に。<br>研究から製品化まで、LTTは挑戦を続けます。</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <div class="row row-cols-2 row-cols-md-2 g-3">
+                                <div class="col">
+                                    <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
+                                        <li><a href="index.html">ホーム</a></li>
+                                        <li><a href="company.html">会社概要</a></li>
+                                        <li><a href="service.html">事業内容</a></li>
+                                        <li><a href="product.html">プロダクト</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="footer-nav m-0 p-0 d-flex flex-column gap-2">
+                                        <li><a href="news.html">お知らせ</a></li>
+                                        <li><a href="recruit.html">採用</a></li>
+                                        <li><a href="contact.html">お問い合わせ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <p class="mb-0 text-muted">
-                            <a href="#" class="me-3">プライバシーポリシー</a>
-                            <a href="#">利用規約</a>
-                        </p>
+                <div class="r-container contact-container d-flex flex-column flex-xl-row align-items-center justify-content-between gap-3">
+                    <div class="d-flex gap-3 small-text order-1 order-xl-2">
+                        <a href="privacy.html">プライバシーポリシー</a>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <p class="mb-0 text-muted">© 2025 Light Touch Technology. All rights reserved.</p>
-                    </div>
+                    <span class="text-color-2 small-text order-2 order-xl-1">Copyright © 2025 Light Touch Technology. All rights reserved.</span>
                 </div>
             </div>
         </div>
@@ -492,9 +318,13 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/vendor/fontawesome/all.js"></script>
+    <script src="js/vendor/fontawesome/all.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
     <script>
         // Form submission handler
         document.getElementById('contactForm').addEventListener('submit', function(e) {
